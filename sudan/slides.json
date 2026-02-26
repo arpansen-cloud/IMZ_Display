@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "defaultTitle": "COUNTRY NAME",
+    "badge": "International • MSA Philanthropy",
+    "secondsPerSlide": 8,
+    "footerLeft": "Scan to donate • Human Development Foundation (HDF)"
+  },
+  "slides": [
+    {
+      "title": "COUNTRY NAME",
+      "subtitle": "1–2 sentence overview of the situation and why it matters.",
+      "media": { "type": "image", "src": "./assets/slide1.jpg" },
+      "points": [
+        { "heading": "What’s happening", "text": "Short, factual summary." },
+        { "heading": "Impact", "text": "One concrete impact point or stat." },
+        { "heading": "MSA action", "text": "1 line about what your fundraiser supports." }
+      ]
+    },
+    {
+      "title": "How support helps",
+      "subtitle": "What donations can provide on the ground.",
+      "media": { "type": "image", "src": "./assets/slide2.jpg" },
+      "points": [
+        { "heading": "Food & water", "text": "Short line." },
+        { "heading": "Medical", "text": "Short line." },
+        { "heading": "Shelter", "text": "Short line." }
+      ]
+    },
+    {
+      "title": "Donate",
+      "subtitle": "Scan the QR code to donate in seconds.",
+      "media": { "type": "video", "src": "./assets/slide3.mp4" },
+      "points": [
+        { "heading": "Fast", "text": "Takes under a minute." },
+        { "heading": "Secure", "text": "Official donation link." },
+        { "heading": "Impactful", "text": "Every contribution helps." }
+      ],
+      "cta": {
+        "label": "Open Donation Link",
+        "url": "https://PUT-DONATION-LINK-HERE",
+        "qr": "./assets/qr.png"
+      }
+    }
+  ]
+}
