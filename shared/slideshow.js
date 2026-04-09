@@ -36,6 +36,10 @@ function setTextContent(targetId, value) {
   el(targetId).textContent = value || "";
 }
 
+function setHeading(targetId, value, fallback) {
+  el(targetId).textContent = value || fallback;
+}
+
 function setParties(parties) {
   const list = el("parties");
   list.innerHTML = "";
@@ -153,6 +157,7 @@ function renderSlide(slide, meta, index, total) {
   setTextContent("backgroundText", slide.whatsHappening?.background);
   setTextContent("impactText", slide.civilianImpact?.experiences);
   setTextContent("helpText", slide.howToHelp?.summary);
+  setHeading("partiesHeading", slide.whatsHappening?.partiesHeading, "Key Actors");
   setParties(slide.whatsHappening?.parties);
   setTimeline(slide.whatsHappening?.timeline);
   setStats(slide.civilianImpact?.stats);
