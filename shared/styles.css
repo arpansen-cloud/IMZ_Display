@@ -282,8 +282,8 @@ h1 {
 }
 
 .qr-grid.single-card {
-  grid-template-columns: minmax(0, 1fr);
-  justify-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .stat-card,
@@ -328,6 +328,7 @@ h1 {
 
 .qr-grid.single-card .qr-card {
   width: min(100%, 220px);
+  margin: 0 auto;
 }
 
 .qr-placeholder {
