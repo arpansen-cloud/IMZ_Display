@@ -116,7 +116,9 @@ function setStats(items) {
 function setQrCards(items) {
   const grid = el("helpCards");
   grid.innerHTML = "";
-  (items || []).slice(0, 2).forEach((item) => {
+  const cards = (items || []).slice(0, 2);
+  grid.classList.toggle("single-card", cards.length === 1);
+  cards.forEach((item) => {
     const article = document.createElement("article");
     article.className = "qr-card";
 

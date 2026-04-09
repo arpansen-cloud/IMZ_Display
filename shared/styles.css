@@ -281,6 +281,11 @@ h1 {
   gap: 0.7rem;
 }
 
+.qr-grid.single-card {
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
+}
+
 .stat-card,
 .qr-card {
   min-height: 92px;
@@ -319,6 +324,10 @@ h1 {
   justify-content: center;
   gap: 0.65rem;
   text-align: center;
+}
+
+.qr-grid.single-card .qr-card {
+  width: min(100%, 220px);
 }
 
 .qr-placeholder {
