@@ -3,7 +3,10 @@ function el(id) {
 }
 
 async function loadSlides() {
-  const res = await fetch("./slides.json", { cache: "no-store" });
+  const params = new URLSearchParams(window.location.search);
+  const version = params.get("v");
+  const slidesUrl = version ? `./slides.json?v=${encodeURIComponent(version)}` : "./slides.json";
+  const res = await fetch(slidesUrl, { cache: "no-store" });
   if (!res.ok) throw new Error("Could not load slides.json");
   return res.json();
 }
