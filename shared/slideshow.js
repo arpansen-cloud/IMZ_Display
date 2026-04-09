@@ -138,14 +138,16 @@ function setQrCards(items) {
       article.appendChild(text);
     }
 
-    if (item.url) {
-      const link = document.createElement("a");
-      link.className = "qr-link";
-      link.href = item.url;
-      link.target = "_blank";
-      link.rel = "noopener";
-      link.textContent = item.label || "Open link";
-      article.appendChild(link);
+    if (item.label) {
+      const label = document.createElement(item.url ? "a" : "span");
+      label.className = "qr-link";
+      label.textContent = item.label;
+      if (item.url) {
+        label.href = item.url;
+        label.target = "_blank";
+        label.rel = "noopener";
+      }
+      article.appendChild(label);
     }
 
     grid.appendChild(article);

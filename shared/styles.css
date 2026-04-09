@@ -349,6 +349,9 @@ h1 {
 .qr-link {
   font-size: 0.74rem;
   color: #dce8ff;
+  text-align: center;
+  line-height: 1.15;
+  text-decoration: none;
 }
 
 .learn-more a {
