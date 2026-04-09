@@ -1,44 +1,58 @@
 {
   "meta": {
-    "defaultTitle": "COUNTRY NAME",
-    "badge": "International • MSA Philanthropy",
-    "secondsPerSlide": 8,
-    "footerLeft": "Scan to donate • Human Development Foundation (HDF)"
+    "defaultTitle": "Sudan",
+    "logoLabel": "MSA",
+    "secondsPerSlide": 10
   },
   "slides": [
     {
-      "title": "COUNTRY NAME",
-      "subtitle": "1–2 sentence overview of the situation and why it matters.",
-      "media": { "type": "image", "src": "./assets/slide1.jpg" },
-      "points": [
-        { "heading": "What’s happening", "text": "Short, factual summary." },
-        { "heading": "Impact", "text": "One concrete impact point or stat." },
-        { "heading": "MSA action", "text": "1 line about what your fundraiser supports." }
-      ]
-    },
-    {
-      "title": "How support helps",
-      "subtitle": "What donations can provide on the ground.",
-      "media": { "type": "image", "src": "./assets/slide2.jpg" },
-      "points": [
-        { "heading": "Food & water", "text": "Short line." },
-        { "heading": "Medical", "text": "Short line." },
-        { "heading": "Shelter", "text": "Short line." }
-      ]
-    },
-    {
-      "title": "Donate",
-      "subtitle": "Scan the QR code to donate in seconds.",
-      "media": { "type": "video", "src": "./assets/slide3.mp4" },
-      "points": [
-        { "heading": "Fast", "text": "Takes under a minute." },
-        { "heading": "Secure", "text": "Official donation link." },
-        { "heading": "Impactful", "text": "Every contribution helps." }
-      ],
-      "cta": {
-        "label": "Open Donation Link",
-        "url": "https://PUT-DONATION-LINK-HERE",
-        "qr": "./assets/qr.png"
+      "title": "Sudan",
+      "subtitle": "Template slide for country-specific crisis context, civilian impact, and donation resources.",
+      "whatsHappening": {
+        "background": "Add a concise summary of the current situation in Sudan and why support is needed.",
+        "parties": [
+          { "name": "Party Name", "description": "Add a short description." },
+          { "name": "Party Name", "description": "Add a short description." },
+          { "name": "Party Name", "description": "Add a short description." }
+        ],
+        "timeline": [
+          { "year": "20XX", "description": "Key event description here." },
+          { "year": "20XX", "description": "Key event description here." },
+          { "year": "20XX", "description": "Key event description here." }
+        ],
+        "image": {
+          "src": "https://images.unsplash.com/photo-1542743408-218cc173cda0?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Sudan cityscape"
+        }
+      },
+      "civilianImpact": {
+        "experiences": "Describe how civilians are affected, including displacement, shortages, disrupted services, or access barriers.",
+        "stats": [
+          { "value": "XX", "label": "Stat Label" },
+          { "value": "XX", "label": "Stat Label" },
+          { "value": "XX", "label": "Stat Label" },
+          { "value": "XX", "label": "Stat Label" }
+        ],
+        "image": {
+          "src": "https://images.unsplash.com/photo-1518695606297-6bb7c9378e6f?auto=format&fit=crop&w=1200&q=80",
+          "alt": "People in affected streets"
+        }
+      },
+      "howToHelp": {
+        "summary": "Add a short explanation of how donations or volunteer support will help people on the ground.",
+        "cards": [
+          { "placeholder": "QR CODE", "label": "Donation Link", "url": "https://example.com/donate" },
+          { "placeholder": "QR CODE", "label": "Learn More", "url": "https://example.com/resources" }
+        ],
+        "learnMore": {
+          "text": "Visit this resource for verified updates and additional information.",
+          "label": "ReliefWeb",
+          "url": "https://reliefweb.int"
+        },
+        "image": {
+          "src": "https://images.unsplash.com/photo-1599837487527-d8f0f837f9f9?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Flags and solidarity"
+        }
       }
     }
   ]

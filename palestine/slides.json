@@ -1,44 +1,175 @@
 {
   "meta": {
-    "defaultTitle": "COUNTRY NAME",
-    "badge": "International • MSA Philanthropy",
-    "secondsPerSlide": 8,
-    "footerLeft": "Scan to donate • Human Development Foundation (HDF)"
+    "defaultTitle": "Palestine",
+    "logoLabel": "MSA",
+    "secondsPerSlide": 14,
+    "background": {
+      "src": "./background-v2.png"
+    }
   },
   "slides": [
     {
-      "title": "COUNTRY NAME",
-      "subtitle": "1–2 sentence overview of the situation and why it matters.",
-      "media": { "type": "image", "src": "./assets/slide1.jpg" },
-      "points": [
-        { "heading": "What’s happening", "text": "Short, factual summary." },
-        { "heading": "Impact", "text": "One concrete impact point or stat." },
-        { "heading": "MSA action", "text": "1 line about what your fundraiser supports." }
-      ]
+      "title": "Palestine",
+      "subtitle": "",
+      "background": {
+        "src": "./background-v2.png"
+      },
+      "whatsHappening": {
+        "background": "1948: The Nakba displaces about 750,000 Palestinians. 1967: Israel occupies Gaza, the West Bank, and East Jerusalem. 1987: the First Intifada begins. 1993: Oslo creates the Palestinian Authority and mutual recognition between the PLO and Israel.",
+        "parties": [
+          { "name": "Israel", "description": "Occupying power since 1967; conducting the current military campaign in Gaza." },
+          { "name": "Hamas", "description": "Armed group governing Gaza; launched the October 7 attack." },
+          { "name": "Palestinian Authority / Fatah", "description": "Governs parts of the West Bank; sidelined in Gaza." },
+          { "name": "United States", "description": "Israel's primary ally and arms supplier; brokered the ceasefire." },
+          { "name": "United Nations", "description": "Leading the humanitarian response." }
+        ],
+        "timeline": [
+          { "year": "1948", "description": "The Nakba: Israel declares independence; mass Palestinian expulsion begins." },
+          { "year": "1967", "description": "Occupation begins after the Six Day War." },
+          { "year": "1987", "description": "First Intifada: widespread Palestinian uprising." }
+        ],
+        "image": {
+          "src": "./bottom-left.png",
+          "alt": "Jerusalem and Al-Aqsa area"
+        }
+      },
+      "civilianImpact": {
+        "experiences": "2007: Gaza blockade begins after Hamas seizes control. 2008-2023: repeated Israeli military operations kill thousands of Palestinians. October 7, 2023: Hamas attacks Israel, killing about 1,200 Israelis; Israel launches a massive military campaign on Gaza.",
+        "stats": [
+          { "value": "2007", "label": "Gaza Blockade" },
+          { "value": "2008-23", "label": "Cycle of Violence" },
+          { "value": "10/7/23", "label": "War Begins" },
+          { "value": "2026", "label": "Crisis Continues" }
+        ],
+        "image": {
+          "src": "./slide1-people.png",
+          "alt": "Palestinians moving through destruction in Gaza"
+        }
+      },
+      "howToHelp": {
+        "summary": "October 2025: a ceasefire is reached, but Israel retains control of 53% of Gaza. In 2026, the war enters its 900th+ day and conditions remain dire.",
+        "cards": [
+          { "placeholder": "1948", "label": "Nakba" },
+          { "placeholder": "1967", "label": "Occupation" }
+        ],
+        "learnMore": {
+          "text": "This slide covers the historical path to the current crisis.",
+          "label": "Next Slide",
+          "url": "#"
+        },
+        "image": {
+          "src": "./flag-slide1.png",
+          "alt": "Palestinian flag"
+        }
+      }
     },
     {
-      "title": "How support helps",
-      "subtitle": "What donations can provide on the ground.",
-      "media": { "type": "image", "src": "./assets/slide2.jpg" },
-      "points": [
-        { "heading": "Food & water", "text": "Short line." },
-        { "heading": "Medical", "text": "Short line." },
-        { "heading": "Shelter", "text": "Short line." }
-      ]
+      "title": "Palestine",
+      "subtitle": "How are civilians affected?",
+      "background": {
+        "src": "./background-v2.png"
+      },
+      "whatsHappening": {
+        "background": "The humanitarian toll is catastrophic. Families have been displaced repeatedly, basic services have collapsed, and children face mass trauma, orphanhood, hunger, and injury.",
+        "parties": [
+          { "name": "72,135 killed", "description": "Including 21,283 children." },
+          { "name": "171,830 injured", "description": "Mass casualty levels continue to rise." },
+          { "name": "1.9 million displaced", "description": "About 90% of Gaza's population." },
+          { "name": "81% structures hit", "description": "Destroyed or damaged across Gaza." }
+        ],
+        "timeline": [
+          { "year": "58,000+", "description": "Children who lost one or both parents." },
+          { "year": "589", "description": "Aid workers killed; 391 from UNRWA." },
+          { "year": "1,700+", "description": "Health workers killed." }
+        ],
+        "image": {
+          "src": "./bottom-left.png",
+          "alt": "Jerusalem and Al-Aqsa area"
+        }
+      },
+      "civilianImpact": {
+        "experiences": "Famine has reached IPC Phase 5, the most severe classification: catastrophe/famine. It means starvation, mass death, and total collapse of livelihoods. In August 2025, famine was confirmed in Gaza.",
+        "stats": [
+          { "value": "641k", "label": "IPC Phase 5" },
+          { "value": "1.14m", "label": "IPC Phase 4" },
+          { "value": "132k", "label": "Children Under 5 at Risk" },
+          { "value": "41k", "label": "Severe Cases" }
+        ],
+        "image": {
+          "src": "./food-insecurity.png",
+          "alt": "Projected acute food insecurity and malnutrition map for Gaza"
+        }
+      },
+      "howToHelp": {
+        "summary": "Almost a third of the population, 641,000 people, were expected to face catastrophic conditions, while another 1.14 million were projected in IPC Phase 4. Acute malnutrition in children under five is expected through June 2026.",
+        "cards": [
+          { "placeholder": "259", "label": "Journalists Killed" },
+          { "placeholder": "81%", "label": "Structures Damaged" }
+        ],
+        "learnMore": {
+          "text": "IPC Phase 5 is the highest famine classification and signals starvation, destitution, and death.",
+          "label": "IPC",
+          "url": "https://www.ipcinfo.org/"
+        },
+        "image": {
+          "src": "./flag.png",
+          "alt": "Palestinian flag"
+        }
+      }
     },
     {
-      "title": "Donate",
-      "subtitle": "Scan the QR code to donate in seconds.",
-      "media": { "type": "video", "src": "./assets/slide3.mp4" },
-      "points": [
-        { "heading": "Fast", "text": "Takes under a minute." },
-        { "heading": "Secure", "text": "Official donation link." },
-        { "heading": "Impactful", "text": "Every contribution helps." }
-      ],
-      "cta": {
-        "label": "Open Donation Link",
-        "url": "https://PUT-DONATION-LINK-HERE",
-        "qr": "./assets/qr.png"
+      "title": "Palestine",
+      "subtitle": "Law and How You Can Help",
+      "background": {
+        "src": "./background-v2.png"
+      },
+      "whatsHappening": {
+        "background": "The ICC issued arrest warrants for Prime Minister Benjamin Netanyahu and former Defense Minister Yoav Gallant for crimes against humanity and war crimes, including starvation as a method of warfare, attacks on civilians, murder, and persecution.",
+        "parties": [
+          { "name": "UNRWA", "description": "Humanitarian relief and services." },
+          { "name": "PCRF", "description": "Medical and humanitarian support for children." },
+          { "name": "HEAL Palestine", "description": "Aid, health, and advocacy support." },
+          { "name": "Doctors Without Borders", "description": "Emergency medical assistance." },
+          { "name": "WFP / UN Crisis Relief", "description": "Food aid and emergency response." }
+        ],
+        "timeline": [
+          { "year": "ICC", "description": "Arrest warrants issued for war crimes and crimes against humanity." },
+          { "year": "ICJ", "description": "International Court of Justice proceedings continue." },
+          { "year": "2026", "description": "Legal, humanitarian, and advocacy pressure remains urgent." }
+        ],
+        "image": {
+          "src": "./bottom-left.png",
+          "alt": "Jerusalem and Al-Aqsa area"
+        }
+      },
+      "civilianImpact": {
+        "experiences": "Help can take three forms: donate to trusted humanitarian organizations, educate yourself using reliable reporting and historical resources, and advocate by contacting representatives and amplifying Palestinian voices.",
+        "stats": [
+          { "value": "6", "label": "Donation Options" },
+          { "value": "3", "label": "Education Sources" },
+          { "value": "1", "label": "Call Your Representatives" },
+          { "value": "24/7", "label": "Amplify On-the-Ground Reporting" }
+        ],
+        "image": {
+          "src": "./people-affected.png",
+          "alt": "Palestinians moving through destruction in Gaza"
+        }
+      },
+      "howToHelp": {
+        "summary": "Donate: UNRWA, PCRF, HEAL Palestine, Doctors Without Borders, UN Crisis Relief, and the World Food Programme. Educate: decolonizepalestine.com, btselem.org, and 972mag.com. Advocate: contact your representatives and amplify Palestinian voices.",
+        "cards": [
+          { "placeholder": "DONATE", "label": "UNRWA", "url": "https://www.unrwa.org/" },
+          { "placeholder": "LEARN", "label": "decolonizepalestine.com", "url": "https://decolonizepalestine.com/" }
+        ],
+        "learnMore": {
+          "text": "Additional education sources: btselem.org and 972mag.com. Advocacy starts with contacting your representatives and sharing verified on-the-ground reporting.",
+          "label": "B'Tselem",
+          "url": "https://www.btselem.org/"
+        },
+        "image": {
+          "src": "./flag.png",
+          "alt": "Palestinian flag"
+        }
       }
     }
   ]
