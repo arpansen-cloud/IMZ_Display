@@ -326,6 +326,10 @@ h1 {
   text-align: center;
 }
 
+.qr-card-text {
+  gap: 0.28rem;
+}
+
 .qr-grid.single-card .qr-card {
   width: min(100%, 220px);
   margin: 0 auto;
@@ -335,6 +339,11 @@ h1 {
   font-size: 1.35rem;
   font-weight: 800;
   letter-spacing: 0.02em;
+}
+
+.qr-card-text .qr-placeholder {
+  font-size: 1.85rem;
+  line-height: 0.95;
 }
 
 .qr-image {
@@ -352,6 +361,10 @@ h1 {
   text-align: center;
   line-height: 1.15;
   text-decoration: none;
+}
+
+.qr-card-text .qr-link {
+  max-width: 11rem;
 }
 
 .learn-more a {

@@ -123,7 +123,8 @@ function setQrCards(items) {
   grid.classList.toggle("single-card", cards.length === 1);
   cards.forEach((item) => {
     const article = document.createElement("article");
-    article.className = "qr-card";
+    const textOnlyCard = !item.qr && !item.url;
+    article.className = `qr-card${textOnlyCard ? " qr-card-text" : ""}`;
 
     if (item.qr) {
       const img = document.createElement("img");
