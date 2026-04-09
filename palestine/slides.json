@@ -54,9 +54,7 @@
           { "placeholder": "1967", "label": "Occupation" }
         ],
         "learnMore": {
-          "text": "This slide covers the historical path to the current crisis.",
-          "label": "Next Slide",
-          "url": "#"
+          "text": "This slide covers the historical path to the current crisis."
         },
         "image": {
           "src": "./flag-slide1.png",
@@ -109,13 +107,13 @@
           { "placeholder": "81%", "label": "Structures Damaged" }
         ],
         "learnMore": {
-          "text": "IPC Phase 5 is the highest famine classification and signals starvation, destitution, and death.",
-          "label": "IPC",
-          "url": "https://www.ipcinfo.org/"
+          "text": "IPC Phase 5 is the highest famine classification and signals starvation, destitution, and death."
         },
+        "imageHeading": "IPC",
         "image": {
-          "src": "./flag.png",
-          "alt": "Palestinian flag"
+          "src": "./ipc-qr.png",
+          "alt": "QR code for IPC information",
+          "mode": "qr"
         }
       }
     },
@@ -161,17 +159,17 @@
       "howToHelp": {
         "summary": "Donate: UNRWA, PCRF, HEAL Palestine, Doctors Without Borders, UN Crisis Relief, and the World Food Programme. Educate: decolonizepalestine.com, btselem.org, and 972mag.com. Advocate: contact your representatives and amplify Palestinian voices.",
         "cards": [
-          { "placeholder": "DONATE", "label": "UNRWA", "url": "https://www.unrwa.org/" },
-          { "placeholder": "LEARN", "label": "decolonizepalestine.com", "url": "https://decolonizepalestine.com/" }
+          { "qr": "./unrwausa-qr.png", "label": "UNRWA USA", "url": "https://www.unrwausa.org/" },
+          { "qr": "./decolonizepalestine-qr.png", "label": "decolonizepalestine.com", "url": "https://decolonizepalestine.com/" }
         ],
         "learnMore": {
-          "text": "Additional education sources: btselem.org and 972mag.com. Advocacy starts with contacting your representatives and sharing verified on-the-ground reporting.",
-          "label": "B'Tselem",
-          "url": "https://www.btselem.org/"
+          "text": "Additional education sources: btselem.org and 972mag.com. Advocacy starts with contacting your representatives and sharing verified on-the-ground reporting."
         },
+        "imageHeading": "B'Tselem",
         "image": {
-          "src": "./flag.png",
-          "alt": "Palestinian flag"
+          "src": "./btselem-qr.png",
+          "alt": "QR code for B'Tselem",
+          "mode": "qr"
         }
       }
     }

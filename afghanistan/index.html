@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../shared/styles.css?v=10" />
+  <link rel="stylesheet" href="../shared/styles.css?v=14" />
 </head>
 <body>
 <div id="app">
@@ -46,9 +46,19 @@
         <figure class="media-card"><img id="rightImage" alt="" /></figure>
       </section>
     </main>
-    <footer class="footer"><div class="pager" id="dots"></div><div class="slide-count" id="slideCount"></div></footer>
+    <footer class="footer">
+      <div class="nav-controls">
+        <a class="nav-button" href="../index.html">Home</a>
+        <button class="nav-button" id="prevButton" type="button">Back</button>
+        <button class="nav-button" id="nextButton" type="button">Forward</button>
+      </div>
+      <div class="nav-controls">
+        <div class="pager" id="dots"></div>
+        <div class="slide-count" id="slideCount"></div>
+      </div>
+    </footer>
   </div>
-  <script src="../shared/slideshow.js"></script>
+  <script src="../shared/slideshow.js?v=4"></script>
 </div>
 </body>
 </html>

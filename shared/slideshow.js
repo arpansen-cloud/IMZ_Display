@@ -40,6 +40,19 @@ function setHeading(targetId, value, fallback) {
   el(targetId).textContent = value || fallback;
 }
 
+function setOptionalHeading(targetId, wrapId, value) {
+  const heading = document.getElementById(targetId);
+  const wrap = document.getElementById(wrapId);
+  if (!heading || !wrap) return;
+  if (value) {
+    heading.textContent = value;
+    wrap.hidden = false;
+  } else {
+    heading.textContent = "";
+    wrap.hidden = true;
+  }
+}
+
 function setParties(parties) {
   const list = el("parties");
   list.innerHTML = "";
@@ -149,6 +162,11 @@ function setImage(targetId, image, fallbackAlt) {
   const element = el(targetId);
   element.src = image?.src || "";
   element.alt = image?.alt || fallbackAlt;
+  const mode = image?.mode || "photo";
+  element.dataset.mode = mode;
+  if (element.parentElement) {
+    element.parentElement.classList.toggle("qr-media-card", mode === "qr");
+  }
 }
 
 function renderSlide(slide, meta, index, total) {
@@ -163,6 +181,7 @@ function renderSlide(slide, meta, index, total) {
   setStats(slide.civilianImpact?.stats);
   setQrCards(slide.howToHelp?.cards);
   setLearnMore(slide.howToHelp?.learnMore);
+  setOptionalHeading("rightImageHeading", "rightImageHeadingWrap", slide.howToHelp?.imageHeading);
   setImage("leftImage", slide.whatsHappening?.image, "Country context image");
   setImage("middleImage", slide.civilianImpact?.image, "Civilian impact image");
   setImage("rightImage", slide.howToHelp?.image, "How to help image");
@@ -177,17 +196,33 @@ async function main() {
   if (slides.length === 0) throw new Error("slides.json has no slides");
 
   let index = 0;
-  const intervalMs = (meta.secondsPerSlide || 10) * 1000;
   const show = () => renderSlide(slides[index], meta, index, slides.length);
+  const prev = () => {
+    index = (index - 1 + slides.length) % slides.length;
+    show();
+  };
+  const next = () => {
+    index = (index + 1) % slides.length;
+    show();
+  };
 
   show();
 
-  if (slides.length > 1) {
-    setInterval(() => {
-      index = (index + 1) % slides.length;
-      show();
-    }, intervalMs);
+  const prevButton = el("prevButton");
+  const nextButton = el("nextButton");
+
+  if (prevButton) {
+    prevButton.addEventListener("click", prev);
   }
+
+  if (nextButton) {
+    nextButton.addEventListener("click", next);
+  }
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft") prev();
+    if (event.key === "ArrowRight") next();
+  });
 }
 
 main().catch((err) => {
