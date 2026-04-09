@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../shared/styles.css?v=14" />
+  <link rel="stylesheet" href="../shared/styles.css?v=24" />
 </head>
 <body>
 <div id="app">
@@ -28,7 +28,7 @@
       <section>
         <h2 class="section-title">What's Happening</h2>
         <article class="content-block"><h3>Background</h3><p id="backgroundText"></p></article>
-        <article class="content-block"><h3>Key Actors</h3><ul class="party-list" id="parties"></ul></article>
+        <article class="content-block"><h3 id="partiesHeading">Key Actors</h3><ul class="party-list" id="parties"></ul></article>
         <article class="content-block"><h3>Timeline</h3><div class="timeline" id="timeline"></div></article>
         <figure class="media-card"><img id="leftImage" alt="" /></figure>
       </section>
@@ -43,6 +43,7 @@
         <article class="content-block"><p id="helpText"></p></article>
         <div class="qr-grid" id="helpCards"></div>
         <article class="content-block learn-more"><h3>Learn More</h3><p id="learnMoreText"></p></article>
+        <article class="content-block image-heading" id="rightImageHeadingWrap" hidden><h3 id="rightImageHeading"></h3></article>
         <figure class="media-card"><img id="rightImage" alt="" /></figure>
       </section>
     </main>
@@ -53,12 +54,13 @@
         <button class="nav-button" id="nextButton" type="button">Forward</button>
       </div>
       <div class="nav-controls">
+        <div class="trademark">Georgia Tech Muslim Student Association</div>
         <div class="pager" id="dots"></div>
         <div class="slide-count" id="slideCount"></div>
       </div>
     </footer>
   </div>
-  <script src="../shared/slideshow.js?v=4"></script>
+  <script src="../shared/slideshow.js?v=11"></script>
 </div>
 </body>
 </html>

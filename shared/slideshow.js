@@ -26,7 +26,12 @@ function setHero(slide, meta) {
 
 function setBackground(slide, meta) {
   const bg = el("bgTexture");
-  const src = slide.background?.src || meta.background?.src || "../shared/country-background.png";
+  const background = slide.background || meta.background || {};
+  const src = background.src || "../shared/country-background.png";
+  bg.style.backgroundSize = background.size || "cover";
+  bg.style.backgroundPosition = background.position || "center";
+  bg.style.backgroundRepeat = background.repeat || "no-repeat";
+  bg.style.opacity = background.opacity || "";
   bg.style.backgroundImage = src
     ? `linear-gradient(180deg, rgba(5, 7, 20, 0.28) 0%, rgba(5, 7, 20, 0.92) 84%, rgba(5, 7, 20, 1) 100%), url("${src}")`
     : "linear-gradient(180deg, rgba(5, 7, 20, 0.28) 0%, rgba(5, 7, 20, 0.92) 84%, rgba(5, 7, 20, 1) 100%)";

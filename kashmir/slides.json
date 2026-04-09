@@ -2,56 +2,68 @@
   "meta": {
     "defaultTitle": "Kashmir",
     "logoLabel": "MSA",
-    "secondsPerSlide": 10
+    "secondsPerSlide": 10,
+    "background": {
+      "src": "./background.png",
+      "size": "cover",
+      "position": "center 58%",
+      "repeat": "no-repeat",
+      "opacity": "1"
+    }
   },
   "slides": [
     {
       "title": "Kashmir",
-      "subtitle": "Template slide for country-specific crisis context, civilian impact, and donation resources.",
+      "subtitle": "Humanitarian Crisis",
+      "background": {
+        "src": "./background.png",
+        "size": "cover",
+        "position": "center 58%",
+        "repeat": "no-repeat",
+        "opacity": "1"
+      },
       "whatsHappening": {
-        "background": "Add a concise summary of the current situation in Kashmir and why support is needed.",
+        "background": "Kashmir sits in the Himalayas and has been disputed since 1947. When British rule ended, the region's Hindu ruler joined India. Pakistan challenged this immediately since most of the population was Muslim, which was the basis of the divide. This triggered the first of three wars. Today, India controls about 55% of the territory, Pakistan around 30%, and China the rest, divided by the Line of Control.",
         "parties": [
-          { "name": "Party Name", "description": "Add a short description." },
-          { "name": "Party Name", "description": "Add a short description." },
-          { "name": "Party Name", "description": "Add a short description." }
+          { "name": "India", "description": "Controls about 55% of the territory and revoked Article 370 in 2019." },
+          { "name": "Pakistan", "description": "Controls around 30% of the territory and contests Indian control." },
+          { "name": "China", "description": "Controls the remainder of the disputed region." }
         ],
         "timeline": [
-          { "year": "20XX", "description": "Key event description here." },
-          { "year": "20XX", "description": "Key event description here." },
-          { "year": "20XX", "description": "Key event description here." }
+          { "year": "1947", "description": "Partition and Kashmir's contested accession to India start the first India-Pakistan war." },
+          { "year": "1989", "description": "An armed insurgency begins in Indian-administered Kashmir; tens of thousands die." },
+          { "year": "2019", "description": "India revokes Article 370 and enforces a months-long internet blackout." }
         ],
         "image": {
-          "src": "https://images.unsplash.com/photo-1542743408-218cc173cda0?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Kashmir cityscape"
+          "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Kashmir landscape"
         }
       },
       "civilianImpact": {
-        "experiences": "Describe how civilians are affected, including displacement, shortages, disrupted services, or access barriers.",
+        "experiences": "In Indian-administered Kashmir, people can be held for up to two years without charge under the Public Safety Act. Thousands of homes have been demolished as collective punishment, and internet shutdowns are repeated and prolonged. In Pakistani-administered Kashmir, protests in May 2024 over food and fuel costs were met with tear gas, and the homes of roughly 70 protesters were raided by authorities.",
         "stats": [
-          { "value": "XX", "label": "Stat Label" },
-          { "value": "XX", "label": "Stat Label" },
-          { "value": "XX", "label": "Stat Label" },
-          { "value": "XX", "label": "Stat Label" }
+          { "value": "47k+", "label": "Killed Since 1989" },
+          { "value": "3.4k+", "label": "Forcibly Displaced" },
+          { "value": "41%", "label": "Suffer from Depression" },
+          { "value": "19%", "label": "Adults Suffer from PTSD" }
         ],
         "image": {
-          "src": "https://images.unsplash.com/photo-1518695606297-6bb7c9378e6f?auto=format&fit=crop&w=1200&q=80",
-          "alt": "People in affected streets"
+          "src": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1200&q=80",
+          "alt": "People affected by conflict"
         }
       },
       "howToHelp": {
-        "summary": "Add a short explanation of how donations or volunteer support will help people on the ground.",
+        "summary": "Children have also been deeply affected: between 22% and 27% of children aged 8-14 show symptoms of conflict-related psychological disorders. Anxiety, depression, and PTSD remain widespread across the valley.",
         "cards": [
-          { "placeholder": "QR CODE", "label": "Donation Link", "url": "https://example.com/donate" },
-          { "placeholder": "QR CODE", "label": "Learn More", "url": "https://example.com/resources" }
+          { "placeholder": "26%", "label": "Adults With Anxiety" },
+          { "placeholder": "19%", "label": "Adults With PTSD" }
         ],
         "learnMore": {
-          "text": "Visit this resource for verified updates and additional information.",
-          "label": "ReliefWeb",
-          "url": "https://reliefweb.int"
+          "text": "In 2025, a terrorist attack in Pahalgam killed 26 people. Indian authorities arrested approximately 2,800 people in the aftermath, including journalists and activists."
         },
         "image": {
-          "src": "https://images.unsplash.com/photo-1599837487527-d8f0f837f9f9?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Flags and solidarity"
+          "src": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Community and solidarity"
         }
       }
     }
