@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "defaultTitle": "Myanmar",
+    "logoLabel": "MSA",
+    "secondsPerSlide": 10,
+    "background": {
+      "src": "./background-v2.png",
+      "size": "100% auto",
+      "position": "center 52%",
+      "repeat": "no-repeat",
+      "opacity": "1"
+    }
+  },
+  "slides": [
+    {
+      "title": "Myanmar",
+      "subtitle": "",
+      "background": {
+        "src": "./background-v2.png",
+        "size": "100% auto",
+        "position": "center 52%",
+        "repeat": "no-repeat",
+        "opacity": "1"
+      },
+      "whatsHappening": {
+        "background": "Myanmar's current catastrophe is rooted in colonial divide-and-rule, decades of Buddhist nationalist politics, and long-term persecution of Rohingya Muslims. Under British rule, Burma was governed together with India and nearby regions, and anti-Muslim riots broke out in 1930 and 1938. During World War II, many Rohingya aligned with the British after being promised an independent state in Rakhine, but that promise was never fulfilled. After independence, military rule hardened exclusion, and under General Ne Win's 1962 coup the state increasingly treated Muslims as aliens, stripping rights, seizing businesses, and fueling sectarian violence.",
+        "parties": [
+          {
+            "name": "Tatmadaw",
+            "description": "Myanmar's armed forces, long central to dictatorship, repression, and violence against minorities, including after the 2021 coup."
+          },
+          {
+            "name": "Arakan Army",
+            "description": "Ethnic Rakhine separatist force that has fought for control of Arakan and since 2024 has been accused of intense sectarian violence and forced displacement against Rohingya."
+          },
+          {
+            "name": "969 Movement and Harakah al-Yaqin",
+            "description": "The 969 Movement spread explicitly anti-Muslim propaganda, while Harakah al-Yaqin emerged as a Rohingya insurgent force whose clashes were used to justify violent reprisals."
+          }
+        ],
+        "timeline": [
+          {
+            "year": "1930s-WWII",
+            "description": "British rule, anti-Muslim riots, and wartime alliances deepen communal tension in Burma and Rakhine."
+          },
+          {
+            "year": "1948-1962",
+            "description": "After independence, promised protections fail to materialize; the 1962 coup entrenches Buddhist supremacist military rule."
+          },
+          {
+            "year": "2016-2025",
+            "description": "Massacres, village burnings, forced displacement, genocide against Rohingya, and the post-2021 civil war devastate civilians."
+          }
+        ],
+        "image": {
+          "src": "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Myanmar landscape"
+        }
+      },
+      "civilianImpact": {
+        "experiences": "Since 2016, Myanmar's military and allied local militias have carried out massacres and raids on Rohingya villages. Civilians have been shot, beaten, raped, thrown into fires, and driven from their homes as villages were burned systematically. Between 13,000 and 43,000 Rohingya civilians are estimated to have been killed, with 6,000 killed in the first month alone. By 2018, the UN said 392 villages had been burned down, tens of thousands of women had been raped, and 1.5 million Rohingya had been forced to flee. As of 2025 only around 300,000 Rohingya remain in Arakan, while Kutupalong camp in Bangladesh houses about 700,000 people in need of humanitarian assistance. Since the 2021 coup, the wider civil war has killed 89,200 to 96,000 people, killed 7,966+ protesters, arrested another 22,000, displaced more than 3.2 million people, and destroyed roughly 84,000 civilian properties.",
+        "stats": [
+          {
+            "value": "1.5M",
+            "label": "Rohingya Forced to Flee"
+          },
+          {
+            "value": "700k",
+            "label": "Kutupalong Camp Residents"
+          },
+          {
+            "value": "3.2M+",
+            "label": "People Displaced by 2025"
+          },
+          {
+            "value": "84k",
+            "label": "Civilian Properties Destroyed Since 2022"
+          }
+        ],
+        "image": {
+          "src": "https://images.unsplash.com/photo-1518695606297-6bb7c9378e6f?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Displacement and refugee crisis"
+        }
+      },
+      "howToHelp": {
+        "summary": "Support for Myanmar should focus on Rohingya refugees, civilians trapped in the wider civil war, and documentation of atrocities. Help can include donating to trusted Rohingya and refugee relief efforts, following verified reporting on the genocide and civil war, and keeping attention on military violence, ethnic cleansing, and mass displacement.",
+        "cards": [
+          {
+            "qr": "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fgive.unrefugees.org%2F250331emer_myan_p_3000%2F%3Futm_medium%3Dreferral%26utm_source%3Ddonate.unhcr.org%26utm_campaign%3DUS_PS_EN_MS_____250331%26utm_content%3Drfrl%26SF_onetime%3D701Rf00000PhjecIAB%26SF_monthly%3D701Rf00000Phf9bIAB%26_gl%3D1%2Al8za4n%2A_gcl_au%2AODY5NTM2Mzk0LjE3NzYwMzczMzQ.%2A_ga%2AMjM5Mzg5NjMzLjE3NzYwMzczMzQ.%2A_ga_X2YZPJ1XWR%2AczE3NzYwMzczMzMkbzEkZzAkdDE3NzYwMzczMzMkajYwJGwwJGgw%2A_rup_ga%2AMjM5Mzg5NjMzLjE3NzYwMzczMzQ.%2A_rup_ga_EVDQTJ4LMY%2AczE3NzYwMzczMzQkbzEkZzAkdDE3NzYwMzczMzQkajYwJGwwJGgw",
+            "label": "UNHCR Donation Link"
+          }
+        ],
+        "learnMore": {
+          "text": "Add your preferred Rohingya relief organizations, refugee support groups, and genocide documentation links here."
+        },
+        "image": {
+          "src": "https://images.unsplash.com/photo-1599837487527-d8f0f837f9f9?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Myanmar solidarity and relief"
+        }
+      }
+    }
+  ]
+}
