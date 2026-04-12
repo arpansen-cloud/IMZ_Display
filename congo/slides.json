@@ -2,56 +2,299 @@
   "meta": {
     "defaultTitle": "Congo",
     "logoLabel": "MSA",
-    "secondsPerSlide": 10
+    "secondsPerSlide": 14,
+    "background": {
+      "src": "./background-v2.png"
+    }
   },
   "slides": [
     {
       "title": "Congo",
-      "subtitle": "Template slide for country-specific crisis context, civilian impact, and donation resources.",
+      "subtitle": "",
+      "background": {
+        "src": "./background-v2.png"
+      },
       "whatsHappening": {
-        "background": "Add a concise summary of the current situation in Congo and why support is needed.",
+        "partiesHeading": "Parties Involved",
+        "background": "The Democratic Republic of the Congo is facing one of the world’s largest humanitarian crises, driven by years of armed conflict, repeated displacement, and weak access to basic services. Violence in the east, especially in North Kivu, South Kivu, and Ituri, has uprooted millions of people and worsened hunger, disease risk, and insecurity. Civilians are caught between armed groups, national forces, and a collapsing protection environment. The crisis is especially severe for children, women, and displaced families living in overcrowded sites or host communities with limited food, water, and health care.",
         "parties": [
-          { "name": "Party Name", "description": "Add a short description." },
-          { "name": "Party Name", "description": "Add a short description." },
-          { "name": "Party Name", "description": "Add a short description." }
+          {
+            "name": "Armed Groups",
+            "description": "Multiple militias and non state armed groups continue to attack civilians and destabilize eastern Congo."
+          },
+          {
+            "name": "Congolese Government and Armed Forces",
+            "description": "The state and national army are trying to contain violence but civilian protection remains weak."
+          },
+          {
+            "name": "Displaced Civilians",
+            "description": "Families in eastern provinces are repeatedly uprooted by conflict and insecurity."
+          },
+          {
+            "name": "UN and Aid Agencies",
+            "description": "OCHA, UNHCR, UNICEF, WFP, and partners are leading the humanitarian response."
+          }
         ],
         "timeline": [
-          { "year": "20XX", "description": "Key event description here." },
-          { "year": "20XX", "description": "Key event description here." },
-          { "year": "20XX", "description": "Key event description here." }
+          {
+            "year": "1990s-2000s",
+            "description": "Regional wars and armed violence entrench instability across eastern Congo."
+          },
+          {
+            "year": "2010s",
+            "description": "Armed groups continue attacks, displacement, and abuses in North Kivu, South Kivu, and Ituri."
+          },
+          {
+            "year": "2025",
+            "description": "Violence intensifies further in the east, triggering new waves of displacement."
+          },
+          {
+            "year": "2026",
+            "description": "The humanitarian crisis deepens as millions remain displaced, hungry, and in need of protection."
+          }
         ],
         "image": {
-          "src": "https://images.unsplash.com/photo-1542743408-218cc173cda0?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Congo cityscape"
+          "src": "./bottom-left.png",
+          "alt": "Landscape or map related to eastern Democratic Republic of the Congo"
         }
       },
       "civilianImpact": {
-        "experiences": "Describe how civilians are affected, including displacement, shortages, disrupted services, or access barriers.",
+        "experiences": "Civilians in Congo are living through repeated displacement, insecurity, and severe deprivation. Families fleeing violence often arrive in overcrowded camps or host communities with little shelter, food, or clean water. Children face interrupted schooling, trauma, malnutrition, and heightened risk of recruitment or abuse. Women and girls face especially serious risks of sexual violence and exploitation. In many areas, access to health care, sanitation, and protection services is extremely limited, making an already dangerous crisis even harder to survive.",
         "stats": [
-          { "value": "XX", "label": "Stat Label" },
-          { "value": "XX", "label": "Stat Label" },
-          { "value": "XX", "label": "Stat Label" },
-          { "value": "XX", "label": "Stat Label" }
+          {
+            "value": "14.9M",
+            "label": "Need Aid in 2026"
+          },
+          {
+            "value": "8M",
+            "label": "Children Need Aid"
+          },
+          {
+            "value": "8.2M",
+            "label": "Displaced by 2025"
+          },
+          {
+            "value": "26.6M",
+            "label": "Face Acute Hunger"
+          }
         ],
         "image": {
-          "src": "https://images.unsplash.com/photo-1518695606297-6bb7c9378e6f?auto=format&fit=crop&w=1200&q=80",
-          "alt": "People in affected streets"
+          "src": "./slide1-people.png",
+          "alt": "Displaced civilians in the Democratic Republic of the Congo"
         }
       },
       "howToHelp": {
-        "summary": "Add a short explanation of how donations or volunteer support will help people on the ground.",
+        "summary": "The crisis in Congo receives far less attention than many other emergencies, even though the scale of need is enormous. Donations to trusted relief organizations can help fund food assistance, shelter, child protection, clean water, emergency health care, and support for displaced families. Public awareness matters too, because underfunded crises become even more deadly when the world stops paying attention.",
         "cards": [
-          { "placeholder": "QR CODE", "label": "Donation Link", "url": "https://example.com/donate" },
-          { "placeholder": "QR CODE", "label": "Learn More", "url": "https://example.com/resources" }
+          {
+            "placeholder": "14.9M",
+            "label": "Need Help"
+          },
+          {
+            "placeholder": "26.6M",
+            "label": "Acute Hunger"
+          }
         ],
         "learnMore": {
-          "text": "Visit this resource for verified updates and additional information.",
-          "label": "ReliefWeb",
-          "url": "https://reliefweb.int"
+          "text": "This slide gives the overall background to Congo’s current humanitarian emergency and why continued support matters."
         },
         "image": {
-          "src": "https://images.unsplash.com/photo-1599837487527-d8f0f837f9f9?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Flags and solidarity"
+          "src": "./flag-slide1.png",
+          "alt": "Solidarity image related to Congo"
+        }
+      }
+    },
+    {
+      "title": "Congo",
+      "subtitle": "How are civilians affected?",
+      "background": {
+        "src": "./background-v2.png"
+      },
+      "whatsHappening": {
+        "partiesHeading": "People Affected",
+        "background": "Eastern Congo’s conflict falls hardest on displaced families, children, and communities trapped in insecure areas where food systems, schools, and health services have broken down. The humanitarian burden is massive and continues to grow.",
+        "parties": [
+          {
+            "name": "Displaced Families",
+            "description": "Millions have fled fighting and are living in camps or with host communities."
+          },
+          {
+            "name": "Children",
+            "description": "Children face malnutrition, interrupted education, disease, trauma, and protection risks."
+          },
+          {
+            "name": "Women and Girls",
+            "description": "Sexual violence and exploitation remain major protection concerns."
+          },
+          {
+            "name": "Rural Communities",
+            "description": "Conflict disrupts farming, markets, and access to food, worsening hunger."
+          }
+        ],
+        "timeline": [
+          {
+            "year": "Displacement",
+            "description": "Violence in the east repeatedly forces people to flee, often more than once."
+          },
+          {
+            "year": "Hunger",
+            "description": "Conflict and displacement disrupt farming and markets, driving severe food insecurity."
+          },
+          {
+            "year": "Child Risk",
+            "description": "Children face malnutrition, abuse, disrupted education, and long term trauma."
+          }
+        ],
+        "image": {
+          "src": "./bottom-left.png",
+          "alt": "Image related to affected regions in eastern Congo"
+        }
+      },
+      "civilianImpact": {
+        "experiences": "The civilian impact is not just about fleeing violence. People who escape attacks often end up in places where basic survival is still uncertain. Overcrowded sites can lack safe water, sanitation, and medical care. Children face rising malnutrition, missed schooling, and severe emotional trauma. Families lose livelihoods when fields, markets, and transport routes are cut off by insecurity. Even when aid reaches them, funding gaps mean many needs still go unmet, leaving people trapped between conflict and deprivation.",
+        "stats": [
+          {
+            "value": "1.7M",
+            "label": "Children Wasting in 2026"
+          },
+          {
+            "value": "542k",
+            "label": "Severe Wasting Cases"
+          },
+          {
+            "value": "5.8M",
+            "label": "Projected IDPs by end 2026"
+          },
+          {
+            "value": "10M+",
+            "label": "Eastern Provinces in Food Crisis"
+          }
+        ],
+        "image": {
+          "src": "./food-insecurity.png",
+          "alt": "Visual representing hunger or humanitarian need in the Democratic Republic of the Congo"
+        }
+      },
+      "howToHelp": {
+        "summary": "Support for Congo helps keep people alive in one of the world’s most under-recognized emergencies. Funding can provide therapeutic food for malnourished children, emergency shelter, safe water, medical care, and protection services for families displaced by violence.",
+        "cards": [
+          {
+            "placeholder": "8M",
+            "label": "Children in Need"
+          },
+          {
+            "placeholder": "1.7M",
+            "label": "Children Wasting"
+          }
+        ],
+        "learnMore": {
+          "text": "Humanitarian groups in Congo are responding to hunger, displacement, disease risk, and protection threats, but they remain severely underfunded."
+        },
+        "imageHeading": "Need",
+        "image": {
+          "src": "./congo-qr.png",
+          "alt": "QR code for more information about humanitarian relief in Congo",
+          "mode": "qr"
+        }
+      }
+    },
+    {
+      "title": "Congo",
+      "subtitle": "How You Can Help",
+      "background": {
+        "src": "./background-v2.png"
+      },
+      "whatsHappening": {
+        "partiesHeading": "Organizations",
+        "background": "Helping Congo means supporting civilians living through conflict, displacement, and hunger. Relief organizations are working to provide food aid, emergency shelter, nutrition treatment, safe water, health care, and child protection, but the needs are far greater than the available funding.",
+        "parties": [
+          {
+            "name": "UNICEF",
+            "description": "Supports children through nutrition, health, water, protection, and education services."
+          },
+          {
+            "name": "WFP",
+            "description": "Provides food assistance and emergency support in hunger affected areas."
+          },
+          {
+            "name": "UNHCR",
+            "description": "Supports displaced people, refugees, and protection services."
+          },
+          {
+            "name": "OCHA and Partners",
+            "description": "Coordinate emergency humanitarian response across crisis affected provinces."
+          },
+          {
+            "name": "Medical and Relief NGOs",
+            "description": "Provide frontline health care, shelter, and lifesaving support to vulnerable communities."
+          }
+        ],
+        "timeline": [
+          {
+            "year": "Donate",
+            "description": "Support trusted groups already responding to hunger, displacement, and child risk."
+          },
+          {
+            "year": "Learn",
+            "description": "Follow verified humanitarian reporting so Congo is not ignored."
+          },
+          {
+            "year": "Share",
+            "description": "Raise awareness about a crisis that remains major but underreported."
+          }
+        ],
+        "image": {
+          "src": "./bottom-left.png",
+          "alt": "Image representing humanitarian response in Congo"
+        }
+      },
+      "civilianImpact": {
+        "experiences": "Helping Congo does not require solving the entire conflict. It means supporting people who need food, protection, shelter, and medical care right now. Awareness also matters because the scale of Congo’s emergency is often overlooked, even as millions remain hungry and displaced. Donations and education can both help close that gap.",
+        "stats": [
+          {
+            "value": "4",
+            "label": "Core Relief Groups"
+          },
+          {
+            "value": "Food",
+            "label": "Emergency Aid"
+          },
+          {
+            "value": "Water",
+            "label": "Basic Survival"
+          },
+          {
+            "value": "Care",
+            "label": "Child Protection"
+          }
+        ],
+        "image": {
+          "src": "./people-affected.png",
+          "alt": "Humanitarian support and civilian resilience in Congo"
+        }
+      },
+      "howToHelp": {
+        "summary": "Donate to trusted humanitarian organizations such as UNICEF, WFP, UNHCR, and coordinated emergency response groups working in Congo. Learn more from verified humanitarian reporting and keep attention on a crisis that remains severe, underfunded, and too often overlooked.",
+        "cards": [
+          {
+            "qr": "./unicef-qr.png",
+            "label": "UNICEF DRC",
+            "url": "https://www.unicef.org/appeals/drc"
+          },
+          {
+            "qr": "./wfp-qr.png",
+            "label": "WFP DRC",
+            "url": "https://www.wfp.org/countries/democratic-republic-congo"
+          }
+        ],
+        "learnMore": {
+          "text": "Additional sources and organizations to follow include UNHCR and OCHA. Supporting food aid, protection, shelter, and child services can make a real difference."
+        },
+        "imageHeading": "Learn More",
+        "image": {
+          "src": "./unhcr-qr.png",
+          "alt": "QR code for Congo humanitarian resources",
+          "mode": "qr"
         }
       }
     }

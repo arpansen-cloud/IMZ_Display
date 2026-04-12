@@ -2,56 +2,297 @@
   "meta": {
     "defaultTitle": "Afghanistan",
     "logoLabel": "MSA",
-    "secondsPerSlide": 10
+    "secondsPerSlide": 14,
+    "background": {
+      "src": "./background-v2.png"
+    }
   },
   "slides": [
     {
       "title": "Afghanistan",
-      "subtitle": "Template slide for country-specific crisis context, civilian impact, and donation resources.",
+      "subtitle": "",
+      "background": {
+        "src": "./background-v2.png"
+      },
       "whatsHappening": {
-        "background": "Add a concise summary of the current situation in Afghanistan and why support is needed.",
+        "partiesHeading": "Key Actors",
+        "background": "Afghanistan has faced decades of war, but the current crisis was reshaped in August 2021 when the Taliban regained control after the U.S. withdrawal. Since then ISIS-K has continued periodic attacks, and the country has been hit by economic collapse, sanctions, natural disasters, and severe food insecurity. The crisis is not only political or military: it is also humanitarian, with millions struggling to access food, education, health care, and basic stability.",
         "parties": [
-          { "name": "Party Name", "description": "Add a short description." },
-          { "name": "Party Name", "description": "Add a short description." },
-          { "name": "Party Name", "description": "Add a short description." }
+          {
+            "name": "Taliban",
+            "description": "De facto rulers of Afghanistan since August 2021."
+          },
+          {
+            "name": "ISIS-K",
+            "description": "Militant group carrying out bombings and attacks against civilians, mosques, and public spaces."
+          },
+          {
+            "name": "Pakistan and Afghanistan",
+            "description": "Cross-border tensions and fighting have added further instability in recent years."
+          },
+          {
+            "name": "UN and aid agencies",
+            "description": "Provide humanitarian support as millions face hunger, displacement, and poverty."
+          },
+          {
+            "name": "International powers",
+            "description": "Sanctions, frozen assets, and limited recognition have worsened the economic crisis."
+          }
         ],
         "timeline": [
-          { "year": "20XX", "description": "Key event description here." },
-          { "year": "20XX", "description": "Key event description here." },
-          { "year": "20XX", "description": "Key event description here." }
+          {
+            "year": "1996-2001",
+            "description": "The Taliban first rule Afghanistan before being removed by the U.S.-led invasion."
+          },
+          {
+            "year": "2001-2014",
+            "description": "U.S. and allied forces fight the Taliban as the war expands across the country."
+          },
+          {
+            "year": "2014",
+            "description": "The U.S. formally ends combat operations, but fighting continues."
+          },
+          {
+            "year": "2021",
+            "description": "The Taliban retake control after the U.S. withdrawal."
+          },
+          {
+            "year": "2022-present",
+            "description": "Humanitarian crisis deepens through hunger, repression, floods, and economic collapse."
+          }
         ],
         "image": {
-          "src": "https://images.unsplash.com/photo-1542743408-218cc173cda0?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Afghanistan cityscape"
+          "src": "./bottom-left.png",
+          "alt": "Landscape or city view from Afghanistan"
         }
       },
       "civilianImpact": {
-        "experiences": "Describe how civilians are affected, including displacement, shortages, disrupted services, or access barriers.",
+        "experiences": "Civilians are facing overlapping emergencies. Communities continue to live with the effects of war, poverty, sanctions, floods, and rising food prices. Families struggle to afford basic needs, and many children face malnutrition, interrupted schooling, and limited access to health care. The result is a long-term humanitarian crisis where daily survival, not recovery, defines life for millions.",
         "stats": [
-          { "value": "XX", "label": "Stat Label" },
-          { "value": "XX", "label": "Stat Label" },
-          { "value": "XX", "label": "Stat Label" },
-          { "value": "XX", "label": "Stat Label" }
+          {
+            "value": "241k",
+            "label": "Killed in War 2001-2021"
+          },
+          {
+            "value": "6M",
+            "label": "Near-Famine by 2022"
+          },
+          {
+            "value": "50%",
+            "label": "Inflation in One Summer"
+          },
+          {
+            "value": "3.5M",
+            "label": "Children in Need by Aug. 2022"
+          }
         ],
         "image": {
-          "src": "https://images.unsplash.com/photo-1518695606297-6bb7c9378e6f?auto=format&fit=crop&w=1200&q=80",
-          "alt": "People in affected streets"
+          "src": "./slide1-people.png",
+          "alt": "Afghan civilians navigating humanitarian hardship"
         }
       },
       "howToHelp": {
-        "summary": "Add a short explanation of how donations or volunteer support will help people on the ground.",
+        "summary": "Afghanistan is often discussed through war and geopolitics, but millions of civilians are living through hunger, repression, and disaster right now. Donations to trusted relief groups help fund food, shelter, medical care, and emergency support. Continued public attention also matters because Afghanistan is frequently underreported despite the scale of suffering.",
         "cards": [
-          { "placeholder": "QR CODE", "label": "Donation Link", "url": "https://example.com/donate" },
-          { "placeholder": "QR CODE", "label": "Learn More", "url": "https://example.com/resources" }
+          {
+            "qr": "./unicef-qr.png",
+            "label": "UNICEF Afghanistan",
+            "url": "https://www.unicef.org/afghanistan/"
+          },
+          {
+            "qr": "./wfp-qr.png",
+            "label": "World Food Programme",
+            "url": "https://www.wfp.org/countries/afghanistan"
+          }
         ],
         "learnMore": {
-          "text": "Visit this resource for verified updates and additional information.",
-          "label": "ReliefWeb",
-          "url": "https://reliefweb.int"
+          "text": "Learn more through trusted humanitarian reporting and organizations working directly on food aid, child protection, education, and emergency response in Afghanistan."
         },
         "image": {
-          "src": "https://images.unsplash.com/photo-1599837487527-d8f0f837f9f9?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Flags and solidarity"
+          "src": "./flag-slide1.png",
+          "alt": "Afghanistan solidarity image"
+        }
+      }
+    },
+    {
+      "title": "Afghanistan",
+      "subtitle": "How are civilians affected?",
+      "background": {
+        "src": "./background-v2.png"
+      },
+      "whatsHappening": {
+        "partiesHeading": "People Affected",
+        "background": "The burden of Afghanistan's crisis falls hardest on civilians, especially women, children, displaced families, and people living in rural or disaster-hit communities. Restrictions on education and work have compounded food insecurity and poverty, while years of conflict have already devastated public systems.",
+        "parties": [
+          {
+            "name": "Children",
+            "description": "Millions face hunger, displacement, interrupted schooling, and trauma."
+          },
+          {
+            "name": "Rural families",
+            "description": "Flooding, disasters, and weak infrastructure make survival even harder."
+          }
+        ],
+        "timeline": [
+          {
+            "year": "2001-2021",
+            "description": "War leaves hundreds of thousands dead and weakens civilian systems."
+          },
+          {
+            "year": "Aug 2021",
+            "description": "Government collapses and Taliban take power."
+          },
+          {
+            "year": "2022",
+            "description": "Near-famine conditions and mass humanitarian need deepen."
+          }
+        ],
+        "image": {
+          "src": "./bottom-left.png",
+          "alt": "Afghanistan city or landscape"
+        }
+      },
+      "civilianImpact": {
+        "experiences": "Afghanistan's crisis is not one statistic but a chain reaction: conflict destroys institutions, sanctions constrict the economy, natural disasters wipe out livelihoods, and social restrictions reduce families' ability to recover. Children are pulled out of school, women are shut out of opportunity, and already-fragile households face impossible choices between food, medicine, and shelter. The result is a population trapped between political repression and humanitarian emergency.",
+        "stats": [
+          {
+            "value": "100k+",
+            "label": "Civilian Deaths 2009-2020"
+          },
+          {
+            "value": "Floods",
+            "label": "Frequent Disaster Damage"
+          },
+          {
+            "value": "Sanctions",
+            "label": "Economy Crippled"
+          }
+        ],
+        "image": {
+          "src": "./food-insecurity.png",
+          "alt": "Visual representing food insecurity or humanitarian need in Afghanistan"
+        }
+      },
+      "howToHelp": {
+        "summary": "Aid can still make a measurable difference even in a difficult political environment. Funding humanitarian groups helps children access nutrition support, helps families survive winter and flooding, and supports emergency health services where state systems have broken down.",
+        "cards": [
+          {
+            "placeholder": "241k",
+            "label": "Killed in War"
+          },
+          {
+            "placeholder": "6M",
+            "label": "Near-Famine"
+          }
+        ],
+        "learnMore": {
+          "text": "Humanitarian support in Afghanistan often focuses on food assistance, child protection, disaster relief, and access to essential health services."
+        },
+        "imageHeading": "Need",
+        "image": {
+          "src": "./afghanistan-qr.png",
+          "alt": "QR code to learn more about Afghanistan relief",
+          "mode": "qr"
+        }
+      }
+    },
+    {
+      "title": "Afghanistan",
+      "subtitle": "How You Can Help",
+      "background": {
+        "src": "./background-v2.png"
+      },
+      "whatsHappening": {
+        "partiesHeading": "Organizations",
+        "background": "There are no easy political solutions for civilians living through Afghanistan's crisis, but humanitarian support remains essential. Relief organizations can still help families access food, child services, health care, winter supplies, and emergency response after disasters.",
+        "parties": [
+          {
+            "name": "UNICEF",
+            "description": "Supports children, nutrition, health, education, and protection services."
+          },
+          {
+            "name": "WFP",
+            "description": "Provides food assistance and emergency relief."
+          },
+          {
+            "name": "UNHCR",
+            "description": "Supports displaced Afghans and vulnerable returnees."
+          },
+          {
+            "name": "International Rescue Committee",
+            "description": "Provides health, protection, and emergency services."
+          },
+          {
+            "name": "Doctors Without Borders",
+            "description": "Supports medical care in fragile and under-resourced settings."
+          }
+        ],
+        "timeline": [
+          {
+            "year": "Donate",
+            "description": "Support trusted humanitarian groups already operating in Afghanistan."
+          },
+          {
+            "year": "Learn",
+            "description": "Follow verified reporting so the crisis is not ignored."
+          },
+          {
+            "year": "Share",
+            "description": "Raise awareness about the humanitarian impact on women, children, and families."
+          }
+        ],
+        "image": {
+          "src": "./bottom-left.png",
+          "alt": "Afghanistan landscape"
+        }
+      },
+      "civilianImpact": {
+        "experiences": "Helping Afghanistan does not require endorsing any government. It means supporting civilians who are facing hunger, repression, displacement, and disaster. Donations help keep lifesaving services running, and awareness matters because long-running crises often lose international attention even while suffering continues.",
+        "stats": [
+          {
+            "value": "5",
+            "label": "Relief Options"
+          },
+          {
+            "value": "Food",
+            "label": "Emergency Aid"
+          },
+          {
+            "value": "Health",
+            "label": "Critical Care"
+          },
+          {
+            "value": "24/7",
+            "label": "Keep Attention On It"
+          }
+        ],
+        "image": {
+          "src": "./people-affected.png",
+          "alt": "Afghan communities and relief context"
+        }
+      },
+      "howToHelp": {
+        "summary": "Donate to trusted humanitarian organizations such as UNICEF, WFP, UNHCR, the International Rescue Committee, and Doctors Without Borders. Learn more through verified humanitarian briefings and reporting. Public attention, education, and material support all matter in a crisis this prolonged.",
+        "cards": [
+          {
+            "qr": "./unicef-qr.png",
+            "label": "UNICEF",
+            "url": "https://www.unicef.org/afghanistan/"
+          },
+          {
+            "qr": "./wfp-qr.png",
+            "label": "WFP",
+            "url": "https://www.wfp.org/countries/afghanistan"
+          }
+        ],
+        "learnMore": {
+          "text": "Additional groups to consider: UNHCR, International Rescue Committee, and Doctors Without Borders. The goal is to support civilians with food, medical care, and protection."
+        },
+        "imageHeading": "Learn More",
+        "image": {
+          "src": "./unhcr-qr.png",
+          "alt": "QR code for Afghanistan humanitarian resources",
+          "mode": "qr"
         }
       }
     }

@@ -2,56 +2,291 @@
   "meta": {
     "defaultTitle": "China",
     "logoLabel": "MSA",
-    "secondsPerSlide": 10
+    "secondsPerSlide": 14,
+    "background": {
+      "src": "./background-v2.png"
+    }
   },
   "slides": [
     {
       "title": "China",
-      "subtitle": "Template slide for country-specific crisis context, civilian impact, and donation resources.",
+      "subtitle": "",
+      "background": {
+        "src": "./background-v2.png"
+      },
       "whatsHappening": {
-        "background": "Add a concise summary of the current situation in China and why support is needed.",
+        "partiesHeading": "Parties Involved",
+        "background": "The Uyghurs are a Turkic Muslim community in Northwest China’s Xinjiang Uyghur Autonomous Region. Since the Chinese Communist Party’s occupation of East Turkistan in 1949, the state has imposed policies aimed at erasing Uyghur religion, culture, and identity. These efforts escalated sharply from 2014 onward, and by 2017 the \"Strike Hard\" campaign had confined millions of Uyghurs and other Turkic peoples in so called re-education camps. Reports describe forced indoctrination, torture, sterilization, surveillance, and forced labor as part of a broad system of repression.",
         "parties": [
-          { "name": "Party Name", "description": "Add a short description." },
-          { "name": "Party Name", "description": "Add a short description." },
-          { "name": "Party Name", "description": "Add a short description." }
+          {
+            "name": "Chinese Communist Party",
+            "description": "State authority responsible for mass surveillance, detention, forced assimilation, and repression targeting Uyghurs."
+          },
+          {
+            "name": "Uyghur People",
+            "description": "A Turkic Muslim community facing detention, cultural erasure, forced labor, and population suppression."
+          },
+          {
+            "name": "United Nations",
+            "description": "Has documented abusive labor and camp conditions as crimes against humanity and modern enslavement."
+          },
+          {
+            "name": "Global Corporations",
+            "description": "Some companies profit from supply chains linked to forced labor in cotton, solar, agriculture, and manufacturing."
+          }
         ],
         "timeline": [
-          { "year": "20XX", "description": "Key event description here." },
-          { "year": "20XX", "description": "Key event description here." },
-          { "year": "20XX", "description": "Key event description here." }
+          {
+            "year": "1949",
+            "description": "Chinese Communist control over East Turkistan begins, followed by long term repression of Uyghur identity."
+          },
+          {
+            "year": "2014",
+            "description": "Policies intensify to eliminate Uyghur culture, religion, and public expression."
+          },
+          {
+            "year": "2017",
+            "description": "The Strike Hard campaign expands mass detention and re-education camps."
+          }
         ],
         "image": {
-          "src": "https://images.unsplash.com/photo-1542743408-218cc173cda0?auto=format&fit=crop&w=1200&q=80",
-          "alt": "China cityscape"
+          "src": "./bottom-left.png",
+          "alt": "Map or landscape related to the Xinjiang Uyghur Autonomous Region"
         }
       },
       "civilianImpact": {
-        "experiences": "Describe how civilians are affected, including displacement, shortages, disrupted services, or access barriers.",
+        "experiences": "Uyghur civilians have been subjected to a system of surveillance, detention, and forced assimilation that reaches into nearly every part of daily life. Reports and survivor testimony describe torture, sexual abuse, indoctrination, family separation, and the criminalization of normal religious and cultural expression. Uyghur women have faced forced sterilization and population control measures, while many youths and adults have been transferred into labor systems tied to factories and state monitored production. The result is not only physical harm, but an attempt to erase a people’s identity across generations.",
         "stats": [
-          { "value": "XX", "label": "Stat Label" },
-          { "value": "XX", "label": "Stat Label" },
-          { "value": "XX", "label": "Stat Label" },
-          { "value": "XX", "label": "Stat Label" }
+          {
+            "value": "1.5M",
+            "label": "Uyghurs Detained"
+          },
+          {
+            "value": "2014",
+            "label": "Major Escalation"
+          },
+          {
+            "value": "2017",
+            "label": "Strike Hard Camps"
+          },
+          {
+            "value": "20%",
+            "label": "World Cotton from XUAR"
+          }
         ],
         "image": {
-          "src": "https://images.unsplash.com/photo-1518695606297-6bb7c9378e6f?auto=format&fit=crop&w=1200&q=80",
-          "alt": "People in affected streets"
+          "src": "./slide1-people.png",
+          "alt": "Visual representing Uyghur civilians affected by repression"
         }
       },
       "howToHelp": {
-        "summary": "Add a short explanation of how donations or volunteer support will help people on the ground.",
+        "summary": "Public pressure and consumer awareness matter because this crisis is often hidden behind state propaganda, censorship, and opaque supply chains. Speaking about the Uyghurs, supporting accountability efforts, and avoiding products linked to forced labor can help challenge the systems that profit from abuse.",
         "cards": [
-          { "placeholder": "QR CODE", "label": "Donation Link", "url": "https://example.com/donate" },
-          { "placeholder": "QR CODE", "label": "Learn More", "url": "https://example.com/resources" }
+          {
+            "placeholder": "1949",
+            "label": "Occupation"
+          },
+          {
+            "placeholder": "2017",
+            "label": "Camp Expansion"
+          }
         ],
         "learnMore": {
-          "text": "Visit this resource for verified updates and additional information.",
-          "label": "ReliefWeb",
-          "url": "https://reliefweb.int"
+          "text": "This slide explains the historical path to the current repression of Uyghurs in China."
         },
         "image": {
-          "src": "https://images.unsplash.com/photo-1599837487527-d8f0f837f9f9?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Flags and solidarity"
+          "src": "./flag-slide1.png",
+          "alt": "Solidarity themed image for Uyghur awareness"
+        }
+      }
+    },
+    {
+      "title": "China",
+      "subtitle": "How are civilians affected?",
+      "background": {
+        "src": "./background-v2.png"
+      },
+      "whatsHappening": {
+        "partiesHeading": "People Affected",
+        "background": "The campaign against Uyghurs targets religion, language, family life, work, movement, and reproduction. What is presented by the state as security policy operates in practice as mass repression and cultural destruction.",
+        "parties": [
+          {
+            "name": "1.5 million detained",
+            "description": "Uyghurs and other Turkic peoples have reportedly been confined in camps and prisons."
+          },
+          {
+            "name": "Uyghur women",
+            "description": "Subjected to forced sterilization and birth suppression policies."
+          },
+          {
+            "name": "Uyghur youth",
+            "description": "Transferred into labor systems and factory work under coercive conditions."
+          },
+          {
+            "name": "Entire communities",
+            "description": "Face surveillance, family separation, religious criminalization, and cultural erasure."
+          }
+        ],
+        "timeline": [
+          {
+            "year": "Surveillance",
+            "description": "Authorities sort people into categories of so called trustworthiness."
+          },
+          {
+            "year": "Detention",
+            "description": "Everyday religious and cultural practices can lead to disappearance into camps."
+          },
+          {
+            "year": "Forced Labor",
+            "description": "Camp linked labor feeds global supply chains in multiple industries."
+          }
+        ],
+        "image": {
+          "src": "./bottom-left.png",
+          "alt": "Regional image related to Xinjiang or East Turkistan"
+        }
+      },
+      "civilianImpact": {
+        "experiences": "Civilians are affected through a mix of direct violence and slow destruction. People have reportedly been tortured, sexually abused, indoctrinated, and removed from their families. Uyghur culture is targeted through the policing of beards, hijabs, language, and religious life, while state media casts Uyghurs as threats in order to justify repression. Forced labor extends the abuse beyond the camp system into global markets, tying consumer products to systems of exploitation and control.",
+        "stats": [
+          {
+            "value": "Torture",
+            "label": "Reported in Camps"
+          },
+          {
+            "value": "Sterilization",
+            "label": "Population Suppression"
+          },
+          {
+            "value": "Labor",
+            "label": "Factory Transfers"
+          },
+          {
+            "value": "Culture",
+            "label": "Identity Targeted"
+          }
+        ],
+        "image": {
+          "src": "./food-insecurity.png",
+          "alt": "Visual representing repression, detention, or surveillance affecting Uyghur communities"
+        }
+      },
+      "howToHelp": {
+        "summary": "The crisis continues partly because it is hidden, normalized, or buried under commercial interests. Awareness is not symbolic only: it helps challenge propaganda, protects diaspora voices, and pressures institutions to confront forced labor and human rights abuses.",
+        "cards": [
+          {
+            "placeholder": "1.5M",
+            "label": "Detained"
+          },
+          {
+            "placeholder": "20%",
+            "label": "World Cotton"
+          }
+        ],
+        "learnMore": {
+          "text": "Many of the products linked to forced labor come from sectors like clothing, agriculture, pharmaceuticals, and solar manufacturing."
+        },
+        "imageHeading": "Forced Labor",
+        "image": {
+          "src": "./uyghur-qr.png",
+          "alt": "QR code for more information about Uyghur forced labor and human rights abuses",
+          "mode": "qr"
+        }
+      }
+    },
+    {
+      "title": "China",
+      "subtitle": "How You Can Help",
+      "background": {
+        "src": "./background-v2.png"
+      },
+      "whatsHappening": {
+        "partiesHeading": "Action Steps",
+        "background": "Helping in this context means disrupting silence, propaganda, and profit. Because the repression of Uyghurs is tied both to state power and to global supply chains, action can take the form of speaking out, learning more, and refusing products linked to forced labor.",
+        "parties": [
+          {
+            "name": "Speak Up",
+            "description": "Talk about the Uyghurs and challenge efforts to hide or normalize the abuse."
+          },
+          {
+            "name": "Support Accountability",
+            "description": "Demand that lawmakers, institutions, and companies confront forced labor and mass repression."
+          },
+          {
+            "name": "Avoid Fast Fashion",
+            "description": "Reduce support for brands and supply chains linked to coerced labor from XUAR."
+          },
+          {
+            "name": "Protect Diaspora Voices",
+            "description": "Uyghurs abroad often face pressure and intimidation when speaking publicly."
+          }
+        ],
+        "timeline": [
+          {
+            "year": "Awareness",
+            "description": "Use your voice to keep the crisis visible."
+          },
+          {
+            "year": "Boycott",
+            "description": "Avoid products tied to forced labor and exploitative sourcing."
+          },
+          {
+            "year": "Advocate",
+            "description": "Push institutions and lawmakers toward accountability."
+          }
+        ],
+        "image": {
+          "src": "./bottom-left.png",
+          "alt": "Image representing public awareness and advocacy"
+        }
+      },
+      "civilianImpact": {
+        "experiences": "Speaking up matters because repression thrives when it is denied, hidden, or treated as distant. Consumer choices matter because forced labor from XUAR enters real supply chains used around the world. Advocacy matters because public pressure can increase scrutiny on companies, lawmakers, and institutions that might otherwise ignore the persecution of Uyghurs.",
+        "stats": [
+          {
+            "value": "Shein",
+            "label": "Fast Fashion Concern"
+          },
+          {
+            "value": "Temu",
+            "label": "Supply Chain Concern"
+          },
+          {
+            "value": "Solar",
+            "label": "Industry Linked"
+          },
+          {
+            "value": "Cotton",
+            "label": "Major Risk Sector"
+          }
+        ],
+        "image": {
+          "src": "./people-affected.png",
+          "alt": "Visual related to advocacy, labor rights, or Uyghur awareness"
+        }
+      },
+      "howToHelp": {
+        "summary": "Talk about the Uyghurs, support accountability efforts, and avoid fast fashion or other products tied to forced labor supply chains. Your role is to help make the crisis harder to hide and harder to profit from.",
+        "cards": [
+          {
+            "qr": "./learnmore-qr.png",
+            "label": "Learn More",
+            "url": "https://www.un.org/"
+          },
+          {
+            "qr": "./boycott-qr.png",
+            "label": "Ethical Buying",
+            "url": "https://www.walkfree.org/"
+          }
+        ],
+        "learnMore": {
+          "text": "Your research doc specifically highlights two direct responses: talk about the Uyghurs and avoid fast fashion linked to XUAR forced labor."
+        },
+        "imageHeading": "Action",
+        "image": {
+          "src": "./uyghur-action-qr.png",
+          "alt": "QR code for awareness and ethical action resources",
+          "mode": "qr"
         }
       }
     }
