@@ -13,7 +13,7 @@ html, body{
     overflow:hidden;
     background:var(--bg);
     color:var(--fg);
-    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-family: "Libre Franklin", "Avenir Next", "Segoe UI", sans-serif;
 }
 
 #app{

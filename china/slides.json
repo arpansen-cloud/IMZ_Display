@@ -1,6 +1,6 @@
 {
   "meta": {
-    "defaultTitle": "China",
+    "defaultTitle": "Uyghur",
     "logoLabel": "MSA",
     "secondsPerSlide": 14,
     "background": {
@@ -9,7 +9,7 @@
   },
   "slides": [
     {
-      "title": "China",
+      "title": "Uyghur",
       "subtitle": "",
       "background": {
         "src": "./background-v2.png"
@@ -101,7 +101,7 @@
       }
     },
     {
-      "title": "China",
+      "title": "Uyghur",
       "subtitle": "How are civilians affected?",
       "background": {
         "src": "./background-v2.png"
@@ -195,7 +195,7 @@
       }
     },
     {
-      "title": "China",
+      "title": "Uyghur",
       "subtitle": "How You Can Help",
       "background": {
         "src": "./background-v2.png"
