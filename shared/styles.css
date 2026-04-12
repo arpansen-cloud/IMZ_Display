@@ -401,8 +401,8 @@ h1 {
 }
 
 .qr-image {
-  width: 62px;
-  height: 62px;
+  width: 84px;
+  height: 84px;
   object-fit: contain;
   background: #fff;
   border-radius: 2px;

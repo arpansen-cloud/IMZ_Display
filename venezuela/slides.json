@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "defaultTitle": "Venezuela",
+    "logoLabel": "MSA",
+    "secondsPerSlide": 10,
+    "background": {
+      "src": "./background.png",
+      "size": "cover",
+      "position": "center",
+      "repeat": "no-repeat",
+      "opacity": "1"
+    }
+  },
+  "slides": [
+    {
+      "title": "Venezuela",
+      "subtitle": "",
+      "background": {
+        "src": "./background.png",
+        "size": "cover",
+        "position": "center",
+        "repeat": "no-repeat",
+        "opacity": "1"
+      },
+      "whatsHappening": {
+        "background": "Venezuela is in the middle of one of the world's largest and longest-running humanitarian crises, a collapse that started in 2014 when oil prices crashed and gutted the country's petrostate economy. Years of hyperinflation, failing public services, political repression, and US sanctions have pushed the country into what the UN calls a protracted multidimensional crisis. More than a quarter of the population, 7.9 million people, need urgent humanitarian assistance. The situation got even more volatile in January 2026 after the US military strikes on Caracas and the capture of President Nicolas Maduro, leaving the country in a fragile transition phase with deep uncertainty.",
+        "parties": [
+          { "name": "Maduro Government", "description": "Has overseen years of political repression, economic decline, and institutional breakdown." },
+          { "name": "United States", "description": "Imposed sanctions and in 2025-2026 escalated to direct military actions cited in the slide." },
+          { "name": "UN Agencies", "description": "OCHA, UNICEF, UNHCR, and others are responding to humanitarian needs and displacement." }
+        ],
+        "timeline": [
+          { "year": "2014", "description": "Oil prices collapse, the economy begins to freefall, and mass protests erupt." },
+          { "year": "2015-2024", "description": "Around 7.7 million Venezuelans flee the country in the largest displacement crisis in Latin America." },
+          { "year": "2025-2026", "description": "US military strikes and Operation Absolute Resolve deepen instability, including strikes on Caracas and the capture of Maduro." }
+        ],
+        "image": {
+          "src": "./background.png",
+          "alt": "Venezuela landscape"
+        }
+      },
+      "civilianImpact": {
+        "experiences": "According to OCHA, communities across Venezuela have limited access to primary healthcare, clean water, education, and electricity. IOM reports that mass emigration has stripped the country of skilled workers like doctors and teachers, further weakening fragile systems, and many families have been split across borders, leaving children and the elderly with reduced support networks. UNICEF warns humanitarian needs are expected to remain high or worsen throughout 2026, and UN officials say that without increased funding, aid agencies will be forced to scale back support at a moment of immense need.",
+        "stats": [
+          { "value": "7.9M", "label": "People Inside Venezuela Need Urgent Humanitarian Assistance" },
+          { "value": "5.1M", "label": "People Urgently Need Food Assistance" },
+          { "value": "6.9M", "label": "Migrants and Refugees Living Across Latin America and the Caribbean" },
+          { "value": "17%", "label": "Of the 2025 Humanitarian Response Plan Was Funded" }
+        ],
+        "image": {
+          "src": "./background.png",
+          "alt": "Venezuela crisis context"
+        }
+      },
+      "howToHelp": {
+        "summary": "Donations directly fund UN agency work that keeps food, medical care, water, and protection services running for the most vulnerable. Because Venezuela is one of the most underfunded humanitarian crises globally, every contribution has outsized impact.",
+        "cards": [
+          { "qr": "./unicef-qr.png?v=1", "label": "UNICEF Venezuela Appeal" },
+          { "qr": "./wfp-qr.png?v=1", "label": "WFP Venezuela" },
+          { "qr": "./unhcr-qr.png?v=1", "label": "UNHCR Venezuela" }
+        ],
+        "learnMore": {
+          "text": "Visit this page for verified resources and updated information on the crisis in Venezuela.",
+          "label": "unocha.org/venezuela",
+          "url": "https://www.unocha.org/venezuela"
+        },
+        "image": {
+          "src": "./background.png",
+          "alt": "Venezuela support and relief context"
+        }
+      }
+    }
+  ]
+}

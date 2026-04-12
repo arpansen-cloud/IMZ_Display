@@ -4,7 +4,7 @@
     "logoLabel": "MSA",
     "secondsPerSlide": 10,
     "background": {
-      "src": "./background.png",
+      "src": "./background-v5.png",
       "size": "cover",
       "position": "center",
       "repeat": "no-repeat",
@@ -16,7 +16,7 @@
       "title": "Lebanon",
       "subtitle": "",
       "background": {
-        "src": "./background.png",
+        "src": "./background-v5.png",
         "size": "cover",
         "position": "center",
         "repeat": "no-repeat",
