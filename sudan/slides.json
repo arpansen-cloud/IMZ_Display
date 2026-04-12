@@ -2,56 +2,110 @@
   "meta": {
     "defaultTitle": "Sudan",
     "logoLabel": "MSA",
-    "secondsPerSlide": 10
+    "secondsPerSlide": 10,
+    "background": {
+      "src": "./background.png",
+      "size": "cover",
+      "position": "center 36%",
+      "repeat": "no-repeat",
+      "opacity": "1"
+    }
   },
   "slides": [
     {
       "title": "Sudan",
-      "subtitle": "Template slide for country-specific crisis context, civilian impact, and donation resources.",
+      "subtitle": "",
+      "background": {
+        "src": "./background.png",
+        "size": "cover",
+        "position": "center 36%",
+        "repeat": "no-repeat",
+        "opacity": "1"
+      },
       "whatsHappening": {
-        "background": "Add a concise summary of the current situation in Sudan and why support is needed.",
+        "background": "Sudan's current crisis grew out of a failed transition after the 2019 revolution that ended Omar al-Bashir's dictatorship. Civilian hopes for democratic rule were undermined as the military kept power, and in 2021 SAF leader Abdel Fattah al-Burhan and RSF leader Mohamed Hamdan Dagalo carried out a coup together. Civilian unrest continued in 2022, and in April 2023 the SAF and RSF turned on each other and launched a war over control of the country.",
         "parties": [
-          { "name": "Party Name", "description": "Add a short description." },
-          { "name": "Party Name", "description": "Add a short description." },
-          { "name": "Party Name", "description": "Add a short description." }
+          {
+            "name": "Sudanese Armed Forces",
+            "description": "The national military led by Abdel Fattah al-Burhan and one of the two main forces fighting for control."
+          },
+          {
+            "name": "Rapid Support Forces",
+            "description": "A powerful military offshoot led by Mohamed Hamdan Dagalo and accused of major atrocities against civilians."
+          },
+          {
+            "name": "Foreign Influence",
+            "description": "The Wagner Group and support linked to the UAE have deepened the rivalry at the center of Sudan's crisis."
+          }
         ],
         "timeline": [
-          { "year": "20XX", "description": "Key event description here." },
-          { "year": "20XX", "description": "Key event description here." },
-          { "year": "20XX", "description": "Key event description here." }
-        ],
-        "image": {
-          "src": "https://images.unsplash.com/photo-1542743408-218cc173cda0?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Sudan cityscape"
-        }
-      },
-      "civilianImpact": {
-        "experiences": "Describe how civilians are affected, including displacement, shortages, disrupted services, or access barriers.",
-        "stats": [
-          { "value": "XX", "label": "Stat Label" },
-          { "value": "XX", "label": "Stat Label" },
-          { "value": "XX", "label": "Stat Label" },
-          { "value": "XX", "label": "Stat Label" }
+          {
+            "year": "2019",
+            "description": "Omar al-Bashir's dictatorship ends after a mass civilian revolution, but the military keeps power."
+          },
+          {
+            "year": "2021-2022",
+            "description": "SAF and RSF leaders stage a coup together, and civilian unrest continues under brutal military rule."
+          },
+          {
+            "year": "Apr 2023",
+            "description": "The SAF and RSF break into open war over leadership of the country."
+          }
         ],
         "image": {
           "src": "https://images.unsplash.com/photo-1518695606297-6bb7c9378e6f?auto=format&fit=crop&w=1200&q=80",
-          "alt": "People in affected streets"
+          "alt": "Sudan humanitarian context"
+        }
+      },
+      "civilianImpact": {
+        "experiences": "The war has destabilized Sudan and turned it into the world's largest humanitarian crisis on multiple fronts. Around 90% of children have lost access to formal education, 21.2 million people face acute hunger, and 12 million people have been displaced from their homes. Sexual violence by armed forces has left a quarter of the population at risk of gender-based violence. The RSF has also been accused of pillaging, rape, ethnic cleansing, and besieging civilians.",
+        "stats": [
+          {
+            "value": "90%",
+            "label": "Of Children Lost Access to Formal Education"
+          },
+          {
+            "value": "21.2M",
+            "label": "People Face Acute Hunger"
+          },
+          {
+            "value": "12M",
+            "label": "People Displaced From Their Homes"
+          },
+          {
+            "value": "25%",
+            "label": "Of the Population at Risk of Gender-Based Violence"
+          }
+        ],
+        "image": {
+          "src": "https://images.unsplash.com/photo-1542743408-218cc173cda0?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Displacement and crisis in Sudan"
         }
       },
       "howToHelp": {
-        "summary": "Add a short explanation of how donations or volunteer support will help people on the ground.",
+        "summary": "Support can fund food aid, protection services, health care, and emergency relief for displaced families. Public pressure also matters: one concrete advocacy action raised in Sudan solidarity campaigns is joining global efforts to boycott the UAE over its role in the conflict.",
         "cards": [
-          { "placeholder": "QR CODE", "label": "Donation Link", "url": "https://example.com/donate" },
-          { "placeholder": "QR CODE", "label": "Learn More", "url": "https://example.com/resources" }
+          {
+            "qr": "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fwww.unicef.org%2Fpress-releases%2Fentire-generation-children-sudan-faces-catastrophe-war-enters-its-second-year",
+            "label": "UNICEF Sudan"
+          },
+          {
+            "qr": "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fwww.wfp.org%2Femergencies%2Fsudan",
+            "label": "WFP Sudan"
+          },
+          {
+            "qr": "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fwww.unrefugees.org%2Femergencies%2Fsudan%2F",
+            "label": "UNHCR Sudan"
+          }
         ],
         "learnMore": {
-          "text": "Visit this resource for verified updates and additional information.",
-          "label": "ReliefWeb",
-          "url": "https://reliefweb.int"
+          "text": "Use the conflict tracker and rights reporting for verified updates on the war, displacement, atrocities, and humanitarian need in Sudan.",
+          "label": "CFR Conflict Tracker",
+          "url": "https://www.cfr.org/global-conflict-tracker"
         },
         "image": {
           "src": "https://images.unsplash.com/photo-1599837487527-d8f0f837f9f9?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Flags and solidarity"
+          "alt": "Sudan solidarity and relief"
         }
       }
     }
