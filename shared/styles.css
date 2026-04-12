@@ -327,6 +327,10 @@ h1 {
   justify-content: center;
 }
 
+.qr-grid.three-cards {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .stat-card,
 .qr-card {
   min-height: 92px;
@@ -365,6 +369,15 @@ h1 {
   justify-content: center;
   gap: 0.65rem;
   text-align: center;
+  min-height: 114px;
+}
+
+.qr-card-image {
+  border: 1px solid var(--stroke);
+  background: var(--card);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  padding: 0.72rem 0.45rem 0.55rem;
+  border-radius: 16px;
 }
 
 .qr-card-text {
@@ -388,16 +401,16 @@ h1 {
 }
 
 .qr-image {
-  width: 72px;
-  height: 72px;
+  width: 62px;
+  height: 62px;
   object-fit: contain;
   background: #fff;
-  border-radius: 10px;
-  padding: 0.28rem;
+  border-radius: 2px;
+  padding: 0;
 }
 
 .qr-link {
-  font-size: 0.74rem;
+  font-size: 0.62rem;
   color: #dce8ff;
   text-align: center;
   line-height: 1.15;

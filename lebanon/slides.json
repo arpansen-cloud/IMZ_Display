@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "defaultTitle": "Lebanon",
+    "logoLabel": "MSA",
+    "secondsPerSlide": 10,
+    "background": {
+      "src": "./background.png",
+      "size": "cover",
+      "position": "center",
+      "repeat": "no-repeat",
+      "opacity": "1"
+    }
+  },
+  "slides": [
+    {
+      "title": "Lebanon",
+      "subtitle": "",
+      "background": {
+        "src": "./background.png",
+        "size": "cover",
+        "position": "center",
+        "repeat": "no-repeat",
+        "opacity": "1"
+      },
+      "whatsHappening": {
+        "background": "Lebanon is facing a major humanitarian crisis driven by renewed large-scale fighting, layered on top of years of economic collapse, displacement, and damage from earlier conflict. Cross-border fire along the Blue Line began escalating on October 8, 2023, a ceasefire took effect on November 27, 2024, and hostilities intensified sharply again on March 2, 2026. The result has been mass displacement, civilian deaths, pressure on hospitals, damaged infrastructure, and worsening food insecurity.",
+        "parties": [
+          { "name": "Israel", "description": "Has exchanged cross-border fire with armed groups in Lebanon and carried out attacks during the current escalation." },
+          { "name": "Hezbollah", "description": "Lebanese armed group involved in the cross-border hostilities and ceasefire breakdown." },
+          { "name": "UN and Aid Agencies", "description": "UNIFIL, OCHA, WHO, and other humanitarian groups are monitoring the crisis and responding to civilian needs." }
+        ],
+        "timeline": [
+          { "year": "2023", "description": "UNIFIL reported rockets fired from southeast Lebanon toward Israeli-occupied territory, marking the start of the current cross-border escalation." },
+          { "year": "2024", "description": "A ceasefire took effect between Israel and Lebanon under a US-brokered truce as the war caused major damage and losses in Lebanon." },
+          { "year": "Mar-Apr 2026", "description": "OCHA, WHO, and UN updates reported renewed hostilities, mass displacement, rising casualties, and growing humanitarian need." }
+        ],
+        "image": {
+          "src": "https://images.unsplash.com/photo-1604608672516-f1b7dd2f5cf7?auto=format&fit=crop&w=1200&q=80",
+          "alt": "View across Lebanon"
+        }
+      },
+      "civilianImpact": {
+        "experiences": "People have been killed, injured, displaced, and cut off from health care, food, shelter, and basic services. Families are living in overcrowded shelters or with host communities, while women, children, older adults, and people with disabilities face especially high risks. Hospitals and primary health centers have been damaged or closed, which makes treatment harder even for people with chronic illnesses or routine medical needs. Food insecurity was already widespread, and the latest fighting is making it worse.",
+        "stats": [
+          { "value": "1,268", "label": "People Killed and 3,750 Injured Since March 2026" },
+          { "value": "1,162,237", "label": "People Had Self-Registered as Displaced" },
+          { "value": "874,000", "label": "Facing Acute Food Insecurity Between Nov 2025 and Mar 2026" },
+          { "value": "88", "label": "Attacks on Health Care; 4 Hospitals Fully Closed" }
+        ],
+        "image": {
+          "src": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Map and region context"
+        }
+      },
+      "howToHelp": {
+        "summary": "Donations to vetted relief groups help fund food, emergency health care, shelter support, medicine, hygiene supplies, and protection services for families who have been displaced or injured.",
+        "cards": [
+          { "qr": "./red-cross-qr.png?v=2", "label": "Lebanese Red Cross" },
+          { "qr": "./unicef-qr.png?v=2", "label": "UNICEF Lebanon Appeal" },
+          { "qr": "./wfp-qr.png?v=2", "label": "WFP Lebanon" }
+        ],
+        "learnMore": {
+          "text": "Visit this page for verified resources and updated information on the Lebanon crisis.",
+          "label": "unocha.org/lebanon",
+          "url": "https://www.unocha.org/lebanon"
+        },
+        "image": {
+          "src": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Families displaced by conflict"
+        }
+      }
+    }
+  ]
+}

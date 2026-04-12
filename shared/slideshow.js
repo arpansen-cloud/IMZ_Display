@@ -119,12 +119,14 @@ function setStats(items) {
 function setQrCards(items) {
   const grid = el("helpCards");
   grid.innerHTML = "";
-  const cards = (items || []).slice(0, 2);
+  const cards = (items || []).slice(0, 3);
   grid.classList.toggle("single-card", cards.length === 1);
+  grid.classList.toggle("three-cards", cards.length === 3);
   cards.forEach((item) => {
     const article = document.createElement("article");
     const textOnlyCard = !item.qr && !item.url;
-    article.className = `qr-card${textOnlyCard ? " qr-card-text" : ""}`;
+    const qrImageCard = Boolean(item.qr);
+    article.className = `qr-card${textOnlyCard ? " qr-card-text" : ""}${qrImageCard ? " qr-card-image" : ""}`;
 
     if (item.qr) {
       const img = document.createElement("img");
