@@ -2,56 +2,299 @@
   "meta": {
     "defaultTitle": "Syria",
     "logoLabel": "MSA",
-    "secondsPerSlide": 10
+    "secondsPerSlide": 14,
+    "background": {
+      "src": "./image-destination-here.png"
+    }
   },
   "slides": [
     {
       "title": "Syria",
-      "subtitle": "Template slide for country-specific crisis context, civilian impact, and donation resources.",
+      "subtitle": "",
+      "background": {
+        "src": "./image-destination-here.png"
+      },
       "whatsHappening": {
-        "background": "Add a concise summary of the current situation in Syria and why support is needed.",
+        "partiesHeading": "Parties Involved",
+        "background": "Syria's crisis began in 2011 when anti-government protests were met with violent repression, escalating into a prolonged war involving the Assad government, opposition factions, ISIS, foreign militaries, and regional powers. Bashar al-Assad was removed from power in December 2024, but intermittent violence, insecurity, damaged infrastructure, and mass displacement continue to shape daily life across the country.",
         "parties": [
-          { "name": "Party Name", "description": "Add a short description." },
-          { "name": "Party Name", "description": "Add a short description." },
-          { "name": "Party Name", "description": "Add a short description." }
+          {
+            "name": "Former Assad Government",
+            "description": "Ruled Syria for decades and violently repressed the 2011 uprising before losing power in December 2024."
+          },
+          {
+            "name": "Opposition / New Authorities",
+            "description": "Anti-government forces and successor authorities that emerged after Assad's removal, now shaping Syria's transition."
+          },
+          {
+            "name": "ISIS",
+            "description": "Militant group that expanded inside Syria during the war and still exploits insecurity in fragmented areas."
+          },
+          {
+            "name": "Regional and Foreign Powers",
+            "description": "Actors including Russia, Iran, Turkey, the United States, and Israel have all influenced the conflict's military and political trajectory."
+          },
+          {
+            "name": "United Nations",
+            "description": "Coordinates humanitarian response for civilians affected by displacement, hunger, damaged services, and explosive remnants of war."
+          }
         ],
         "timeline": [
-          { "year": "20XX", "description": "Key event description here." },
-          { "year": "20XX", "description": "Key event description here." },
-          { "year": "20XX", "description": "Key event description here." }
+          {
+            "year": "2011",
+            "description": "Anti-government protests begin and are met with violent repression, triggering nationwide conflict."
+          },
+          {
+            "year": "2014",
+            "description": "ISIS expands its control in parts of Syria as the war fragments further."
+          },
+          {
+            "year": "2024",
+            "description": "Assad is removed from power in December, opening a new but unstable transition period."
+          }
         ],
         "image": {
-          "src": "https://images.unsplash.com/photo-1542743408-218cc173cda0?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Syria cityscape"
+          "src": "./bottom-left.png",
+          "alt": "Destroyed urban landscape in Syria"
         }
       },
       "civilianImpact": {
-        "experiences": "Describe how civilians are affected, including displacement, shortages, disrupted services, or access barriers.",
+        "experiences": "After more than a decade of war, civilians continue to face repeated displacement, damaged homes, weakened health care, contaminated land, and major economic hardship. The change in authorities in late 2024 created cautious hope, but renewed clashes, explosive ordnance, and service disruptions have kept humanitarian needs severe.",
         "stats": [
-          { "value": "XX", "label": "Stat Label" },
-          { "value": "XX", "label": "Stat Label" },
-          { "value": "XX", "label": "Stat Label" },
-          { "value": "XX", "label": "Stat Label" }
+          {
+            "value": "14 yrs",
+            "label": "Conflict and Crisis"
+          },
+          {
+            "value": "12/2024",
+            "label": "Assad Removed"
+          },
+          {
+            "value": "2026",
+            "label": "Needs Remain High"
+          },
+          {
+            "value": "Ongoing",
+            "label": "Displacement and Recovery"
+          }
         ],
         "image": {
-          "src": "https://images.unsplash.com/photo-1518695606297-6bb7c9378e6f?auto=format&fit=crop&w=1200&q=80",
-          "alt": "People in affected streets"
+          "src": "./slide1-people.png",
+          "alt": "Syrian civilians navigating destruction"
         }
       },
       "howToHelp": {
-        "summary": "Add a short explanation of how donations or volunteer support will help people on the ground.",
+        "summary": "Syria is now in a transition period, but humanitarian needs remain immense. Millions still need food, health care, education, protection, and safe shelter, and many returnees are going back to communities with damaged services and unexploded ordnance.",
         "cards": [
-          { "placeholder": "QR CODE", "label": "Donation Link", "url": "https://example.com/donate" },
-          { "placeholder": "QR CODE", "label": "Learn More", "url": "https://example.com/resources" }
+          {
+            "placeholder": "2011",
+            "label": "Uprising"
+          },
+          {
+            "placeholder": "2024",
+            "label": "Political Shift"
+          }
         ],
         "learnMore": {
-          "text": "Visit this resource for verified updates and additional information.",
-          "label": "ReliefWeb",
-          "url": "https://reliefweb.int"
+          "text": "This slide gives the historical path from the 2011 uprising to today's humanitarian crisis."
         },
         "image": {
-          "src": "https://images.unsplash.com/photo-1599837487527-d8f0f837f9f9?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Flags and solidarity"
+          "src": "./flag-slide1.png",
+          "alt": "Syrian flag"
+        }
+      }
+    },
+    {
+      "title": "Syria",
+      "subtitle": "How are civilians affected?",
+      "background": {
+        "src": "./image-destination-here.png"
+      },
+      "whatsHappening": {
+        "partiesHeading": "People Affected",
+        "background": "Syria remains one of the world's largest humanitarian emergencies. Families continue to live with displacement, hunger, unsafe water, interrupted schooling, damaged hospitals, and the threat of landmines and unexploded ordnance.",
+        "parties": [
+          {
+            "name": "6.2 million displaced",
+            "description": "People remained internally displaced by the start of 2026."
+          },
+          {
+            "name": "1.4 million in camps",
+            "description": "Many displaced Syrians still live in camp settings."
+          },
+          {
+            "name": "14.6 million food insecure",
+            "description": "Food insecurity continues to affect households across the country."
+          },
+          {
+            "name": "7+ million children in need",
+            "description": "Children remain among the most affected by disrupted services and insecurity."
+          }
+        ],
+        "timeline": [
+          {
+            "year": "40%",
+            "description": "Hospitals and health facilities partly or completely non-functional."
+          },
+          {
+            "year": "600k",
+            "description": "Children under age five suffering from wasting."
+          },
+          {
+            "year": "200k",
+            "description": "People newly displaced in northeast violence reported in early 2026."
+          }
+        ],
+        "image": {
+          "src": "./bottom-left.png",
+          "alt": "Damaged neighborhood in Syria"
+        }
+      },
+      "civilianImpact": {
+        "experiences": "Children in Syria have grown up with conflict as a constant. Damage to schools, weak health systems, unsafe water, economic collapse, and explosive remnants of war have increased risks of malnutrition, illness, interrupted education, child labor, child marriage, and long-term trauma.",
+        "stats": [
+          {
+            "value": "6.2m",
+            "label": "Internally Displaced"
+          },
+          {
+            "value": "14.6m",
+            "label": "Food Insecure"
+          },
+          {
+            "value": "600k",
+            "label": "Children Wasting"
+          },
+          {
+            "value": "40%",
+            "label": "Health Facilities Hit"
+          }
+        ],
+        "image": {
+          "src": "./food-insecurity.png",
+          "alt": "Food insecurity or humanitarian conditions in Syria"
+        }
+      },
+      "howToHelp": {
+        "summary": "By the start of 2026, millions remained displaced and food insecurity stayed widespread. Recovery is further complicated by damaged infrastructure, poverty, and explosive ordnance that threatens children's safety and access to schools and services.",
+        "cards": [
+          {
+            "placeholder": "1.4m",
+            "label": "In Camps"
+          },
+          {
+            "placeholder": "7m+",
+            "label": "Children in Need"
+          }
+        ],
+        "learnMore": {
+          "text": "The crisis affects health, nutrition, education, protection, and safe return for families across Syria."
+        },
+        "imageHeading": "Syria Crisis",
+        "image": {
+          "src": "./ipc-qr.png",
+          "alt": "QR code for Syria crisis information",
+          "mode": "qr"
+        }
+      }
+    },
+    {
+      "title": "Syria",
+      "subtitle": "How You Can Help",
+      "background": {
+        "src": "./image-destination-here.png"
+      },
+      "whatsHappening": {
+        "partiesHeading": "Organizations",
+        "background": "Support is most effective when it goes to organizations already delivering food, shelter, education, protection, health services, and refugee support on the ground. Humanitarian aid remains essential because returns alone do not mean families are returning to safe or fully functioning communities.",
+        "parties": [
+          {
+            "name": "UNICEF",
+            "description": "Supports children with health, nutrition, education, water, and protection services."
+          },
+          {
+            "name": "UNHCR",
+            "description": "Protects refugees, returnees, and displaced families and supports shelter and legal assistance."
+          },
+          {
+            "name": "World Food Programme",
+            "description": "Provides food assistance and support for vulnerable households."
+          },
+          {
+            "name": "International Rescue Committee",
+            "description": "Delivers relief, recovery, and protection support for displaced and conflict-affected communities."
+          },
+          {
+            "name": "Doctors Without Borders",
+            "description": "Provides emergency and essential medical care where access is possible."
+          }
+        ],
+        "timeline": [
+          {
+            "year": "Donate",
+            "description": "Support trusted relief organizations working with Syrians."
+          },
+          {
+            "year": "Learn",
+            "description": "Follow verified humanitarian reporting and country updates."
+          },
+          {
+            "year": "Advocate",
+            "description": "Share accurate information and support policies that protect civilians and refugees."
+          }
+        ],
+        "image": {
+          "src": "./people-affected.png",
+          "alt": "Aid and civilian recovery efforts in Syria"
+        }
+      },
+      "civilianImpact": {
+        "experiences": "Helping Syria means more than responding to headlines. Donations help fund food, clean water, medical treatment, education, child protection, and support for displaced families and returnees trying to rebuild their lives in communities still affected by poverty, damaged infrastructure, and insecurity.",
+        "stats": [
+          {
+            "value": "5",
+            "label": "Trusted Aid Options"
+          },
+          {
+            "value": "3",
+            "label": "Ways to Take Action"
+          },
+          {
+            "value": "1",
+            "label": "Learn More QR"
+          },
+          {
+            "value": "Ongoing",
+            "label": "Need for Support"
+          }
+        ],
+        "image": {
+          "src": "./slide1-people.png",
+          "alt": "Syrian families affected by the crisis"
+        }
+      },
+      "howToHelp": {
+        "summary": "Donate to trusted groups such as UNICEF, UNHCR, WFP, IRC, or Doctors Without Borders. Learn more through verified humanitarian updates. Advocacy also matters: accurate public attention can help sustain aid and protection for Syrians, including displaced families and refugees across the region.",
+        "cards": [
+          {
+            "qr": "./unicef-qr.png",
+            "label": "UNICEF Syria Crisis",
+            "url": "https://www.unicef.org/emergencies/syrian-crisis"
+          },
+          {
+            "qr": "./unhcr-qr.png",
+            "label": "UNHCR Syria",
+            "url": "https://www.unhcr.org/sy/"
+          }
+        ],
+        "learnMore": {
+          "text": "You can also support WFP, IRC, and Doctors Without Borders for food aid, refugee support, protection services, and medical care."
+        },
+        "imageHeading": "Learn More",
+        "image": {
+          "src": "./wfp-qr.png",
+          "alt": "QR code for WFP Syria or relief information",
+          "mode": "qr"
         }
       }
     }
