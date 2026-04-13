@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "defaultTitle": "Iran",
+    "logoLabel": "MSA",
+    "secondsPerSlide": 10,
+    "background": {
+      "src": "./background.png",
+      "size": "108% auto",
+      "position": "center 66%",
+      "repeat": "no-repeat",
+      "opacity": "1"
+    }
+  },
+  "slides": [
+    {
+      "title": "Iran",
+      "subtitle": "",
+      "background": {
+        "src": "./background.png",
+        "size": "108% auto",
+        "position": "center 66%",
+        "repeat": "no-repeat",
+        "opacity": "1"
+      },
+      "whatsHappening": {
+        "background": "On February 28, 2026, coordinated Israeli and U.S. airstrikes hit Tehran and other Iranian cities as part of a broader campaign targeting Iran's nuclear and missile infrastructure. Iran responded with strikes against Israel, U.S. bases in the region, and military and civilian sites in neighboring states. The conflict quickly became a regional emergency marked by large-scale airstrikes, mounting civilian casualties, and damage to homes, schools, hospitals, and critical infrastructure including electricity, water, and telecommunications.",
+        "parties": [
+          {
+            "name": "Coalition Offensive",
+            "description": "The United States and Israel led the strikes, with regional support linked to Saudi Arabia, the UAE, Bahrain, and Jordan."
+          },
+          {
+            "name": "Iran and Allied Forces",
+            "description": "Iran's military and IRGC, along with Hezbollah, the Houthis, and Iraqi Popular Mobilization Forces, have taken part in the response."
+          },
+          {
+            "name": "Neutral Mediators",
+            "description": "Qatar, Kuwait, Oman, Turkey, and Egypt have been involved in diplomatic efforts to stop further escalation."
+          }
+        ],
+        "timeline": [
+          {
+            "year": "Feb 28, 2026",
+            "description": "War begins as U.S. and Israeli forces launch hundreds of strikes on Iranian military targets."
+          },
+          {
+            "year": "Mar 2026",
+            "description": "The Strait of Hormuz closes, oil prices surge, and strikes continue across Iran, including the deadly Minab school strike."
+          },
+          {
+            "year": "Apr 8-9, 2026",
+            "description": "A two-week ceasefire is announced, but fighting and disruption continue and implementation remains uncertain."
+          }
+        ],
+        "image": {
+          "src": "https://images.unsplash.com/photo-1526481280695-3c4691f8d3d8?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Iran city and mountain landscape"
+        }
+      },
+      "civilianImpact": {
+        "experiences": "Thousands of civilians have been killed and millions displaced since the war began. Strikes on civilian infrastructure have damaged homes, hospitals, schools, and emergency centers across the country while disrupting water, electricity, healthcare, banking, and communications. The environmental damage of the conflict is expected to outlast the fighting, and families already under strain are now navigating displacement, service collapse, and repeated attacks. As one driver told The New Humanitarian while commuting his family away from Tehran, every departure for the capital is shadowed by fear of dying in the bombings.",
+        "stats": [
+          {
+            "value": "3.2M",
+            "label": "Internally Displaced People"
+          },
+          {
+            "value": "1,500",
+            "label": "Killed Between Feb 28 and Mar 25"
+          },
+          {
+            "value": "334+",
+            "label": "Health and Emergency Centers Damaged"
+          },
+          {
+            "value": "115k+",
+            "label": "Civilian Units Damaged, Including 763 Schools"
+          }
+        ],
+        "image": {
+          "src": "https://images.unsplash.com/photo-1518695606297-6bb7c9378e6f?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Displacement and humanitarian crisis"
+        }
+      },
+      "howToHelp": {
+        "summary": "Humanitarian organizations with verified operations are raising funds for medical aid, clean water, food, and shelter for displaced families. The Iranian Red Crescent, through the IFRC emergency appeal, has mobilized thousands of responders across the country, but the scale of need far exceeds current resources. Donations and continued public attention both matter because aid access remains difficult and the humanitarian fallout is still growing.",
+        "cards": [
+          {
+            "qr": "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fwww.ifrc.org%2Femergency%2Firan-complex-emergency-2026",
+            "label": "IFRC Iran Appeal"
+          },
+          {
+            "qr": "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fwww.doctorswithoutborders.org%2Fwhat-we-do%2Fwhere-we-work%2Firan",
+            "label": "Doctors Without Borders"
+          },
+          {
+            "qr": "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fwww.unhcr.org%2Fcountries%2Firan",
+            "label": "UNHCR Iran"
+          }
+        ],
+        "learnMore": {
+          "text": "Stay informed through verified humanitarian reporting and displacement updates while internet blackouts and disrupted communications make it harder to see conditions on the ground.",
+          "label": "UN OCHA Iran Updates",
+          "url": "https://www.unocha.org/iran"
+        },
+        "image": {
+          "src": "https://images.unsplash.com/photo-1599837487527-d8f0f837f9f9?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Humanitarian support and solidarity"
+        }
+      }
+    }
+  ]
+}
