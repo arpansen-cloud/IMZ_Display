@@ -281,12 +281,12 @@
         "summary": "Support humanitarian groups such as the World Food Programme and follow verified updates on Yemen. You can also advocate for diplomacy, civilian protection, and serious international attention to a crisis that remains underfunded despite the scale of need.",
         "cards": [
           {
-            "qr": "./wfp-qr.png",
+            "qr": "../images/yemen-1.png",
             "label": "World Food Programme Yemen",
             "url": "https://www.wfp.org/emergencies/yemen-emergency"
           },
           {
-            "qr": "./un-yemen-qr.png",
+            "qr": "../images/yemen-2.png",
             "label": "UN Yemen Crisis Response",
             "url": "https://www.unocha.org/yemen"
           }

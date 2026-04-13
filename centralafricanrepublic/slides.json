@@ -281,12 +281,12 @@
           "summary": "Share information about the Central African Republic so the crisis is not forgotten, and donate to organizations such as UNICEF or UNHCR that are already working there. Public awareness and direct support both matter in places where humanitarian need is high but global attention is low.",
           "cards": [
             {
-              "qr": "./unicef-qr.png",
+              "qr": "../images/car-1.png",
               "label": "UNICEF CAR",
               "url": "https://www.unicef.org/car/en"
             },
             {
-              "qr": "./unhcr-qr.png",
+              "qr": "../images/car-2.png",
               "label": "UNHCR CAR",
               "url": "https://www.unhcr.org/where-we-work/countries/central-african-republic"
             }

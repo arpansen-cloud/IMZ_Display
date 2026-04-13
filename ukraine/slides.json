@@ -285,12 +285,12 @@
           "summary": "Support trusted organizations such as UNHCR, UNICEF, WFP, Doctors Without Borders, and local relief groups. You can also stay informed and help keep attention on the humanitarian needs of civilians across Ukraine.",
           "cards": [
             {
-              "qr": "./unhcr-qr.png",
+              "qr": "../images/unhcr-qr.png",
               "label": "UNHCR Ukraine",
               "url": "https://www.unhcr.org/ua/en"
             },
             {
-              "qr": "./unicef-qr.png",
+              "qr": "../images/ukraine-2.png",
               "label": "UNICEF Ukraine",
               "url": "https://www.unicef.org/ukraine/en"
             }

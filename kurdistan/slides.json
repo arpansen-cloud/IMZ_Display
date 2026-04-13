@@ -285,12 +285,12 @@
           "summary": "Educate yourself and others about the Kurdish crisis, support trusted humanitarian organizations such as UNHCR and WFP that operate in the relevant regions, and follow verified human rights reporting so abuses are not ignored or erased.",
           "cards": [
             {
-              "qr": "./unhcr-qr.png",
+              "qr": "../images/unhcr-qr.png",
               "label": "UNHCR Regional Support",
               "url": "https://www.unhcr.org/"
             },
             {
-              "qr": "./wfp-qr.png",
+              "qr": "../images/wpf.png",
               "label": "World Food Programme",
               "url": "https://www.wfp.org/"
             }
