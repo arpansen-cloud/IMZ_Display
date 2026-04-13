@@ -208,6 +208,10 @@ h1 {
   min-height: 112px;
 }
 
+.hero .logo {
+  margin-right: 2.5rem;
+}
+
 .title-wrap {
   max-width: 64%;
 }
