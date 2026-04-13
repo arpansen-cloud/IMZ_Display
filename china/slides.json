@@ -269,14 +269,14 @@
         "summary": "Talk about the Uyghurs, support accountability efforts, and avoid fast fashion or other products tied to forced labor supply chains. Your role is to help make the crisis harder to hide and harder to profit from.",
         "cards": [
           {
-            "qr": "./learnmore-qr.png",
+            "qr": "../images/uyghur-1.png",
             "label": "Learn More",
             "url": "https://www.un.org/"
           },
           {
-            "qr": "./boycott-qr.png",
-            "label": "Ethical Buying",
-            "url": "https://www.walkfree.org/"
+            "qr": "../images/uyghur-2.png",
+            "label": "Help the Uyghurs",
+            "url": "https://uhrp.org/take-action/"
           }
         ],
         "learnMore": {

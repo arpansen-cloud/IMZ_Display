@@ -277,12 +277,12 @@
         "summary": "Donate to trusted humanitarian organizations such as UNICEF, WFP, UNHCR, and coordinated emergency response groups working in Congo. Learn more from verified humanitarian reporting and keep attention on a crisis that remains severe, underfunded, and too often overlooked.",
         "cards": [
           {
-            "qr": "./unicef-qr.png",
+            "qr": "../images/congo-1.png",
             "label": "UNICEF DRC",
             "url": "https://www.unicef.org/appeals/drc"
           },
           {
-            "qr": "./wfp-qr.png",
+            "qr": "../images/congo-2.png",
             "label": "WFP DRC",
             "url": "https://www.wfp.org/countries/democratic-republic-congo"
           }

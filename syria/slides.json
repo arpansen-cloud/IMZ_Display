@@ -277,12 +277,12 @@
         "summary": "Donate to trusted groups such as UNICEF, UNHCR, WFP, IRC, or Doctors Without Borders. Learn more through verified humanitarian updates. Advocacy also matters: accurate public attention can help sustain aid and protection for Syrians, including displaced families and refugees across the region.",
         "cards": [
           {
-            "qr": "./unicef-qr.png",
+            "qr": "../images/syria-1.png",
             "label": "UNICEF Syria Crisis",
             "url": "https://www.unicef.org/emergencies/syrian-crisis"
           },
           {
-            "qr": "./unhcr-qr.png",
+            "qr": "../images/syria-2.png",
             "label": "UNHCR Syria",
             "url": "https://www.unhcr.org/sy/"
           }

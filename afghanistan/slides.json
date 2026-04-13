@@ -275,12 +275,12 @@
         "summary": "Donate to trusted humanitarian organizations such as UNICEF, WFP, UNHCR, the International Rescue Committee, and Doctors Without Borders. Learn more through verified humanitarian briefings and reporting. Public attention, education, and material support all matter in a crisis this prolonged.",
         "cards": [
           {
-            "qr": "./unicef-qr.png",
+            "qr": "../images/afghan-1.png",
             "label": "UNICEF",
             "url": "https://www.unicef.org/afghanistan/"
           },
           {
-            "qr": "./wfp-qr.png",
+            "qr": "../images/afghan-2.png",
             "label": "WFP",
             "url": "https://www.wfp.org/countries/afghanistan"
           }
