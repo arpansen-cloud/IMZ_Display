@@ -1,0 +1,310 @@
+{
+    "meta": {
+      "defaultTitle": "Ukraine",
+      "logoLabel": "MSA",
+      "secondsPerSlide": 14,
+      "background": {
+        "src": "./image-destination-here.png"
+      }
+    },
+    "slides": [
+      {
+        "title": "Ukraine",
+        "subtitle": "",
+        "background": {
+          "src": "./image-destination-here.png"
+        },
+        "whatsHappening": {
+          "partiesHeading": "Parties Involved",
+          "background": "Ukraine’s current crisis escalated sharply in 2014 after Russia annexed Crimea and war began in eastern Ukraine. In February 2022, Russia launched a full-scale invasion that transformed the conflict into Europe’s largest war in decades. Since then, fighting has caused mass displacement, widespread destruction, attacks on civilian infrastructure, and severe humanitarian needs across the country. Front lines continue to shift while millions of civilians live with insecurity, grief, damaged services, and long-term uncertainty.",
+          "parties": [
+            {
+              "name": "Ukraine",
+              "description": "The sovereign state defending its territory, population, and infrastructure against ongoing invasion and attacks."
+            },
+            {
+              "name": "Russia",
+              "description": "Invaded Ukraine in 2014 through Crimea and eastern operations, then launched a full-scale invasion in 2022."
+            },
+            {
+              "name": "Civilians",
+              "description": "Families across Ukraine continue to bear the humanitarian cost through displacement, injury, loss, and service disruption."
+            },
+            {
+              "name": "United Nations and Aid Agencies",
+              "description": "Organizations providing food, shelter, health care, protection, and emergency support."
+            },
+            {
+              "name": "International Partners",
+              "description": "Governments and institutions supporting humanitarian relief, reconstruction, and other assistance."
+            }
+          ],
+          "timeline": [
+            {
+              "year": "2014",
+              "description": "Russia annexes Crimea and conflict begins in eastern Ukraine."
+            },
+            {
+              "year": "2022",
+              "description": "Russia launches a full-scale invasion across multiple fronts."
+            },
+            {
+              "year": "2023",
+              "description": "Heavy fighting continues while attacks damage homes, energy systems, and public infrastructure."
+            },
+            {
+              "year": "2024",
+              "description": "War remains active with ongoing displacement and humanitarian need."
+            },
+            {
+              "year": "2026",
+              "description": "Millions still require assistance as recovery and security challenges continue."
+            }
+          ],
+          "image": {
+            "src": "./bottom-left.png",
+            "alt": "Conflict-affected landscape in Ukraine"
+          }
+        },
+        "civilianImpact": {
+          "experiences": "Civilians across Ukraine have endured displacement, bereavement, trauma, damaged homes, interrupted schooling, power outages, and pressure on health systems. Repeated attacks on infrastructure have affected heating, electricity, and water, especially during winter periods. Many families remain separated, while children and older adults face heightened vulnerability.",
+          "stats": [
+            {
+              "value": "14.6m",
+              "label": "Need Assistance"
+            },
+            {
+              "value": "3.7m",
+              "label": "Internally Displaced"
+            },
+            {
+              "value": "6m+",
+              "label": "Refugees Abroad"
+            },
+            {
+              "value": "2026",
+              "label": "Needs Continue"
+            }
+          ],
+          "image": {
+            "src": "./slide1-people.png",
+            "alt": "Ukrainian civilians affected by war"
+          }
+        },
+        "howToHelp": {
+          "summary": "Ukraine’s humanitarian crisis remains urgent because millions still need shelter, protection, health care, winter support, and help rebuilding their lives. Supporting trusted aid efforts can help civilians recover while conflict continues.",
+          "cards": [
+            {
+              "placeholder": "2014",
+              "label": "War Expands"
+            },
+            {
+              "placeholder": "2022",
+              "label": "Full Invasion"
+            }
+          ],
+          "learnMore": {
+            "text": "This slide explains how the crisis developed from the 2014 conflict into the full-scale war and humanitarian emergency of today."
+          },
+          "image": {
+            "src": "./flag-slide1.png",
+            "alt": "Ukrainian flag"
+          }
+        }
+      },
+      {
+        "title": "Ukraine",
+        "subtitle": "How are civilians affected?",
+        "background": {
+          "src": "./image-destination-here.png"
+        },
+        "whatsHappening": {
+          "partiesHeading": "People Affected",
+          "background": "The war affects civilians through displacement, injury, psychological trauma, damaged infrastructure, economic hardship, and disrupted public services. Needs are especially high near front-line areas and in communities repeatedly targeted by strikes.",
+          "parties": [
+            {
+              "name": "14.6 million need aid",
+              "description": "Millions across Ukraine require humanitarian assistance."
+            },
+            {
+              "name": "3.7 million displaced",
+              "description": "Many people remain internally displaced inside Ukraine."
+            },
+            {
+              "name": "6 million+ refugees",
+              "description": "Large numbers of Ukrainians continue living abroad after fleeing war."
+            },
+            {
+              "name": "Children and elderly at risk",
+              "description": "Vulnerable groups face greater danger from displacement, trauma, and service disruption."
+            }
+          ],
+          "timeline": [
+            {
+              "year": "Homes",
+              "description": "Residential areas have been damaged or destroyed in many regions."
+            },
+            {
+              "year": "Power",
+              "description": "Energy systems have been repeatedly hit, affecting heating and electricity."
+            },
+            {
+              "year": "Health",
+              "description": "Hospitals and health access have been strained by attacks and displacement."
+            }
+          ],
+          "image": {
+            "src": "./bottom-left.png",
+            "alt": "Destroyed urban area in Ukraine"
+          }
+        },
+        "civilianImpact": {
+          "experiences": "For many Ukrainians, the crisis means living far from home, coping with loss, rebuilding after attacks, and trying to maintain daily life under uncertainty. Children face interrupted education and trauma, while older adults and people with disabilities may struggle to evacuate or access care. Recovery is made harder by ongoing insecurity and repeated damage to infrastructure.",
+          "stats": [
+            {
+              "value": "14.6m",
+              "label": "Need Aid"
+            },
+            {
+              "value": "3.7m",
+              "label": "Internally Displaced"
+            },
+            {
+              "value": "6m+",
+              "label": "Refugees"
+            },
+            {
+              "value": "Ongoing",
+              "label": "Reconstruction Need"
+            }
+          ],
+          "image": {
+            "src": "./food-insecurity.png",
+            "alt": "Humanitarian conditions in Ukraine"
+          }
+        },
+        "howToHelp": {
+          "summary": "Even beyond front-line fighting, millions need shelter support, psychosocial care, winter assistance, education support, and reconstruction help. Long-term recovery will take sustained international attention.",
+          "cards": [
+            {
+              "placeholder": "Shelter",
+              "label": "Housing Need"
+            },
+            {
+              "placeholder": "Power",
+              "label": "Utilities Hit"
+            }
+          ],
+          "learnMore": {
+            "text": "The civilian toll includes displacement, trauma, damaged infrastructure, and long-term rebuilding challenges."
+          },
+          "imageHeading": "Ukraine Crisis",
+          "image": {
+            "src": "./ipc-qr.png",
+            "alt": "QR code for Ukraine crisis information",
+            "mode": "qr"
+          }
+        }
+      },
+      {
+        "title": "Ukraine",
+        "subtitle": "How You Can Help",
+        "background": {
+          "src": "./image-destination-here.png"
+        },
+        "whatsHappening": {
+          "partiesHeading": "Organizations",
+          "background": "Support is most effective when it goes to organizations already assisting civilians with shelter, food, medical care, winterization, child protection, and reconstruction support. Public awareness also matters because long wars can fade from attention even while needs remain high.",
+          "parties": [
+            {
+              "name": "UNHCR",
+              "description": "Supports displaced families, refugees, shelter, and protection services."
+            },
+            {
+              "name": "UNICEF",
+              "description": "Supports children through education, protection, water, and emergency services."
+            },
+            {
+              "name": "World Food Programme",
+              "description": "Provides food assistance and logistics support for affected communities."
+            },
+            {
+              "name": "Doctors Without Borders",
+              "description": "Provides medical assistance where needs are urgent."
+            },
+            {
+              "name": "Local Relief Groups",
+              "description": "Community organizations often provide direct aid and recovery support."
+            }
+          ],
+          "timeline": [
+            {
+              "year": "Donate",
+              "description": "Support trusted organizations helping civilians in Ukraine."
+            },
+            {
+              "year": "Learn",
+              "description": "Follow verified humanitarian updates and developments."
+            },
+            {
+              "year": "Share",
+              "description": "Help sustain attention on civilian needs and long-term recovery."
+            }
+          ],
+          "image": {
+            "src": "./people-affected.png",
+            "alt": "Aid and recovery efforts in Ukraine"
+          }
+        },
+        "civilianImpact": {
+          "experiences": "Helping Ukraine means supporting both emergency relief and long-term rebuilding. Donations can help families with shelter, food, medical care, and winter support, while awareness can sustain attention on civilians whose needs continue long after headlines change.",
+          "stats": [
+            {
+              "value": "5",
+              "label": "Trusted Aid Options"
+            },
+            {
+              "value": "3",
+              "label": "Ways to Act"
+            },
+            {
+              "value": "1",
+              "label": "Learn More QR"
+            },
+            {
+              "value": "Ongoing",
+              "label": "Need for Support"
+            }
+          ],
+          "image": {
+            "src": "./slide1-people.png",
+            "alt": "Ukrainian families affected by war"
+          }
+        },
+        "howToHelp": {
+          "summary": "Support trusted organizations such as UNHCR, UNICEF, WFP, Doctors Without Borders, and local relief groups. You can also stay informed and help keep attention on the humanitarian needs of civilians across Ukraine.",
+          "cards": [
+            {
+              "qr": "./unhcr-qr.png",
+              "label": "UNHCR Ukraine",
+              "url": "https://www.unhcr.org/ua/en"
+            },
+            {
+              "qr": "./unicef-qr.png",
+              "label": "UNICEF Ukraine",
+              "url": "https://www.unicef.org/ukraine/en"
+            }
+          ],
+          "learnMore": {
+            "text": "You can also support WFP, medical aid groups, and community-led recovery efforts across Ukraine."
+          },
+          "imageHeading": "Learn More",
+          "image": {
+            "src": "./ukraine-qr.png",
+            "alt": "QR code for Ukraine humanitarian information",
+            "mode": "qr"
+          }
+        }
+      }
+    ]
+  }
