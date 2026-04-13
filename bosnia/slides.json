@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "defaultTitle": "Bosnia",
+    "logoLabel": "MSA",
+    "secondsPerSlide": 10,
+    "background": {
+      "src": "./background.png",
+      "size": "cover",
+      "position": "center",
+      "repeat": "no-repeat",
+      "opacity": "1"
+    }
+  },
+  "slides": [
+    {
+      "title": "Bosnia",
+      "subtitle": "",
+      "background": {
+        "src": "./background.png",
+        "size": "cover",
+        "position": "center",
+        "repeat": "no-repeat",
+        "opacity": "1"
+      },
+      "whatsHappening": {
+        "background": "Bosnia and Herzegovina still lives in the shadow of the 1992-1995 Bosnian War and genocide, in which around 100,000 people were killed. Today, Bosnia sits at a major bottleneck on the Western Balkan migration route as people fleeing conflict and poverty in places like Syria, Afghanistan, Pakistan, and beyond attempt to reach the EU. Bosnia has become a transit country unable to fully process or protect many arrivals, while EU border policies and far-right anti-migrant politics leave thousands trapped in legal limbo and vulnerable to violent pushbacks.",
+        "parties": [
+          {
+            "name": "European Union",
+            "description": "Provides major humanitarian funding, but harsh border enforcement and anti-migrant politics make asylum access extremely difficult."
+          },
+          {
+            "name": "Bosnian Government",
+            "description": "Has been criticized for weak management of the migration crisis and for failing to extend aid infrastructure widely enough."
+          },
+          {
+            "name": "Migrants and Refugees",
+            "description": "People from the Middle East, North Africa, Central Asia, and the Balkans are using Bosnia as a transit point toward Western Europe."
+          }
+        ],
+        "timeline": [
+          {
+            "year": "1992-1995",
+            "description": "The Bosnian War and genocide kill around 100,000 people and leave deep political and social scars."
+          },
+          {
+            "year": "2018-2024",
+            "description": "Bosnia becomes a major choke point on the Western Balkan route as migrant camps and border abuses draw international scrutiny."
+          },
+          {
+            "year": "2025",
+            "description": "Only a handful of people are granted refugee recognition while pushbacks and overcrowding continue."
+          }
+        ],
+        "image": {
+          "src": "https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Bosnia and Herzegovina cityscape"
+        }
+      },
+      "civilianImpact": {
+        "experiences": "Migrants in Bosnia face abuse at borders, theft of their belongings, overcrowded camps, and exposure to harsh conditions while trying to reach asylum in the EU. Reports describe violent pushbacks, including people being forced back without a chance to apply for asylum. The crisis also strains Bosnia's own fragile institutions, adding pressure to local services and worsening political gridlock, while some Bosnians emigrate in search of better prospects. Vulnerable groups such as Roma, Jewish people, women, LGBT people, and disabled migrants face especially severe discrimination and risk.",
+        "stats": [
+          {
+            "value": "25.2k",
+            "label": "People Arrived in Bosnia in 2024"
+          },
+          {
+            "value": "€88M+",
+            "label": "EU Humanitarian Aid Funding"
+          },
+          {
+            "value": "4",
+            "label": "People Recognized as Refugees Jan-Jul 2025"
+          },
+          {
+            "value": "80k",
+            "label": "Migrants Pushed Back at EU Borders in 2025"
+          }
+        ],
+        "image": {
+          "src": "https://images.unsplash.com/photo-1518695606297-6bb7c9378e6f?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Migration and displacement context"
+        }
+      },
+      "howToHelp": {
+        "summary": "Support can help deliver food, hygiene supplies, first aid, and legal assistance to migrants stuck in Bosnia. Donations to humanitarian groups working along the Balkan route can ease material hardship, while political advocacy and public pressure can challenge violent pushbacks and underfunded asylum systems.",
+        "cards": [
+          {
+            "qr": "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fwww.unicef.org%2Fbih%2Fen%2Fdonate",
+            "label": "UNICEF Donation Link"
+          }
+        ],
+        "learnMore": {
+          "text": "Use these sources for reporting on pushbacks, camp conditions, and migrant rights on the Bosnia-Croatia border.",
+          "label": "IFRC Report",
+          "url": "https://www.ifrc.org/press-release/migrants-bosnia-and-herzegovina-dying-while-seeking-safety"
+        },
+        "image": {
+          "src": "https://images.unsplash.com/photo-1599837487527-d8f0f837f9f9?auto=format&fit=crop&w=1200&q=80",
+          "alt": "Humanitarian support and solidarity"
+        }
+      }
+    }
+  ]
+}
