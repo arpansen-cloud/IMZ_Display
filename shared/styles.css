@@ -209,7 +209,43 @@ h1 {
 }
 
 .hero .logo {
-  margin-right: 2.5rem;
+  margin-right: 0.4rem;
+}
+
+.logo-shifted .hero .logo {
+  margin-right: 3.3rem;
+}
+
+.content-shifted .page-shell {
+  padding-left: 22px;
+  padding-right: 26px;
+}
+
+.content-shift-strong .page-shell {
+  padding-left: 10px;
+  padding-right: 38px;
+}
+
+.content-shift-venezuela .page-shell {
+  padding-left: 6px;
+  padding-right: 42px;
+}
+
+@media (min-width: 1400px) and (min-height: 820px) {
+  .content-shifted .page-shell {
+    padding-left: 22px;
+    padding-right: 30px;
+  }
+
+  .content-shift-strong .page-shell {
+    padding-left: 10px;
+    padding-right: 42px;
+  }
+
+  .content-shift-venezuela .page-shell {
+    padding-left: 6px;
+    padding-right: 46px;
+  }
 }
 
 .title-wrap {

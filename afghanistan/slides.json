@@ -95,14 +95,14 @@
         "summary": "Afghanistan is often discussed through war and geopolitics, but millions of civilians are living through hunger, repression, and disaster right now. Donations to trusted relief groups help fund food, shelter, medical care, and emergency support. Continued public attention also matters because Afghanistan is frequently underreported despite the scale of suffering.",
         "cards": [
           {
-            "qr": "./unicef-qr.png",
+            "qr": "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fhelp.unicef.org%2Fafghanistan-children",
             "label": "UNICEF Afghanistan",
-            "url": "https://www.unicef.org/afghanistan/"
+            "url": "https://help.unicef.org/afghanistan-children"
           },
           {
-            "qr": "./wfp-qr.png",
-            "label": "World Food Programme",
-            "url": "https://www.wfp.org/countries/afghanistan"
+            "qr": "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fsharethemeal.org%2Fen-us%2Fcampaigns%2Fafghanistan6",
+            "label": "ShareTheMeal",
+            "url": "https://sharethemeal.org/en-us/campaigns/afghanistan6"
           }
         ],
         "learnMore": {
