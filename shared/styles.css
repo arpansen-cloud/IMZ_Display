@@ -589,7 +589,7 @@ h1 {
   }
 
   .page-shell {
-    width: calc(var(--display-width) - 48px);
+    width: min(calc(var(--display-width) - 48px), calc(100vw - 24px));
     min-height: var(--display-height);
     padding: 22px 24px 18px;
   }
