@@ -209,6 +209,7 @@ async function main() {
   const meta = data.meta || {};
   const slides = data.slides || [];
   if (slides.length === 0) throw new Error("slides.json has no slides");
+  const hasMultipleSlides = slides.length > 1;
 
   let index = 0;
   const show = () => renderSlide(slides[index], meta, index, slides.length);
@@ -225,6 +226,16 @@ async function main() {
 
   const prevButton = el("prevButton");
   const nextButton = el("nextButton");
+  const dots = el("dots");
+  const slideCount = el("slideCount");
+
+  if (!hasMultipleSlides) {
+    if (prevButton) prevButton.hidden = true;
+    if (nextButton) nextButton.hidden = true;
+    if (dots) dots.hidden = true;
+    if (slideCount) slideCount.hidden = true;
+    return;
+  }
 
   if (prevButton) {
     prevButton.addEventListener("click", prev);
