@@ -15,6 +15,7 @@
         "src": "../background_aljaz_afghanistan.jpg"
       },
       "whatsHappening": {
+        "backgroundHeading": "Background",
         "partiesHeading": "Main Parties Involved",
         "background": "Afghanistan has faced decades of war, but the current crisis was reshaped in August 2021 when the Taliban regained control after the U.S. withdrawal. Since then ISIS-K has continued periodic attacks, and the country has been hit by economic collapse, sanctions, natural disasters, and severe food insecurity. The crisis is not only political or military: it is also humanitarian, with millions struggling to access food, education, health care, and basic stability.",
         "parties": [
@@ -67,6 +68,8 @@
         }
       },
       "civilianImpact": {
+        "experiencesHeading": "Experiences",
+        "statsHeading": "Key Figures",
         "experiences": "Civilians are facing overlapping emergencies. Communities continue to live with the effects of war, poverty, sanctions, floods, and rising food prices. Families struggle to afford basic needs, and many children face malnutrition, interrupted schooling, and limited access to health care. The result is a long-term humanitarian crisis where daily survival, not recovery, defines life for millions.",
         "stats": [
           {
@@ -110,7 +113,9 @@
         "src": "../background_aljaz_afghanistan.jpg"
       },
       "whatsHappening": {
-        "partiesHeading": "People Affected",
+        "backgroundHeading": "Civilian Impact",
+        "partiesHeading": "Who Is Most Affected",
+        "timelineHeading": "Impact Timeline",
         "background": "The burden of Afghanistan's crisis falls hardest on civilians, especially women, children, displaced families, and people living in rural or disaster-hit communities. Restrictions on education and work have compounded food insecurity and poverty, while years of conflict have already devastated public systems.",
         "parties": [
           {
@@ -142,6 +147,8 @@
         }
       },
       "civilianImpact": {
+        "experiencesHeading": "How Civilians Are Affected",
+        "statsHeading": "Impact Statistics",
         "experiences": "Afghanistan's crisis is not one statistic but a chain reaction: conflict destroys institutions, sanctions constrict the economy, natural disasters wipe out livelihoods, and social restrictions reduce families' ability to recover. Children are pulled out of school, women are shut out of opportunity, and already-fragile households face impossible choices between food, medicine, and shelter. The result is a population trapped between political repression and humanitarian emergency.",
         "stats": [
           {
@@ -181,7 +188,8 @@
         "src": "../background_aljaz_afghanistan.jpg"
       },
       "whatsHappening": {
-        "partiesHeading": "Organizations",
+        "backgroundHeading": "How Support Helps",
+        "partiesHeading": "Aid Organizations",
         "timelineHeading": "How to Make an Impact",
         "background": "There are no easy political solutions for civilians living through Afghanistan's crisis, but humanitarian support remains essential. Relief organizations can still help families access food, child services, health care, winter supplies, and emergency response after disasters.",
         "parties": [
@@ -227,6 +235,8 @@
         }
       },
       "civilianImpact": {
+        "experiencesHeading": "How You Can Help",
+        "statsHeading": "Support Priorities",
         "experiences": "Helping Afghanistan does not require endorsing any government. It means supporting civilians who are facing hunger, repression, displacement, and disaster. Donations help keep lifesaving services running, and awareness matters because long-running crises often lose international attention even while suffering continues.",
         "stats": [
           {

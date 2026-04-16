@@ -221,13 +221,29 @@ function buildSectionSlides(slides) {
   }));
 }
 
-function getEntryLabel(slide, index, total) {
-  if (total <= 1) return "";
-  return slide.subtitle || "";
-}
-
 function hasText(value) {
   return Boolean(value && value.trim());
+}
+
+function getStandardHeading(sectionKey, blockKey, index, fallbackHeading) {
+  const headingMap = {
+    whatsHappening: {
+      background: ["Background / Overview", "Civilian Impact", "How Support Helps"],
+      parties: ["Main Parties Involved", "Who Is Most Affected", "Aid Organizations"],
+      timeline: ["Timeline", "Impact Timeline", "Ways to Make an Impact"],
+    },
+    civilianImpact: {
+      experiences: ["Experiences", "How Civilians Are Affected", "How You Can Help"],
+      stats: ["Key Figures", "Impact Statistics", "Support Priorities"],
+    },
+    howToHelp: {
+      summary: ["Summary", "Support Needs", "How You Can Help"],
+      learnMore: ["Learn More", "Resources", "Additional Resources"],
+      cards: ["Support Options", "Support Options", "Ways to Make an Impact"],
+    },
+  };
+
+  return headingMap[sectionKey]?.[blockKey]?.[index] || fallbackHeading;
 }
 
 function renderSection(sectionSlide) {
@@ -250,22 +266,24 @@ function renderSection(sectionSlide) {
 
   if (sectionSlide.section.key === "whatsHappening") {
     sectionSlide.slides.forEach((slide, index) => {
-      const label = getEntryLabel(slide, index, sectionSlide.slides.length);
-      const suffix = label ? ` - ${label}` : "";
-      const timelineHeading = slide.whatsHappening?.timelineHeading || "Timeline";
-      const timelineSuffix = slide.whatsHappening?.timelineHeading ? "" : suffix;
-      appendIfPresent(copy, createContentBlock(`Background${suffix}`, slide.whatsHappening?.background));
+      appendIfPresent(
+        copy,
+        createContentBlock(
+          getStandardHeading("whatsHappening", "background", index, "Background / Overview"),
+          slide.whatsHappening?.background,
+        ),
+      );
       appendIfPresent(
         copy,
         createPartiesBlock(
-          `${slide.whatsHappening?.partiesHeading || "Main Parties Involved"}${suffix}`,
+          getStandardHeading("whatsHappening", "parties", index, "Main Parties Involved"),
           slide.whatsHappening?.parties,
         ),
       );
       appendIfPresent(
         copy,
         createTimelineBlock(
-          `${timelineHeading}${timelineSuffix}`,
+          getStandardHeading("whatsHappening", "timeline", index, "Timeline"),
           slide.whatsHappening?.timeline,
         ),
       );
@@ -281,10 +299,20 @@ function renderSection(sectionSlide) {
 
   if (sectionSlide.section.key === "civilianImpact") {
     sectionSlide.slides.forEach((slide, index) => {
-      const label = getEntryLabel(slide, index, sectionSlide.slides.length);
-      const suffix = label ? ` - ${label}` : "";
-      appendIfPresent(copy, createContentBlock(`Experiences${suffix}`, slide.civilianImpact?.experiences));
-      appendIfPresent(side, createStatsBlock(`Key Figures${suffix}`, slide.civilianImpact?.stats));
+      appendIfPresent(
+        copy,
+        createContentBlock(
+          getStandardHeading("civilianImpact", "experiences", index, "Experiences"),
+          slide.civilianImpact?.experiences,
+        ),
+      );
+      appendIfPresent(
+        side,
+        createStatsBlock(
+          getStandardHeading("civilianImpact", "stats", index, "Key Figures"),
+          slide.civilianImpact?.stats,
+        ),
+      );
       appendIfPresent(
         side,
         createImageCard(
@@ -297,16 +325,32 @@ function renderSection(sectionSlide) {
 
   if (sectionSlide.section.key === "howToHelp") {
     sectionSlide.slides.forEach((slide, index) => {
-      const label = getEntryLabel(slide, index, sectionSlide.slides.length);
-      const suffix = label ? ` - ${label}` : "";
       if (hasText(slide.howToHelp?.summary)) {
-        appendIfPresent(copy, createContentBlock(`Summary${suffix}`, slide.howToHelp?.summary));
+        appendIfPresent(
+          copy,
+          createContentBlock(
+            getStandardHeading("howToHelp", "summary", index, "Summary"),
+            slide.howToHelp?.summary,
+          ),
+        );
       }
       if (hasText(slide.howToHelp?.learnMore?.text) || slide.howToHelp?.learnMore?.url) {
-        appendIfPresent(copy, createLearnMoreBlock(`Learn More${suffix}`, slide.howToHelp?.learnMore));
+        appendIfPresent(
+          copy,
+          createLearnMoreBlock(
+            getStandardHeading("howToHelp", "learnMore", index, "Learn More"),
+            slide.howToHelp?.learnMore,
+          ),
+        );
       }
       if (slide.howToHelp?.cards?.length) {
-        appendIfPresent(side, createQrBlock(`Support Options${suffix}`, slide.howToHelp?.cards));
+        appendIfPresent(
+          side,
+          createQrBlock(
+            getStandardHeading("howToHelp", "cards", index, "Support Options"),
+            slide.howToHelp?.cards,
+          ),
+        );
       }
       appendIfPresent(
         side,
