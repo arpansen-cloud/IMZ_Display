@@ -7,21 +7,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../shared/styles.css?v=27" />
+  <link rel="stylesheet" href="../shared/styles.css?v=29" />
 </head>
 <body class="hub-page">
   <div class="hub-shell sources-shell">
     <header class="topbar">
       <div>
         <p class="eyebrow">Reference Hub</p>
-        <h1>Sources</h1>
+        <h1 id="sourcesTitle">Sources</h1>
       </div>
       <div class="logo" aria-label="MSA logo">
         <img src="../shared/gt-msa-logo.png" alt="GT MSA logo" />
       </div>
     </header>
 
-    <p class="hub-intro">
+    <p class="hub-intro" id="sourcesIntro">
       Add your citations, reports, articles, and resource links here. This page is set up as a
       central place for the source material used across the country slides.
     </p>
@@ -46,8 +46,24 @@
     </main>
 
     <div class="sources-actions">
+      <a class="nav-button" id="countryBackLink" href="../index.html">Back to Country</a>
       <a class="nav-button" href="../index.html">Back to Home</a>
     </div>
   </div>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const country = params.get("country");
+    const path = params.get("path");
+
+    if (country) {
+      document.title = `${country} Sources`;
+      document.getElementById("sourcesTitle").textContent = `${country} Sources`;
+      document.getElementById("sourcesIntro").textContent =
+        `Add citations, reports, articles, and resource links for ${country} here. This page can serve as the reference hub for that country's display slides.`;
+      document.getElementById("countryBackLink").href = path ? `../${path}/index.html` : "../index.html";
+    } else {
+      document.getElementById("countryBackLink").remove();
+    }
+  </script>
 </body>
 </html>

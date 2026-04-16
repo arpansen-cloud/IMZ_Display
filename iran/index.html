@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../shared/styles.css?v=28" />
+  <link rel="stylesheet" href="../shared/styles.css?v=29" />
 </head>
 <body class="logo-shifted content-shift-strong">
 <div id="app">
@@ -24,30 +24,12 @@
         <span id="logoLabel">MSA</span>
       </div>
     </header>
-    <main class="columns">
-      <section>
-        <h2 class="section-title">What's Happening</h2>
-        <article class="content-block"><h3>Background</h3><p id="backgroundText"></p></article>
-        <article class="content-block"><h3 id="partiesHeading">Key Actors</h3><ul class="party-list" id="parties"></ul></article>
-        <article class="content-block"><h3>Timeline</h3><div class="timeline" id="timeline"></div></article>
-        <figure class="media-card"><img id="leftImage" alt="" /></figure>
-      </section>
-      <section>
-        <h2 class="section-title">Civilian Impact</h2>
-        <article class="content-block"><h3>Experiences</h3><p id="impactText"></p></article>
-        <div class="stats-grid" id="stats"></div>
-        <figure class="media-card"><img id="middleImage" alt="" /></figure>
-      </section>
-      <section>
-        <h2 class="section-title">How to Help</h2>
-        <article class="content-block"><p id="helpText"></p></article>
-        <div class="qr-grid" id="helpCards"></div>
-        <article class="content-block learn-more"><h3>Learn More</h3><p id="learnMoreText"></p></article>
-        <figure class="media-card"><img id="rightImage" alt="" /></figure>
-      </section>
+    <main class="feature-stage">
+      <div id="sectionShell"></div>
     </main>
     <footer class="footer">
       <div class="nav-controls">
+        <a class="nav-button" id="sourcesButton" href="../sources/index.html">Sources</a>
         <a class="nav-button" href="../index.html">Home</a>
         <button class="nav-button" id="prevButton" type="button">Back</button>
         <button class="nav-button" id="nextButton" type="button">Forward</button>
@@ -59,7 +41,7 @@
       </div>
     </footer>
   </div>
-  <script src="../shared/slideshow.js?v=16"></script>
+  <script src="../shared/slideshow.js?v=18"></script>
 </div>
 </body>
 </html>

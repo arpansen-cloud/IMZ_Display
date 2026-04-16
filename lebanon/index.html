@@ -7,37 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../shared/styles.css?v=28" />
-  <style>
-    #helpCards.three-cards {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 0.6rem;
-    }
-
-    #helpCards .qr-card.qr-card-image {
-      min-height: 112px;
-      padding: 0.72rem 0.4rem 0.5rem;
-      border-radius: 14px;
-      border: 1px solid rgba(176, 189, 255, 0.17);
-      background: rgba(41, 39, 78, 0.72);
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
-    }
-
-    #helpCards .qr-image {
-      width: 72px;
-      height: 72px;
-      background: #fff;
-      border-radius: 2px;
-      padding: 0;
-    }
-
-    #helpCards .qr-link {
-      font-size: 0.62rem;
-      line-height: 1.1;
-      max-width: 5.6rem;
-      color: #f5f5fb;
-    }
-  </style>
+  <link rel="stylesheet" href="../shared/styles.css?v=29" />
 </head>
 <body class="logo-shifted content-shifted">
 <div id="app">
@@ -54,30 +24,12 @@
         <span id="logoLabel">MSA</span>
       </div>
     </header>
-    <main class="columns">
-      <section>
-        <h2 class="section-title">What's Happening</h2>
-        <article class="content-block"><h3>Background</h3><p id="backgroundText"></p></article>
-        <article class="content-block"><h3 id="partiesHeading">Key Actors</h3><ul class="party-list" id="parties"></ul></article>
-        <article class="content-block"><h3>Timeline</h3><div class="timeline" id="timeline"></div></article>
-        <figure class="media-card"><img id="leftImage" alt="" /></figure>
-      </section>
-      <section>
-        <h2 class="section-title">Civilian Impact</h2>
-        <article class="content-block"><h3>Experiences</h3><p id="impactText"></p></article>
-        <div class="stats-grid" id="stats"></div>
-        <figure class="media-card"><img id="middleImage" alt="" /></figure>
-      </section>
-      <section>
-        <h2 class="section-title">How to Help</h2>
-        <article class="content-block"><p id="helpText"></p></article>
-        <div class="qr-grid" id="helpCards"></div>
-        <article class="content-block learn-more"><h3>Learn More</h3><p id="learnMoreText"></p></article>
-        <figure class="media-card"><img id="rightImage" alt="" /></figure>
-      </section>
+    <main class="feature-stage">
+      <div id="sectionShell"></div>
     </main>
     <footer class="footer">
       <div class="nav-controls">
+        <a class="nav-button" id="sourcesButton" href="../sources/index.html">Sources</a>
         <a class="nav-button" href="../index.html">Home</a>
         <button class="nav-button" id="prevButton" type="button">Back</button>
         <button class="nav-button" id="nextButton" type="button">Forward</button>
@@ -89,7 +41,7 @@
       </div>
     </footer>
   </div>
-  <script src="../shared/slideshow.js?v=16"></script>
+  <script src="../shared/slideshow.js?v=18"></script>
 </div>
 </body>
 </html>
