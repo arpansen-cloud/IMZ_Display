@@ -159,14 +159,9 @@ function createQrBlock(title, items) {
     }
 
     if (item.label) {
-      const label = document.createElement(item.url ? "a" : "span");
+      const label = document.createElement("span");
       label.className = "qr-link";
       label.textContent = item.label;
-      if (item.url) {
-        label.href = item.url;
-        label.target = "_blank";
-        label.rel = "noopener";
-      }
       article.appendChild(label);
     }
 
@@ -185,14 +180,9 @@ function createLearnMoreBlock(title, learnMore) {
   const copy = document.createElement("p");
   copy.append(document.createTextNode(learnMore?.text || ""));
 
-  if (learnMore?.url) {
+  if (learnMore?.label) {
     copy.append(" ");
-    const link = document.createElement("a");
-    link.href = learnMore.url;
-    link.target = "_blank";
-    link.rel = "noopener";
-    link.textContent = learnMore.label || "Learn more";
-    copy.appendChild(link);
+    copy.append(document.createTextNode(learnMore.label));
   }
 
   article.appendChild(copy);
