@@ -75,7 +75,7 @@ function createContentBlock(title, text) {
 function createPartiesBlock(title, parties) {
   if (!parties?.length) return null;
   const article = createNode("article", "content-block");
-  article.appendChild(createNode("h3", "", title || "Key Actors"));
+  article.appendChild(createNode("h3", "", title || "Main Parties Involved"));
 
   const list = createNode("ul", "party-list");
   parties.forEach((party) => {
@@ -140,12 +140,13 @@ function createQrBlock(title, items) {
   const cards = items.slice(0, 3);
   grid.classList.toggle("single-card", cards.length === 1);
   grid.classList.toggle("three-cards", cards.length === 3);
+  grid.classList.toggle("has-primary", cards.some((item) => item.primary));
 
   cards.forEach((item) => {
     const article = document.createElement("article");
     const textOnlyCard = !item.qr && !item.url;
     const qrImageCard = Boolean(item.qr);
-    article.className = `qr-card${textOnlyCard ? " qr-card-text" : ""}${qrImageCard ? " qr-card-image" : ""}`;
+    article.className = `qr-card${textOnlyCard ? " qr-card-text" : ""}${qrImageCard ? " qr-card-image" : ""}${item.primary ? " qr-card-primary" : ""}`;
 
     if (item.qr) {
       const img = document.createElement("img");
@@ -232,7 +233,11 @@ function buildSectionSlides(slides) {
 
 function getEntryLabel(slide, index, total) {
   if (total <= 1) return "";
-  return slide.subtitle || `Part ${index + 1}`;
+  return slide.subtitle || "";
+}
+
+function hasText(value) {
+  return Boolean(value && value.trim());
 }
 
 function renderSection(sectionSlide) {
@@ -257,15 +262,23 @@ function renderSection(sectionSlide) {
     sectionSlide.slides.forEach((slide, index) => {
       const label = getEntryLabel(slide, index, sectionSlide.slides.length);
       const suffix = label ? ` - ${label}` : "";
+      const timelineHeading = slide.whatsHappening?.timelineHeading || "Timeline";
+      const timelineSuffix = slide.whatsHappening?.timelineHeading ? "" : suffix;
       appendIfPresent(copy, createContentBlock(`Background${suffix}`, slide.whatsHappening?.background));
       appendIfPresent(
         copy,
         createPartiesBlock(
-          `${slide.whatsHappening?.partiesHeading || "Key Actors"}${suffix}`,
+          `${slide.whatsHappening?.partiesHeading || "Main Parties Involved"}${suffix}`,
           slide.whatsHappening?.parties,
         ),
       );
-      appendIfPresent(copy, createTimelineBlock(`Timeline${suffix}`, slide.whatsHappening?.timeline));
+      appendIfPresent(
+        copy,
+        createTimelineBlock(
+          `${timelineHeading}${timelineSuffix}`,
+          slide.whatsHappening?.timeline,
+        ),
+      );
       appendIfPresent(
         side,
         createImageCard(
@@ -296,9 +309,15 @@ function renderSection(sectionSlide) {
     sectionSlide.slides.forEach((slide, index) => {
       const label = getEntryLabel(slide, index, sectionSlide.slides.length);
       const suffix = label ? ` - ${label}` : "";
-      appendIfPresent(copy, createContentBlock(`Summary${suffix}`, slide.howToHelp?.summary));
-      appendIfPresent(copy, createLearnMoreBlock(`Learn More${suffix}`, slide.howToHelp?.learnMore));
-      appendIfPresent(side, createQrBlock(`Support Options${suffix}`, slide.howToHelp?.cards));
+      if (hasText(slide.howToHelp?.summary)) {
+        appendIfPresent(copy, createContentBlock(`Summary${suffix}`, slide.howToHelp?.summary));
+      }
+      if (hasText(slide.howToHelp?.learnMore?.text) || slide.howToHelp?.learnMore?.url) {
+        appendIfPresent(copy, createLearnMoreBlock(`Learn More${suffix}`, slide.howToHelp?.learnMore));
+      }
+      if (slide.howToHelp?.cards?.length) {
+        appendIfPresent(side, createQrBlock(`Support Options${suffix}`, slide.howToHelp?.cards));
+      }
       appendIfPresent(
         side,
         createImageCard(
