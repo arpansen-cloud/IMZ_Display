@@ -202,10 +202,6 @@ function createImageCard(image, fallbackAlt, heading) {
   if (!image?.src && !heading) return null;
 
   const wrap = createNode("div", "feature-stack");
-  if (heading) {
-    wrap.appendChild(createNode("h3", "stack-heading", heading));
-  }
-
   if (image?.src) {
     const figure = createNode("figure", "media-card feature-media-card");
     const img = document.createElement("img");
@@ -275,7 +271,6 @@ function renderSection(sectionSlide) {
         createImageCard(
           slide.whatsHappening?.image,
           "Country context image",
-          label ? `Image - ${label}` : "",
         ),
       );
     });
@@ -292,7 +287,6 @@ function renderSection(sectionSlide) {
         createImageCard(
           slide.civilianImpact?.image,
           "Civilian impact image",
-          label ? `Image - ${label}` : "",
         ),
       );
     });
@@ -310,7 +304,6 @@ function renderSection(sectionSlide) {
         createImageCard(
           slide.howToHelp?.image,
           "How to help image",
-          slide.howToHelp?.imageHeading || (label ? `Image - ${label}` : ""),
         ),
       );
     });

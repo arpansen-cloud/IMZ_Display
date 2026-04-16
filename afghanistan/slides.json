@@ -4,7 +4,7 @@
     "logoLabel": "MSA",
     "secondsPerSlide": 14,
     "background": {
-      "src": "./background-v2.png"
+      "src": "../background_aljaz_afghanistan.jpg"
     }
   },
   "slides": [
@@ -12,7 +12,7 @@
       "title": "Afghanistan",
       "subtitle": "",
       "background": {
-        "src": "./background-v2.png"
+        "src": "../background_aljaz_afghanistan.jpg"
       },
       "whatsHappening": {
         "partiesHeading": "Key Actors",
@@ -62,8 +62,8 @@
           }
         ],
         "image": {
-          "src": "./bottom-left.png",
-          "alt": "Landscape or city view from Afghanistan"
+          "src": "./slide1-right-1.png",
+          "alt": "Afghan family gathered indoors during hardship"
         }
       },
       "civilianImpact": {
@@ -87,8 +87,8 @@
           }
         ],
         "image": {
-          "src": "./slide1-people.png",
-          "alt": "Afghan civilians navigating humanitarian hardship"
+          "src": "../civilians_irc_afghanistan.jpg",
+          "alt": "Afghan family standing near a damaged home"
         }
       },
       "howToHelp": {
@@ -118,7 +118,7 @@
       "title": "Afghanistan",
       "subtitle": "How are civilians affected?",
       "background": {
-        "src": "./background-v2.png"
+        "src": "../background_aljaz_afghanistan.jpg"
       },
       "whatsHappening": {
         "partiesHeading": "People Affected",
@@ -148,8 +148,8 @@
           }
         ],
         "image": {
-          "src": "./bottom-left.png",
-          "alt": "Afghanistan city or landscape"
+          "src": "./slide1-right-2.png",
+          "alt": "Doctor treating a child in Afghanistan"
         }
       },
       "civilianImpact": {
@@ -169,8 +169,8 @@
           }
         ],
         "image": {
-          "src": "./food-insecurity.png",
-          "alt": "Visual representing food insecurity or humanitarian need in Afghanistan"
+          "src": "../civilians2_humanrightswatch_afghanistan.jpg.webp",
+          "alt": "Crowd of Afghan civilians waiting in line"
         }
       },
       "howToHelp": {
@@ -190,7 +190,7 @@
         },
         "imageHeading": "Need",
         "image": {
-          "src": "./afghanistan-qr.png",
+          "src": "./help-qr.png",
           "alt": "QR code to learn more about Afghanistan relief",
           "mode": "qr"
         }
@@ -200,7 +200,7 @@
       "title": "Afghanistan",
       "subtitle": "How You Can Help",
       "background": {
-        "src": "./background-v2.png"
+        "src": "../background_aljaz_afghanistan.jpg"
       },
       "whatsHappening": {
         "partiesHeading": "Organizations",
@@ -242,8 +242,9 @@
           }
         ],
         "image": {
-          "src": "./bottom-left.png",
-          "alt": "Afghanistan landscape"
+          "src": "./help-qr.png",
+          "alt": "QR code for Afghanistan relief resources",
+          "mode": "qr"
         }
       },
       "civilianImpact": {
