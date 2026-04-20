@@ -53,8 +53,8 @@
           }
         ],
         "image": {
-          "src": "https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Bosnia and Herzegovina cityscape"
+          "src": "./bosnia_slide1.png",
+          "alt": "Bosnia slide 1 image"
         }
       },
       "civilianImpact": {
@@ -78,12 +78,12 @@
           }
         ],
         "image": {
-          "src": "https://images.unsplash.com/photo-1518695606297-6bb7c9378e6f?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Migration and displacement context"
+          "src": "./bosnia2.png",
+          "alt": "Bosnia slide 2 image"
         }
       },
       "howToHelp": {
-        "summary": "Support can help deliver food, hygiene supplies, first aid, and legal assistance to migrants stuck in Bosnia. Donations to humanitarian groups working along the Balkan route can ease material hardship, while political advocacy and public pressure can challenge violent pushbacks and underfunded asylum systems.",
+        "summary": "Support can help deliver food, hygiene supplies, first aid, and legal assistance to migrants stranded in Bosnia. Donations ease immediate hardship, while advocacy can push back against violent border practices and underfunded asylum systems.",
         "cards": [
           {
             "qr": "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fwww.unicef.org%2Fbih%2Fen%2Fdonate",
@@ -91,7 +91,7 @@
           }
         ],
         "learnMore": {
-          "text": "Use these sources for reporting on pushbacks, camp conditions, and migrant rights on the Bosnia-Croatia border.",
+          "text": "See verified reporting on pushbacks, camp conditions, and migrant rights at the Bosnia-Croatia border.",
           "label": "IFRC Report",
           "url": "https://www.ifrc.org/press-release/migrants-bosnia-and-herzegovina-dying-while-seeking-safety"
         },

@@ -8,6 +8,8 @@
   --shadow: 0 16px 48px rgba(0, 0, 0, 0.34);
   --display-width: 1476px;
   --display-height: 830px;
+  --qr-size: 168px;
+  --qr-size-primary: 188px;
 }
 
 * {
@@ -251,9 +253,13 @@ h1 {
 
 .title-wrap {
   max-width: 64%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .title {
+  margin: 0;
   font-size: clamp(3.1rem, 4.8vw, 4.2rem);
   font-weight: 700;
   font-style: italic;
@@ -339,6 +345,382 @@ h1 {
   align-items: start;
 }
 
+.feature-panel-bosnia-howToHelp .feature-grid {
+  grid-template-columns: minmax(0, 1.08fr) minmax(290px, 0.92fr);
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.feature-panel-bosnia-howToHelp .feature-copy,
+.feature-panel-bosnia-howToHelp .feature-side {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.75rem;
+}
+
+.feature-panel-bosnia-howToHelp .feature-copy {
+  align-content: start;
+}
+
+.feature-panel-bosnia-howToHelp .feature-side {
+  align-content: center;
+  justify-items: stretch;
+  overflow: visible;
+}
+
+.feature-panel-bosnia-howToHelp .content-block,
+.feature-panel-bosnia-howToHelp .feature-stack {
+  margin-bottom: 0;
+}
+
+.feature-panel-bosnia-howToHelp .content-block p,
+.feature-panel-bosnia-howToHelp .content-block li {
+  line-height: 1.24;
+}
+
+.feature-panel-bosnia-howToHelp .qr-grid,
+.feature-panel-bosnia-howToHelp .qr-grid.single-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-panel-bosnia-howToHelp .qr-card,
+.feature-panel-bosnia-howToHelp .qr-grid.single-card .qr-card {
+  width: min(100%, 280px);
+  min-height: 220px;
+  padding: 1rem 0.9rem 0.85rem;
+}
+
+.feature-panel-bosnia-howToHelp .qr-card-image {
+  min-width: 280px;
+  min-height: 220px;
+  overflow: visible;
+}
+
+.feature-panel-bosnia-howToHelp .qr-image {
+  width: min(100%, 168px);
+  height: auto;
+  max-width: 168px;
+  max-height: 168px;
+  aspect-ratio: 1 / 1;
+}
+
+.feature-panel-bosnia-howToHelp .qr-link {
+  font-size: 0.74rem;
+}
+
+.feature-panel-bosnia-howToHelp .learn-more {
+  min-height: 0;
+}
+
+.feature-panel-bosnia-howToHelp .supporting-image-stack {
+  margin-top: auto;
+}
+
+.feature-panel-bosnia-howToHelp .supporting-image-stack .feature-media-card {
+  margin-top: 0;
+}
+
+.feature-panel-bosnia-howToHelp .supporting-image-stack .feature-media-card img {
+  width: 100%;
+  height: 132px;
+  object-fit: cover;
+}
+
+.feature-panel-afghanistan-overview .feature-copy,
+.feature-panel-afghanistan-overview .feature-side {
+  gap: 0.9rem;
+}
+
+.feature-panel-afghanistan-overview .content-block h3,
+.feature-panel-afghanistan-overview .stack-heading {
+  font-size: 1.08rem;
+}
+
+.feature-panel-afghanistan-overview .content-block p,
+.feature-panel-afghanistan-overview .content-block li,
+.feature-panel-afghanistan-overview .party-list li {
+  font-size: 1.04rem;
+  line-height: 1.38;
+}
+
+.feature-panel-afghanistan-overview .stat-label {
+  font-size: 0.84rem;
+  line-height: 1.22;
+}
+
+.feature-panel-afghanistan-howToHelp .feature-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.02fr);
+  gap: 2.25rem;
+  align-items: start;
+}
+
+.feature-panel-afghanistan-howToHelp .feature-copy {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.72rem;
+  align-content: start;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  padding-right: 0.35rem;
+}
+
+.feature-panel-afghanistan-howToHelp .feature-side {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.7rem;
+  align-content: start;
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.feature-panel-afghanistan-howToHelp .content-block,
+.feature-panel-afghanistan-howToHelp .feature-stack {
+  margin-bottom: 0;
+}
+
+.feature-panel-afghanistan-howToHelp .content-block p {
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.feature-panel-afghanistan-howToHelp .content-block h3,
+.feature-panel-afghanistan-howToHelp .stack-heading {
+  font-size: 1.1rem;
+}
+
+.feature-panel-afghanistan-howToHelp .afghanistan-support-image {
+  margin-top: 0.08rem;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-panel-afghanistan-howToHelp .afghanistan-support-image .feature-media-card {
+  margin-top: 0;
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  border-radius: 18px;
+}
+
+.feature-panel-afghanistan-howToHelp .afghanistan-support-image .feature-media-card img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 210px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  position: static;
+  transform: none;
+}
+
+.feature-panel-afghanistan-howToHelp .feature-side .feature-stack,
+.feature-panel-afghanistan-howToHelp .feature-side .stat-card,
+.feature-panel-afghanistan-howToHelp .feature-side .qr-card {
+  position: relative;
+  z-index: 2;
+}
+
+.feature-panel-afghanistan-howToHelp .afghanistan-support-qr,
+.feature-panel-afghanistan-howToHelp .afghanistan-support-priorities {
+  width: 100%;
+}
+
+.feature-panel-afghanistan-howToHelp .afghanistan-support-qr {
+  gap: 0.5rem;
+}
+
+.feature-panel-afghanistan-howToHelp .afghanistan-support-qr .qr-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(168px, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+  justify-items: center;
+}
+
+.feature-panel-afghanistan-howToHelp .qr-grid.has-primary {
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(168px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+  align-items: start;
+}
+
+.feature-panel-afghanistan-howToHelp .qr-card,
+.feature-panel-afghanistan-howToHelp .qr-grid.has-primary .qr-card,
+.feature-panel-afghanistan-howToHelp .qr-grid.single-card .qr-card {
+  width: clamp(168px, 100%, 200px);
+  min-width: 168px;
+  max-width: 200px;
+  min-height: 222px;
+  padding: 0.9rem 0.75rem 0.8rem;
+}
+
+.feature-panel-afghanistan-howToHelp .qr-grid.has-primary .qr-card-primary {
+  grid-column: auto;
+}
+
+.feature-panel-afghanistan-howToHelp .qr-image,
+.feature-panel-afghanistan-howToHelp .qr-grid.has-primary .qr-image,
+.feature-panel-afghanistan-howToHelp .qr-grid.has-primary .qr-card-primary .qr-image,
+.feature-panel-afghanistan-howToHelp .qr-card-primary .qr-image {
+  width: clamp(168px, 100%, 188px);
+  min-width: 168px;
+  max-width: 180px;
+  min-height: 168px;
+  max-height: 180px;
+}
+
+.feature-panel-afghanistan-howToHelp .qr-link {
+  font-size: 0.8rem;
+  line-height: 1.24;
+}
+
+.feature-panel-afghanistan-howToHelp .afghanistan-support-priorities {
+  gap: 0.5rem;
+}
+
+.feature-panel-afghanistan-howToHelp .stats-grid {
+  gap: 0.6rem;
+}
+
+.feature-panel-afghanistan-howToHelp .stat-card {
+  min-height: 88px;
+  padding: 0.62rem;
+}
+
+.feature-panel-afghanistan-howToHelp .stat-value {
+  font-size: 1.38rem;
+}
+
+.feature-panel-afghanistan-howToHelp .stat-label {
+  font-size: 0.84rem;
+  line-height: 1.2;
+}
+
+.feature-panel-afghanistan-background .feature-grid {
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+  gap: 1rem;
+}
+
+.feature-panel-afghanistan-background .feature-copy {
+  gap: 0.75rem;
+  align-content: start;
+}
+
+.feature-panel-afghanistan-background .feature-side {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.8rem;
+  align-content: center;
+  align-items: start;
+  justify-items: center;
+}
+
+.feature-panel-afghanistan-background .afghanistan-background-top {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.feature-panel-afghanistan-background .info-card {
+  min-height: 0;
+  padding: 0.8rem 0.9rem;
+  border-radius: 16px;
+  border: 1px solid var(--stroke);
+  background: var(--card);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.feature-panel-afghanistan-background .info-card h3 {
+  margin-bottom: 0.4rem;
+  font-size: 0.98rem;
+}
+
+.feature-panel-afghanistan-background .info-card p,
+.feature-panel-afghanistan-background .info-card li {
+  font-size: 0.96rem;
+  line-height: 1.3;
+}
+
+.feature-panel-afghanistan-background .info-card .party-list,
+.feature-panel-afghanistan-background .info-card .bullet-list {
+  gap: 0.42rem;
+}
+
+.feature-panel-afghanistan-background .timeline-card {
+  padding-top: 0.75rem;
+}
+
+.feature-panel-afghanistan-background .timeline-card .timeline {
+  gap: 0.65rem;
+}
+
+.feature-panel-afghanistan-background .timeline-card .timeline-item p {
+  font-size: 0.72rem;
+  line-height: 1.18;
+}
+
+.feature-panel-afghanistan-background .feature-side > .feature-stack {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.feature-panel-afghanistan-background .feature-side > .feature-stack:first-child {
+  max-width: 360px;
+  justify-self: center;
+}
+
+.feature-panel-afghanistan-background .feature-side > .feature-stack:last-child {
+  width: min(100%, 410px);
+  max-width: 410px;
+  align-self: start;
+  justify-self: center;
+  margin-top: 0.05rem;
+}
+
+.feature-panel-afghanistan-background .feature-side .stack-heading {
+  text-align: center;
+}
+
+.feature-panel-afghanistan-background .feature-side .stats-grid {
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  justify-content: center;
+  justify-items: stretch;
+}
+
+.feature-panel-afghanistan-background .feature-side .stat-card {
+  min-height: 92px;
+}
+
+.feature-panel-afghanistan-background .feature-side .feature-media-card {
+  margin-top: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature-panel-afghanistan-background .feature-side .feature-media-card img {
+  width: 100%;
+  height: 232px;
+  object-fit: cover;
+  object-position: center;
+}
+
 .feature-panel-howToHelp .feature-side > .feature-stack {
   width: 100%;
 }
@@ -391,11 +773,15 @@ h1 {
 }
 
 .subtitle {
-  margin-top: 0.45rem;
-  color: rgba(245, 245, 251, 0.82);
-  font-size: 0.92rem;
-  line-height: 1.28;
+  margin: 0 0 0.35rem;
+  color: rgba(255, 255, 255, 0.96);
+  font-size: 0.76rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
   max-width: 42rem;
+  order: -1;
 }
 
 .columns {
@@ -436,6 +822,13 @@ h1 {
 .party-list {
   margin: 0;
   padding-left: 1rem;
+}
+
+.bullet-list {
+  margin: 0;
+  padding-left: 1rem;
+  display: grid;
+  gap: 0.36rem;
 }
 
 .party-list strong {
@@ -514,8 +907,10 @@ h1 {
 }
 
 .qr-grid.has-primary .qr-card-primary .qr-image {
-  width: 104px;
-  height: 104px;
+  width: min(100%, var(--qr-size-primary));
+  height: auto;
+  max-width: var(--qr-size-primary);
+  max-height: var(--qr-size-primary);
 }
 
 .stat-card,
@@ -565,6 +960,9 @@ h1 {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
   padding: 0.72rem 0.45rem 0.55rem;
   border-radius: 16px;
+  display: grid;
+  justify-items: center;
+  align-content: center;
 }
 
 .qr-card-text {
@@ -588,12 +986,24 @@ h1 {
 }
 
 .qr-image {
-  width: 80px;
-  height: 80px;
+  width: min(100%, var(--qr-size));
+  min-width: 168px;
+  height: auto;
+  max-width: var(--qr-size);
+  min-height: 168px;
+  max-height: var(--qr-size);
+  aspect-ratio: 1 / 1;
+  display: block;
+  margin: 0 auto;
   object-fit: contain;
+  object-position: center;
   background: #fff;
   border-radius: 14px;
   padding: 0;
+  overflow: hidden;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  flex: 0 0 auto;
 }
 
 .qr-link {
@@ -635,8 +1045,19 @@ h1 {
 
 .feature-panel-howToHelp .qr-grid.has-primary .qr-image,
 .feature-panel-howToHelp .qr-grid.has-primary .qr-card-primary .qr-image {
-  width: 92px;
-  height: 92px;
+  width: min(100%, var(--qr-size-primary));
+  min-width: 168px;
+  max-width: var(--qr-size-primary);
+  min-height: 168px;
+  max-height: var(--qr-size-primary);
+}
+
+.qr-card-primary .qr-image {
+  width: min(100%, var(--qr-size-primary));
+  min-width: 168px;
+  max-width: var(--qr-size-primary);
+  min-height: 168px;
+  max-height: var(--qr-size-primary);
 }
 
 .learn-more a {
@@ -665,21 +1086,29 @@ h1 {
 }
 
 #rightImage[data-mode="qr"] {
-  width: min(100%, 104px);
-  height: 104px;
+  width: min(100%, var(--qr-size-primary));
+  height: auto;
+  max-width: var(--qr-size-primary);
+  max-height: var(--qr-size-primary);
   aspect-ratio: 1 / 1;
   object-fit: contain;
+  object-position: center;
   background: #ffffff;
   border-radius: 12px;
   padding: 0.2rem;
+  display: block;
+  margin: 0 auto;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 .qr-media-card {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 104px;
   width: fit-content;
+  min-width: calc(var(--qr-size-primary) + 0.4rem);
+  min-height: calc(var(--qr-size-primary) + 0.4rem);
   margin-left: auto;
   margin-right: auto;
   background: rgba(26, 22, 62, 0.92);

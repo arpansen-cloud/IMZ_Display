@@ -17,7 +17,7 @@
       "whatsHappening": {
         "backgroundHeading": "Background",
         "partiesHeading": "Main Parties Involved",
-        "background": "Afghanistan has faced decades of war, but the current crisis was reshaped in August 2021 when the Taliban regained control after the U.S. withdrawal. Since then ISIS-K has continued periodic attacks, and the country has been hit by economic collapse, sanctions, natural disasters, and severe food insecurity. The crisis is not only political or military: it is also humanitarian, with millions struggling to access food, education, health care, and basic stability.",
+        "background": "Afghanistan has endured decades of war, but the current emergency accelerated in August 2021 when the Taliban regained control after the U.S. withdrawal. Since then, ISIS-K attacks, economic collapse, sanctions, natural disasters, and severe hunger have left millions struggling to access food, health care, education, and basic stability.",
         "parties": [
           {
             "name": "Taliban",
@@ -116,15 +116,23 @@
         "backgroundHeading": "Civilian Impact",
         "partiesHeading": "Who Is Most Affected",
         "timelineHeading": "Impact Timeline",
-        "background": "The burden of Afghanistan's crisis falls hardest on civilians, especially women, children, displaced families, and people living in rural or disaster-hit communities. Restrictions on education and work have compounded food insecurity and poverty, while years of conflict have already devastated public systems.",
+        "background": "The heaviest burden falls on civilians, especially women, children, displaced families, and people in rural or disaster-hit communities. Restrictions on education and work have deepened poverty, while years of conflict have already weakened the systems families depend on to survive.",
         "parties": [
           {
             "name": "Children",
             "description": "Millions face hunger, displacement, interrupted schooling, and trauma."
           },
           {
+            "name": "Women and girls",
+            "description": "Restrictions on education, work, and movement have sharply narrowed safety and opportunity."
+          },
+          {
             "name": "Rural families",
             "description": "Flooding, disasters, and weak infrastructure make survival even harder."
+          },
+          {
+            "name": "Displaced households",
+            "description": "Families uprooted by violence or economic collapse often lose housing, income, and access to services."
           }
         ],
         "timeline": [
@@ -149,19 +157,23 @@
       "civilianImpact": {
         "experiencesHeading": "How Civilians Are Affected",
         "statsHeading": "Impact Statistics",
-        "experiences": "Afghanistan's crisis is not one statistic but a chain reaction: conflict destroys institutions, sanctions constrict the economy, natural disasters wipe out livelihoods, and social restrictions reduce families' ability to recover. Children are pulled out of school, women are shut out of opportunity, and already-fragile households face impossible choices between food, medicine, and shelter. The result is a population trapped between political repression and humanitarian emergency.",
+        "experiences": "Afghanistan's humanitarian emergency is rooted in decades of war and political upheaval. The Taliban's return to power, continued attacks by ISIS-K, economic isolation, frozen assets, and repeated climate disasters have all deepened instability. The result is a crisis where political control, security threats, and economic breakdown reinforce one another and make recovery far more difficult.",
         "stats": [
           {
             "value": "100k+",
             "label": "Civilian Deaths 2009-2020"
           },
           {
-            "value": "Floods",
-            "label": "Frequent Disaster Damage"
+            "value": "2021",
+            "label": "Taliban Return to Power"
           },
           {
             "value": "Sanctions",
             "label": "Economy Crippled"
+          },
+          {
+            "value": "ISIS-K",
+            "label": "Ongoing Security Threat"
           }
         ],
         "image": {
@@ -257,8 +269,8 @@
           }
         ],
         "image": {
-          "src": "./civilian-impact-3.png",
-          "alt": "Afghan children sitting outside a damaged home"
+          "src": "./last-slide-replacement.png",
+          "alt": "Afghanistan support image"
         }
       },
       "howToHelp": {

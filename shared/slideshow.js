@@ -72,6 +72,25 @@ function createContentBlock(title, text) {
   return article;
 }
 
+function createBulletBlock(title, items) {
+  if (!items?.length) return null;
+  const article = createNode("article", "content-block");
+  if (title) {
+    article.appendChild(createNode("h3", "", title));
+  }
+
+  const list = createNode("ul", "bullet-list");
+  items.forEach((item) => {
+    if (!item) return;
+    const entry = document.createElement("li");
+    entry.textContent = item;
+    list.appendChild(entry);
+  });
+
+  article.appendChild(list);
+  return article;
+}
+
 function createPartiesBlock(title, parties) {
   if (!parties?.length) return null;
   const article = createNode("article", "content-block");
@@ -131,6 +150,23 @@ function createStatsBlock(title, items) {
   return wrap;
 }
 
+function normalizeQrSrc(src) {
+  if (!src) return src;
+
+  try {
+    const url = new URL(src, window.location.href);
+    const size = url.searchParams.get("size");
+
+    if (size) {
+      url.searchParams.set("size", "500x500");
+    }
+
+    return url.toString();
+  } catch (error) {
+    return src.replace(/size=\d+x\d+/i, "size=500x500");
+  }
+}
+
 function createQrBlock(title, items) {
   if (!items?.length) return null;
   const wrap = createNode("article", "feature-stack");
@@ -151,8 +187,10 @@ function createQrBlock(title, items) {
     if (item.qr) {
       const img = document.createElement("img");
       img.className = "qr-image";
-      img.src = item.qr;
+      img.src = normalizeQrSrc(item.qr);
       img.alt = item.label ? `${item.label} QR code` : "QR code";
+      img.loading = "eager";
+      img.decoding = "sync";
       article.appendChild(img);
     } else {
       article.appendChild(createNode("span", "qr-placeholder", item.placeholder || "QR CODE"));
@@ -207,18 +245,55 @@ function createImageCard(image, fallbackAlt, heading) {
   return wrap;
 }
 
-function buildSectionSlides(slides) {
-  const sections = [
-    { key: "whatsHappening", title: "What's Happening", eyebrow: "Section 1" },
-    { key: "civilianImpact", title: "Civilian Impact", eyebrow: "Section 2" },
-    { key: "howToHelp", title: "How to Help", eyebrow: "Section 3" },
-  ];
+function buildSectionSlides(slides, meta = {}) {
+  const getSlide = (index) => slides[index] || slides[0];
 
-  return sections.map((section) => ({
-    slide: slides[0],
-    slides,
-    section,
-  }));
+  return [
+    {
+      slide: getSlide(0),
+      slides: [getSlide(0), getSlide(1)],
+      section: {
+        key: "whatsHappening",
+        variant: "afghanistan-overview",
+        title: "Civilian Impact",
+        eyebrow: "Section 1",
+      },
+    },
+    {
+      slide: getSlide(1),
+      slides: [getSlide(0), getSlide(1)],
+      section: {
+        key: "civilianImpact",
+        variant: "afghanistan-background",
+        title: "Key Information",
+        eyebrow: "Section 2",
+      },
+    },
+    {
+      slide: getSlide(2),
+      slides: [getSlide(2)],
+      section: {
+        key: "howToHelp",
+        variant: "afghanistan-howToHelp",
+        title: "How to Help",
+        eyebrow: "Section 3",
+      },
+    },
+  ];
+}
+
+function buildContextBullets(analysisSlide, overviewSlide) {
+  const source =
+    analysisSlide?.civilianImpact?.experiences ||
+    analysisSlide?.whatsHappening?.background ||
+    overviewSlide?.whatsHappening?.background ||
+    "";
+
+  return source
+    .split(/(?<=[.!?])\s+/)
+    .map((item) => item.trim())
+    .filter(Boolean)
+    .slice(0, 3);
 }
 
 function hasText(value) {
@@ -250,7 +325,14 @@ function renderSection(sectionSlide) {
   const shell = el("sectionShell");
   shell.innerHTML = "";
 
-  const panel = createNode("section", `feature-panel feature-panel-${sectionSlide.section.key}`);
+  const panelClass = [
+    "feature-panel",
+    `feature-panel-${sectionSlide.section.key}`,
+    sectionSlide.section.variant ? `feature-panel-${sectionSlide.section.variant}` : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
+  const panel = createNode("section", panelClass);
   panel.appendChild(createNode("p", "section-eyebrow", sectionSlide.section.eyebrow));
 
   const gridClass =
@@ -260,11 +342,140 @@ function renderSection(sectionSlide) {
   const grid = createNode("div", gridClass);
   const copy = createNode("div", "feature-copy");
   const side = createNode("aside", "feature-side");
+  let trailingNode = null;
   const appendIfPresent = (parent, node) => {
     if (node) parent.appendChild(node);
   };
 
-  if (sectionSlide.section.key === "whatsHappening") {
+  if (sectionSlide.section.variant === "afghanistan-overview") {
+    const overviewSlide = sectionSlide.slides[0];
+    const impactSlide = sectionSlide.slides[1];
+
+    appendIfPresent(
+      copy,
+      createContentBlock("Background / Overview", overviewSlide.whatsHappening?.background),
+    );
+    appendIfPresent(
+      copy,
+      createContentBlock("Civilian Impact", impactSlide.whatsHappening?.background),
+    );
+    appendIfPresent(
+      copy,
+      createPartiesBlock("Who Is Most Affected", impactSlide.whatsHappening?.parties),
+    );
+
+    appendIfPresent(
+      side,
+      createStatsBlock("Key Figures", overviewSlide.civilianImpact?.stats),
+    );
+    appendIfPresent(
+      side,
+      createImageCard(
+        overviewSlide.civilianImpact?.image || impactSlide.whatsHappening?.image,
+        "Country civilian impact image",
+      ),
+    );
+  }
+
+  if (sectionSlide.section.variant === "afghanistan-background") {
+    const overviewSlide = sectionSlide.slides[0];
+    const analysisSlide = sectionSlide.slides[1];
+    const topCards = createNode("div", "afghanistan-background-top");
+    const contextBlock = createBulletBlock(
+      "Background / Context",
+      buildContextBullets(analysisSlide, overviewSlide),
+    );
+    const partiesBlock = createPartiesBlock("Main Parties Involved", overviewSlide.whatsHappening?.parties);
+
+    if (contextBlock) {
+      contextBlock.classList.add("info-card");
+      topCards.appendChild(contextBlock);
+    }
+    if (partiesBlock) {
+      partiesBlock.classList.add("info-card");
+      topCards.appendChild(partiesBlock);
+    }
+
+    appendIfPresent(copy, topCards);
+
+    const timelineBlock = createTimelineBlock("Timeline", overviewSlide.whatsHappening?.timeline);
+    if (timelineBlock) {
+      timelineBlock.classList.add("info-card", "timeline-card");
+    }
+    appendIfPresent(copy, timelineBlock);
+
+    appendIfPresent(
+      side,
+      createStatsBlock("Impact Statistics", analysisSlide.civilianImpact?.stats),
+    );
+    appendIfPresent(
+      side,
+      createImageCard(
+        analysisSlide.civilianImpact?.image || analysisSlide.whatsHappening?.image,
+        "Country background image",
+      ),
+    );
+  }
+
+  if (sectionSlide.section.variant === "afghanistan-howToHelp") {
+    const slide = sectionSlide.slides[0];
+
+    if (hasText(slide.howToHelp?.summary)) {
+      appendIfPresent(
+        copy,
+        createContentBlock("How to Make an Impact", slide.howToHelp?.summary),
+      );
+    }
+
+    appendIfPresent(
+      copy,
+      createContentBlock(
+        "Support Priorities",
+        "Direct support helps keep food assistance, health services, and emergency protection available for civilians facing prolonged crisis.",
+      ),
+    );
+
+    if (hasText(slide.howToHelp?.learnMore?.text) || slide.howToHelp?.learnMore?.url) {
+      appendIfPresent(
+        copy,
+        createLearnMoreBlock("Learn More", slide.howToHelp?.learnMore),
+      );
+    }
+
+    if (slide.howToHelp?.cards?.length) {
+      const qrBlock = createQrBlock("Support Options", slide.howToHelp?.cards);
+      if (qrBlock) {
+        qrBlock.classList.add("afghanistan-support-qr");
+      }
+      appendIfPresent(
+        side,
+        qrBlock,
+      );
+    }
+
+    const prioritiesBlock = createStatsBlock("Support Priorities", slide.civilianImpact?.stats);
+    if (prioritiesBlock) {
+      prioritiesBlock.classList.add("afghanistan-support-priorities");
+    }
+    appendIfPresent(
+      side,
+      prioritiesBlock,
+    );
+
+    const supportImage = createImageCard(
+      slide.civilianImpact?.image || slide.howToHelp?.image,
+      "Country support image",
+    );
+    if (supportImage) {
+      supportImage.classList.add("afghanistan-support-image");
+    }
+    appendIfPresent(
+      copy,
+      supportImage,
+    );
+  }
+
+  if (!sectionSlide.section.variant && sectionSlide.section.key === "whatsHappening") {
     sectionSlide.slides.forEach((slide, index) => {
       appendIfPresent(
         copy,
@@ -297,7 +508,7 @@ function renderSection(sectionSlide) {
     });
   }
 
-  if (sectionSlide.section.key === "civilianImpact") {
+  if (!sectionSlide.section.variant && sectionSlide.section.key === "civilianImpact") {
     sectionSlide.slides.forEach((slide, index) => {
       appendIfPresent(
         copy,
@@ -323,7 +534,7 @@ function renderSection(sectionSlide) {
     });
   }
 
-  if (sectionSlide.section.key === "howToHelp") {
+  if (!sectionSlide.section.variant && sectionSlide.section.key === "howToHelp") {
     sectionSlide.slides.forEach((slide, index) => {
       if (hasText(slide.howToHelp?.summary)) {
         appendIfPresent(
@@ -374,6 +585,9 @@ function renderSection(sectionSlide) {
 
   grid.prepend(copy);
   panel.appendChild(grid);
+  if (trailingNode) {
+    panel.appendChild(trailingNode);
+  }
   shell.appendChild(panel);
 }
 
@@ -391,7 +605,7 @@ async function main() {
   const slides = data.slides || [];
   if (slides.length === 0) throw new Error("slides.json has no slides");
 
-  const sectionSlides = buildSectionSlides(slides);
+  const sectionSlides = buildSectionSlides(slides, meta);
   const hasMultipleSlides = sectionSlides.length > 1;
   setSourcesLink(meta);
 
