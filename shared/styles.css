@@ -567,6 +567,58 @@ h1 {
   object-position: center;
 }
 
+.country-myanmar .feature-panel-afghanistan-overview {
+  min-height: 600px;
+  padding: 1.05rem 1.15rem 0.95rem;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.country-myanmar .feature-panel-afghanistan-overview .feature-grid {
+  gap: 1rem;
+}
+
+.country-myanmar .feature-panel-afghanistan-overview .feature-copy,
+.country-myanmar .feature-panel-afghanistan-overview .feature-side {
+  gap: 0.65rem;
+}
+
+.country-myanmar .feature-panel-afghanistan-overview .content-block {
+  margin-bottom: 0.42rem;
+}
+
+.country-myanmar .feature-panel-afghanistan-overview .content-block h3,
+.country-myanmar .feature-panel-afghanistan-overview .stack-heading {
+  margin-bottom: 0.16rem;
+}
+
+.country-myanmar .feature-panel-afghanistan-overview .content-block p,
+.country-myanmar .feature-panel-afghanistan-overview .content-block li,
+.country-myanmar .feature-panel-afghanistan-overview .party-list li {
+  font-size: 1rem;
+  line-height: 1.28;
+}
+
+.country-myanmar .feature-panel-afghanistan-overview .party-list {
+  padding-left: 0.88rem;
+}
+
+.country-myanmar .feature-panel-afghanistan-overview .feature-side .feature-media-card {
+  width: 100%;
+  max-width: 320px;
+  height: 220px;
+  margin-top: 0.05rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.country-myanmar .feature-panel-afghanistan-overview .feature-side .feature-media-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+}
+
 .feature-panel-afghanistan-howToHelp .feature-grid {
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.02fr);
   gap: 2.25rem;
@@ -662,6 +714,44 @@ h1 {
   max-height: none;
   object-fit: cover;
   object-position: bottom;
+}
+
+.country-myanmar .feature-panel-afghanistan-howToHelp .feature-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.country-myanmar .feature-panel-afghanistan-howToHelp .afghanistan-support-image {
+  width: 60%;
+  max-width: 60%;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.25rem;
+}
+
+.country-myanmar .feature-panel-afghanistan-howToHelp .afghanistan-support-image .feature-media-card {
+  width: 100%;
+  height: 220px;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  padding: 0;
+  overflow: hidden;
+}
+
+.country-myanmar .feature-panel-afghanistan-howToHelp .afghanistan-support-image .feature-media-card img {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .feature-panel-afghanistan-howToHelp .feature-side .feature-stack,
