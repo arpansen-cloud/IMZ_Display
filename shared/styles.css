@@ -412,28 +412,50 @@ h1 {
 
 .feature-panel-bosnia-howToHelp .qr-card,
 .feature-panel-bosnia-howToHelp .qr-grid.single-card .qr-card {
-  width: min(100%, 280px);
-  min-height: 220px;
-  padding: 1rem 0.9rem 0.85rem;
+  width: min(100%, 190px);
+  min-height: 204px;
+  padding: 0.7rem 0.7rem 0.6rem;
 }
 
 .feature-panel-bosnia-howToHelp .qr-card-image {
-  min-width: 280px;
-  min-height: 220px;
+  min-width: 190px;
+  min-height: 204px;
   overflow: visible;
 }
 
 .feature-panel-bosnia-howToHelp .qr-image {
-  width: min(100%, 168px);
+  width: min(100%, 156px);
   height: auto;
-  max-width: 168px;
-  max-height: 168px;
+  max-width: 156px;
+  max-height: 156px;
   aspect-ratio: 1 / 1;
 }
 
 .feature-panel-bosnia-howToHelp .qr-link {
   font-size: 0.74rem;
   text-align: center;
+}
+
+.feature-panel-bosnia-howToHelp .qr-section .qr-grid.single-card {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.feature-panel-bosnia-howToHelp .qr-section {
+  width: fit-content;
+  max-width: 100%;
+  justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature-panel-bosnia-howToHelp .afghanistan-support-qr {
+  width: fit-content;
+  max-width: 100%;
+  justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .feature-panel-bosnia-howToHelp .learn-more {
@@ -567,15 +589,19 @@ h1 {
 }
 
 .feature-panel-afghanistan-howToHelp .afghanistan-support-qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 0.5rem;
 }
 
 .feature-panel-afghanistan-howToHelp .afghanistan-support-qr .qr-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(168px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
-  align-items: stretch;
-  justify-items: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .feature-panel-afghanistan-howToHelp .qr-grid.has-primary {
@@ -1006,6 +1032,7 @@ h1 {
   gap: 0.55rem;
   text-align: center;
   min-height: 108px;
+  margin: 0 auto;
 }
 
 .qr-container {
@@ -1014,6 +1041,27 @@ h1 {
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+.support-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.support-options .section-heading {
+  width: 100%;
+}
+
+.support-options .qr-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .qr-section {

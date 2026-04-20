@@ -169,7 +169,7 @@ function normalizeQrSrc(src) {
 
 function createQrBlock(title, items) {
   if (!items?.length) return null;
-  const wrap = createNode("article", "feature-stack qr-section");
+  const wrap = createNode("article", "feature-stack qr-section support-options");
   wrap.appendChild(createNode("h3", "stack-heading section-heading", title || "How to Help"));
 
   const grid = createNode("div", "qr-grid");
