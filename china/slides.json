@@ -75,8 +75,8 @@
           }
         ],
         "image": {
-          "src": "./slide1-people.png",
-          "alt": "Visual representing Uyghur civilians affected by repression"
+          "src": "./uyghur1.jpeg",
+          "alt": "Barbed wire image representing detention and repression affecting Uyghur civilians"
         }
       },
       "howToHelp": {
@@ -167,8 +167,8 @@
           }
         ],
         "image": {
-          "src": "./food-insecurity.png",
-          "alt": "Visual representing repression, detention, or surveillance affecting Uyghur communities"
+          "src": "./ughyer2.jpeg",
+          "alt": "Uyghur flag image representing identity, solidarity, and resistance"
         }
       },
       "howToHelp": {
@@ -284,9 +284,8 @@
         },
         "imageHeading": "Action",
         "image": {
-          "src": "./uyghur-action-qr.png",
-          "alt": "QR code for awareness and ethical action resources",
-          "mode": "qr"
+          "src": "./u3.jpeg",
+          "alt": "Uyghur region landscape"
         }
       }
     }

@@ -135,7 +135,7 @@ function createTimelineBlock(title, items) {
 function createStatsBlock(title, items) {
   if (!items?.length) return null;
   const wrap = createNode("article", "feature-stack");
-  wrap.appendChild(createNode("h3", "stack-heading section-heading", title || "Key Figures"));
+  wrap.appendChild(createNode("h3", "stack-heading section-heading key-figures-heading", title || "Key Figures"));
 
   const grid = createNode("div", "stats-grid");
   items.slice(0, 4).forEach((item) => {

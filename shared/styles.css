@@ -654,7 +654,19 @@ h1 {
 
 .feature-panel-afghanistan-overview .feature-side > .feature-stack:first-child {
   width: min(100%, 410px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-self: center;
+}
+
+.feature-panel-afghanistan-overview .feature-side > .feature-stack:first-child .key-figures-heading {
+  width: 100%;
+  text-align: center;
+}
+
+.feature-panel-afghanistan-overview .feature-side > .feature-stack:first-child .stats-grid {
+  width: 100%;
 }
 
 .feature-panel-afghanistan-howToHelp .stats-grid {
@@ -833,6 +845,13 @@ h1 {
   text-align: center;
   width: 100%;
   margin-bottom: 20px;
+}
+
+.key-figures-heading {
+  width: 100%;
+  text-align: center;
+  justify-self: stretch;
+  align-self: stretch;
 }
 
 .feature-media-card {
