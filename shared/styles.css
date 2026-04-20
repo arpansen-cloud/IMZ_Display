@@ -648,8 +648,9 @@ h1 {
 
 .feature-panel-afghanistan-overview .feature-side .stack-heading,
 .feature-panel-afghanistan-background .feature-side .stack-heading,
-.feature-panel-afghanistan-howToHelp .afghanistan-support-priorities .stack-heading {
+.feature-panel-afghanistan-howToHelp .feature-side .stack-heading {
   text-align: center;
+  font-size: 1.08rem;
 }
 
 .feature-panel-afghanistan-overview .feature-side > .feature-stack:first-child {
@@ -722,13 +723,13 @@ h1 {
 
 .feature-panel-afghanistan-background .info-card h3 {
   margin-bottom: 0.4rem;
-  font-size: 0.98rem;
+  font-size: 1.04rem;
 }
 
 .feature-panel-afghanistan-background .info-card p,
 .feature-panel-afghanistan-background .info-card li {
-  font-size: 0.96rem;
-  line-height: 1.3;
+  font-size: 1.02rem;
+  line-height: 1.34;
 }
 
 .feature-panel-afghanistan-background .info-card .party-list,
@@ -745,8 +746,8 @@ h1 {
 }
 
 .feature-panel-afghanistan-background .timeline-card .timeline-item p {
-  font-size: 0.72rem;
-  line-height: 1.18;
+  font-size: 0.88rem;
+  line-height: 1.24;
 }
 
 .feature-panel-afghanistan-background .feature-side > .feature-stack {

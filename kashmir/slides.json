@@ -2,7 +2,7 @@
   "meta": {
     "defaultTitle": "Kashmir",
     "logoLabel": "MSA",
-    "secondsPerSlide": 10,
+    "secondsPerSlide": 14,
     "background": {
       "src": "./background.png",
       "size": "cover",
@@ -14,7 +14,7 @@
   "slides": [
     {
       "title": "Kashmir",
-      "subtitle": "Humanitarian Crisis",
+      "subtitle": "",
       "background": {
         "src": "./background.png",
         "size": "cover",
@@ -23,16 +23,48 @@
         "opacity": "1"
       },
       "whatsHappening": {
-        "background": "Kashmir sits in the Himalayas and has been disputed since 1947. When British rule ended, the region's Hindu ruler joined India. Pakistan challenged this immediately since most of the population was Muslim, which was the basis of the divide. This triggered the first of three wars. Today, India controls about 55% of the territory, Pakistan around 30%, and China the rest, divided by the Line of Control.",
+        "backgroundHeading": "Background",
+        "partiesHeading": "Main Parties Involved",
+        "background": "Kashmir has been disputed since 1947, when British India was partitioned into India and Pakistan. The former princely state became divided after war, and today India, Pakistan, and China each control parts of the wider region. In Indian-administered Jammu and Kashmir, decades of insurgency, militarization, cross-border tensions, and political restrictions have shaped daily life for civilians.",
         "parties": [
-          { "name": "India", "description": "Controls about 55% of the territory and revoked Article 370 in 2019." },
-          { "name": "Pakistan", "description": "Controls around 30% of the territory and contests Indian control." },
-          { "name": "China", "description": "Controls the remainder of the disputed region." }
+          {
+            "name": "India",
+            "description": "Controls Jammu and Kashmir and revoked Article 370 in 2019."
+          },
+          {
+            "name": "Pakistan",
+            "description": "Controls Azad Jammu and Kashmir and Gilgit-Baltistan, and disputes Indian control."
+          },
+          {
+            "name": "China",
+            "description": "Controls Aksai Chin and is part of the wider territorial dispute."
+          },
+          {
+            "name": "Armed Groups",
+            "description": "Militant groups have carried out attacks in Indian-administered Kashmir."
+          },
+          {
+            "name": "Civilians",
+            "description": "Families live with insecurity, restrictions, trauma, and political uncertainty."
+          }
         ],
         "timeline": [
-          { "year": "1947", "description": "Partition and Kashmir's contested accession to India start the first India-Pakistan war." },
-          { "year": "1989", "description": "An armed insurgency begins in Indian-administered Kashmir; tens of thousands die." },
-          { "year": "2019", "description": "India revokes Article 370 and enforces a months-long internet blackout." }
+          {
+            "year": "1947",
+            "description": "Partition and Kashmir's contested accession to India trigger the first India-Pakistan war."
+          },
+          {
+            "year": "1989",
+            "description": "An armed insurgency begins in Indian-administered Kashmir."
+          },
+          {
+            "year": "2019",
+            "description": "India revokes Article 370 and imposes a major security and communications lockdown."
+          },
+          {
+            "year": "2025",
+            "description": "A deadly Pahalgam attack renews fear and India-Pakistan tensions."
+          }
         ],
         "image": {
           "src": "./crowd.png",
@@ -40,12 +72,26 @@
         }
       },
       "civilianImpact": {
-        "experiences": "In Indian-administered Kashmir, people can be held for up to two years without charge under the Public Safety Act. Thousands of homes have been demolished as collective punishment, and internet shutdowns are repeated and prolonged. In Pakistani-administered Kashmir, protests in May 2024 over food and fuel costs were met with tear gas, and the homes of roughly 70 protesters were raided by authorities.",
+        "experiencesHeading": "Experiences",
+        "statsHeading": "Key Figures",
+        "experiences": "Civilians in Kashmir live with the long-term effects of conflict, militarization, political uncertainty, and periodic communication restrictions. Many families have experienced fear, loss, disruption to school or work, and pressure on mental health. After 2019, the region also faced a prolonged internet shutdown and tighter controls on movement, media, and political life.",
         "stats": [
-          { "value": "47k+", "label": "Killed Since 1989" },
-          { "value": "3.4k+", "label": "Forcibly Displaced" },
-          { "value": "41%", "label": "Suffer from Depression" },
-          { "value": "19%", "label": "Adults Suffer from PTSD" }
+          {
+            "value": "47k+",
+            "label": "Killed Since 1989"
+          },
+          {
+            "value": "2019",
+            "label": "Article 370 Revoked"
+          },
+          {
+            "value": "41%",
+            "label": "Adults Show Depression"
+          },
+          {
+            "value": "19%",
+            "label": "Adults Show PTSD"
+          }
         ],
         "image": {
           "src": "./map.png",
@@ -53,16 +99,205 @@
         }
       },
       "howToHelp": {
-        "summary": "Children have also been deeply affected: between 22% and 27% of children aged 8-14 show symptoms of conflict-related psychological disorders. Anxiety, depression, and PTSD remain widespread across the valley.",
-        "cards": [
-          { "placeholder": "26%", "label": "Adults Suffer From Anxiety" }
-        ],
+        "summary": "",
+        "cards": [],
         "learnMore": {
-          "text": "In 2025, a terrorist attack in Pahalgam killed 26 people. Indian authorities arrested approximately 2,800 people in the aftermath, including journalists and activists."
+          "text": ""
         },
+        "image": {
+          "src": "",
+          "alt": ""
+        }
+      }
+    },
+    {
+      "title": "Kashmir",
+      "subtitle": "How are civilians affected?",
+      "background": {
+        "src": "./background.png",
+        "size": "cover",
+        "position": "center 58%",
+        "repeat": "no-repeat",
+        "opacity": "1"
+      },
+      "whatsHappening": {
+        "backgroundHeading": "Civilian Impact",
+        "partiesHeading": "Who Is Most Affected",
+        "timelineHeading": "Impact Statistics",
+        "background": "The conflict affects civilians through security operations, militant attacks, detentions, raids, home demolitions, restricted movement, and limits on communication. Internet shutdowns and media pressure can disrupt school, work, health care, journalism, and access to information. The emotional impact is also severe, with surveys showing high levels of depression, anxiety, and PTSD symptoms among adults.",
+        "parties": [
+          {
+            "name": "Families in Conflict Areas",
+            "description": "Face raids, displacement risk, fear, and disrupted daily life."
+          },
+          {
+            "name": "Children and Students",
+            "description": "Face school disruption, trauma, and limited internet access during shutdowns."
+          },
+          {
+            "name": "Journalists and Activists",
+            "description": "Face pressure, raids, detention risk, and restrictions on reporting."
+          },
+          {
+            "name": "Tourists and Civilians",
+            "description": "Militant attacks, including Pahalgam in 2025, have killed civilians."
+          }
+        ],
+        "timeline": [
+          {
+            "year": "41%",
+            "description": "of adults showed symptoms of depression in an MSF-linked survey."
+          },
+          {
+            "year": "26%",
+            "description": "of adults showed significant anxiety symptoms."
+          },
+          {
+            "year": "19%",
+            "description": "of adults showed significant PTSD symptoms."
+          }
+        ],
         "image": {
           "src": "./damage.png",
           "alt": "Destroyed buildings in Kashmir"
+        }
+      },
+      "civilianImpact": {
+        "experiencesHeading": "How Civilians Are Affected",
+        "statsHeading": "Impact Statistics",
+        "experiences": "For civilians, the crisis is not only about the India-Pakistan dispute. It is also about daily uncertainty: whether schools stay open, whether phones and internet work, whether families can move safely, and whether people can speak, report, protest, or organize without fear. The mental health toll reflects years of insecurity and unresolved political conflict.",
+        "stats": [
+          {
+            "value": "26%",
+            "label": "Adults Show Anxiety"
+          },
+          {
+            "value": "22-27%",
+            "label": "Children Show Symptoms"
+          },
+          {
+            "value": "26",
+            "label": "Killed in Pahalgam"
+          },
+          {
+            "value": "150+",
+            "label": "Days of 2019 Blackout"
+          }
+        ],
+        "image": {
+          "src": "./damage.png",
+          "alt": "Destroyed buildings in Kashmir"
+        }
+      },
+      "howToHelp": {
+        "summary": "",
+        "cards": [],
+        "learnMore": {
+          "text": ""
+        },
+        "image": {
+          "src": "",
+          "alt": ""
+        }
+      }
+    },
+    {
+      "title": "Kashmir",
+      "subtitle": "How You Can Help",
+      "background": {
+        "src": "./background.png",
+        "size": "cover",
+        "position": "center 58%",
+        "repeat": "no-repeat",
+        "opacity": "1"
+      },
+      "whatsHappening": {
+        "backgroundHeading": "How Support Helps",
+        "partiesHeading": "Ways to Support",
+        "timelineHeading": "How to Make an Impact",
+        "background": "Helping Kashmir starts with careful attention to civilians rather than treating the conflict only as a border dispute. Support can focus on mental health, press freedom, human rights documentation, emergency relief, and education access for communities affected by violence, restrictions, and political instability.",
+        "parties": [
+          {
+            "name": "Share Accurate Information",
+            "description": "Use reliable sources and avoid spreading rumors during crises."
+          },
+          {
+            "name": "Support Civil Liberties",
+            "description": "Follow groups documenting detentions, shutdowns, press freedom, and rights abuses."
+          },
+          {
+            "name": "Support Mental Health",
+            "description": "Conflict trauma has affected both adults and children across the valley."
+          },
+          {
+            "name": "Keep Attention on Civilians",
+            "description": "Center families, students, journalists, and affected communities."
+          }
+        ],
+        "timeline": [
+          {
+            "year": "Learn",
+            "description": "Understand the history, Article 370, and civilian rights concerns."
+          },
+          {
+            "year": "Share",
+            "description": "Raise awareness without dehumanizing any community."
+          },
+          {
+            "year": "Support",
+            "description": "Back trusted human rights, journalism, relief, and mental health work."
+          }
+        ],
+        "image": {
+          "src": "./crowd.png",
+          "alt": "Crowd of Kashmiris"
+        }
+      },
+      "civilianImpact": {
+        "experiencesHeading": "How You Can Help",
+        "statsHeading": "Support Priorities",
+        "experiences": "The most useful support keeps civilians visible. That means learning from reliable reporting, supporting organizations that defend rights and press freedom, and paying attention to the mental health effects of prolonged conflict. Kashmir is politically complex, but civilian protection and dignity should stay at the center.",
+        "stats": [
+          {
+            "value": "Rights",
+            "label": "Civil Liberties"
+          },
+          {
+            "value": "Care",
+            "label": "Mental Health"
+          },
+          {
+            "value": "Press",
+            "label": "Free Reporting"
+          },
+          {
+            "value": "Info",
+            "label": "Accurate Awareness"
+          }
+        ],
+        "image": {
+          "src": "./crowd.png",
+          "alt": "Crowd of Kashmiris"
+        }
+      },
+      "howToHelp": {
+        "summary": "Use the support options on the right as reminders: learn the history, follow credible reporting, and support civilian-focused human rights or mental health work.",
+        "cards": [
+          {
+            "placeholder": "Learn",
+            "label": "Understand the Conflict"
+          },
+          {
+            "placeholder": "Share",
+            "label": "Raise Awareness"
+          }
+        ],
+        "learnMore": {
+          "text": "Reliable sources include human rights groups, press freedom monitors, medical humanitarian reporting, and careful news coverage from the region."
+        },
+        "image": {
+          "src": "./crowd.png",
+          "alt": "Crowd of Kashmiris"
         }
       }
     }
