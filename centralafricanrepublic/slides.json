@@ -4,7 +4,7 @@
       "logoLabel": "MSA",
       "secondsPerSlide": 14,
       "background": {
-        "src": "./image-destination-here.png"
+        "src": "./capital-bangui.jpg"
       }
     },
     "slides": [
@@ -12,45 +12,46 @@
         "title": "Central African Republic",
         "subtitle": "",
         "background": {
-          "src": "./image-destination-here.png"
+          "src": "./capital-bangui.jpg"
         },
         "whatsHappening": {
-          "partiesHeading": "Parties Involved",
-          "background": "The Central African Republic has endured decades of coups, armed conflict, and weak state control. The crisis deepened after Seleka rebels seized Bangui in 2013 and anti-Balaka militias formed in response, setting off years of violence, displacement, and insecurity. Although peace agreements and elections followed, armed groups still control large parts of the country and civilians continue to live with instability, fear, and extremely weak public services.",
+          "backgroundHeading": "Background",
+          "partiesHeading": "Main Parties Involved",
+          "background": "Since independence in 1960, the Central African Republic has faced repeated coups, weak state control and chronic insecurity. The current crisis grew out of years of failed peace efforts, then escalated sharply in 2013 when Seleka rebels captured Bangui and anti-Balaka militias formed in response. Although elections and peace agreements followed, armed groups kept operating across much of the country outside Bangui. Violence, displacement and weak public services still shape everyday life for civilians.",
           "parties": [
             {
               "name": "Government of CAR",
-              "description": "The national government and army have tried to hold state control and fight armed groups, often with limited reach outside Bangui."
+              "description": "National government and army."
             },
             {
               "name": "Seleka",
-              "description": "A mainly Muslim rebel coalition that captured Bangui in 2013 and removed President François Bozizé from power."
+              "description": "Rebel coalition that seized Bangui in 2013."
             },
             {
               "name": "ex-Seleka Groups",
-              "description": "Smaller armed factions that emerged after Seleka splintered and continued fighting in different parts of the country."
+              "description": "Splinter factions after Seleka broke apart."
             },
             {
               "name": "anti-Balaka",
-              "description": "Mainly Christian militias formed in response to Seleka violence but also carried out revenge attacks against Muslim civilians."
+              "description": "Militias formed in response to Seleka."
             },
             {
               "name": "CPC",
-              "description": "A coalition of six armed groups that attacked the government around the 2020 to 2021 elections."
+              "description": "Six-group rebel coalition."
             },
             {
               "name": "MINUSCA and Foreign Forces",
-              "description": "The UN peacekeeping mission MINUSCA, along with Rwandan soldiers and Russian Wagner-linked forces, have helped support the government against rebels."
+              "description": "UN, Rwandan, and Wagner-linked forces."
             }
           ],
           "timeline": [
             {
               "year": "2003",
-              "description": "François Bozizé takes power in a coup while rebel violence and poverty remain widespread."
+              "description": "Francois Bozize takes power in a coup as rebel violence and weak state control continue."
             },
             {
               "year": "2013",
-              "description": "Seleka captures Bangui and removes Bozizé, triggering a new phase of national crisis."
+              "description": "Seleka captures Bangui, Bozize is removed, and anti-Balaka militias soon emerge."
             },
             {
               "year": "2014",
@@ -58,20 +59,22 @@
             },
             {
               "year": "2019",
-              "description": "The government and 14 armed groups sign a peace agreement, but it is not fully implemented."
+              "description": "The government and 14 armed groups sign a peace deal, but most of it is not implemented."
             },
             {
               "year": "2020-21",
-              "description": "The CPC attacks again, threatening Bangui before government forces push back with outside military support."
+              "description": "The CPC threatens Bangui before government forces push back with support from MINUSCA, Rwanda and Wagner fighters."
             }
           ],
           "image": {
-            "src": "./bottom-left.png",
-            "alt": "Conflict-affected area in the Central African Republic"
+            "src": "./anti-balaka-group.jpg",
+            "alt": "Anti-Balaka fighters gathered in the Central African Republic"
           }
         },
         "civilianImpact": {
-          "experiences": "Civilians in the Central African Republic live with recurring violence, forced displacement, disrupted schooling, weak public services, and severe poverty. Humanitarian needs remain extremely high, especially for children. Many communities still struggle to access clean water, education, and basic safety as repeated conflict keeps families trapped in long-term instability.",
+          "experiencesHeading": "Experiences",
+          "statsHeading": "Key Figures",
+          "experiences": "Civilians in the Central African Republic have lived through years of armed violence, forced displacement, disrupted schooling, weak public services and severe poverty. Humanitarian needs remain high, especially for children. Many communities still struggle to access clean water, education, health care and safety, while recurring violence keeps forcing families from their homes.",
           "stats": [
             {
               "value": "2.3m",
@@ -91,28 +94,19 @@
             }
           ],
           "image": {
-            "src": "./slide1-people.png",
-            "alt": "Civilians in the Central African Republic affected by displacement and humanitarian crisis"
+            "src": "./displaced-people.jpg",
+            "alt": "Displaced civilians traveling through the Central African Republic"
           }
         },
         "howToHelp": {
-          "summary": "The Central African Republic receives far less global attention than many other crises, even though humanitarian needs remain severe. Raising awareness and supporting organizations already working on the ground can help families access protection, shelter, education, and essential services.",
-          "cards": [
-            {
-              "placeholder": "2013",
-              "label": "Bangui Falls"
-            },
-            {
-              "placeholder": "2014",
-              "label": "MINUSCA Formed"
-            }
-          ],
+          "summary": "",
+          "cards": [],
           "learnMore": {
-            "text": "This slide introduces how repeated coups, militia violence, and failed peace efforts created today’s crisis in the Central African Republic."
+            "text": ""
           },
           "image": {
-            "src": "./flag-slide1.png",
-            "alt": "Central African Republic flag"
+            "src": "",
+            "alt": ""
           }
         }
       },
@@ -120,50 +114,54 @@
         "title": "Central African Republic",
         "subtitle": "How are civilians affected?",
         "background": {
-          "src": "./image-destination-here.png"
+          "src": "./bangui-central-mosque.jpg"
         },
         "whatsHappening": {
-          "partiesHeading": "People Affected",
-          "background": "The conflict in the Central African Republic is not only military. It is also a humanitarian crisis shaped by displacement, poverty, disrupted education, and weak access to water and essential services. Children and families in remote regions are often the most affected.",
+          "backgroundHeading": "Civilian Impact",
+          "partiesHeading": "Who Is Most Affected",
+          "timelineHeading": "Impact Statistics",
+          "background": "The conflict in the Central African Republic is not only a military crisis. It is also a humanitarian crisis shaped by displacement, poverty, disrupted education and weak access to water and basic services. Children and families in remote areas are often the most affected, and insecurity can also block aid from reaching them.",
           "parties": [
             {
               "name": "2.3 million people in need",
-              "description": "A large share of the country requires humanitarian assistance in 2026."
+              "description": "UNICEF says 2.3 million people will need humanitarian assistance in 2026."
             },
             {
-              "name": "1.2 million children affected",
-              "description": "Children make up a major portion of those in need of urgent support."
+              "name": "1.2 million children in need",
+              "description": "Children make up a large share of those who need urgent support."
             },
             {
               "name": "Families forced from home",
-              "description": "Over 1.4 million people have been forcibly displaced by violence and insecurity."
+              "description": "UNHCR reports that more than 1.4 million Central Africans are forcibly displaced."
             },
             {
               "name": "Communities without basic services",
-              "description": "Many areas lack reliable access to school, safe water, and stable protection."
+              "description": "Many communities still lack reliable access to school, safe water, health care and protection."
             }
           ],
           "timeline": [
             {
               "year": "41%",
-              "description": "Children who cannot access school."
+              "description": "of children cannot access school."
             },
             {
               "year": "1.1m",
-              "description": "People who need water, sanitation, and hygiene support."
+              "description": "people need emergency water, sanitation and hygiene support."
             },
             {
               "year": "70%",
-              "description": "Share of the population living in extreme poverty."
+              "description": "of the population lives in extreme poverty."
             }
           ],
           "image": {
-            "src": "./bottom-left.png",
-            "alt": "Community or settlement affected by humanitarian conditions in CAR"
+            "src": "./conflict-vehicle-fire.jpg",
+            "alt": "A burned vehicle after conflict in the Central African Republic"
           }
         },
         "civilianImpact": {
-          "experiences": "For many civilians, the crisis means children missing school, families lacking clean water, and communities living with displacement and economic hardship. Years of conflict have weakened already fragile systems, leaving millions dependent on humanitarian support while violence and poverty continue to reinforce one another.",
+          "experiencesHeading": "How Civilians Are Affected",
+          "statsHeading": "Impact Statistics",
+          "experiences": "For many civilians, the crisis means much more than headline fighting. It means children missing school, families lacking clean water, communities living with displacement and daily life shaped by fear and economic hardship. Long-running conflict has weakened already fragile systems and left many people dependent on humanitarian support.",
           "stats": [
             {
               "value": "41%",
@@ -183,30 +181,19 @@
             }
           ],
           "image": {
-            "src": "./food-insecurity.png",
-            "alt": "Humanitarian needs and poverty in the Central African Republic"
+            "src": "./displaced-people-2.jpg",
+            "alt": "Security vehicles moving through a community in the Central African Republic"
           }
         },
         "howToHelp": {
-          "summary": "Humanitarian needs in the Central African Republic remain severe because conflict, displacement, and poverty keep basic services out of reach for many communities. Relief efforts help, but under-attention makes sustained support even more important.",
-          "cards": [
-            {
-              "placeholder": "Water",
-              "label": "Basic Needs"
-            },
-            {
-              "placeholder": "School",
-              "label": "Children Affected"
-            }
-          ],
+          "summary": "",
+          "cards": [],
           "learnMore": {
-            "text": "The civilian toll includes displacement, interrupted education, weak infrastructure, and severe poverty across much of the country."
+            "text": ""
           },
-          "imageHeading": "CAR Crisis",
           "image": {
-            "src": "./ipc-qr.png",
-            "alt": "QR code for Central African Republic crisis information",
-            "mode": "qr"
+            "src": "",
+            "alt": ""
           }
         }
       },
@@ -214,19 +201,21 @@
         "title": "Central African Republic",
         "subtitle": "How You Can Help",
         "background": {
-          "src": "./image-destination-here.png"
+          "src": "./notre-dame-cathedral-bangui.jpg"
         },
         "whatsHappening": {
-          "partiesHeading": "Organizations",
-          "background": "Support is most effective when it goes to organizations already working in the Central African Republic and when it helps raise awareness about a crisis that is often overlooked. Even public attention can matter because underreported crises often struggle to attract sustained aid.",
+          "backgroundHeading": "How Support Helps",
+          "partiesHeading": "Aid Organizations",
+          "timelineHeading": "How to Make an Impact",
+          "background": "Support is most effective when it goes to organizations already working in the Central African Republic and when it helps raise awareness about a crisis that is often overlooked. Even simple public attention matters because underreported crises often struggle to attract enough sustained aid.",
           "parties": [
             {
               "name": "UNICEF",
-              "description": "Supports children and families with health, nutrition, education, water, and protection services."
+              "description": "Supports children and families with health, nutrition, education, water and protection services."
             },
             {
               "name": "UNHCR",
-              "description": "Supports displaced people and refugees with protection, shelter, and humanitarian assistance."
+              "description": "Supports displaced people and refugees with protection, shelter and humanitarian assistance."
             },
             {
               "name": "Humanitarian Awareness",
@@ -248,12 +237,14 @@
             }
           ],
           "image": {
-            "src": "./people-affected.png",
-            "alt": "Aid or recovery support in the Central African Republic"
+            "src": "./bangui-central-mosque.jpg",
+            "alt": "Bangui Central Mosque in the Central African Republic"
           }
         },
         "civilianImpact": {
-          "experiences": "Helping the Central African Republic means responding to a crisis that is both severe and underreported. Donations can support children, displaced families, education, water access, and protection services, while awareness helps prevent the crisis from being ignored.",
+          "experiencesHeading": "How You Can Help",
+          "statsHeading": "Support Priorities",
+          "experiences": "Helping the Central African Republic means responding to a crisis that is both severe and underreported. Donations can support children, displaced families, education, water access and protection services, while awareness helps keep the crisis from being ignored.",
           "stats": [
             {
               "value": "Protection",
@@ -273,32 +264,31 @@
             }
           ],
           "image": {
-            "src": "./people-affected.png",
-            "alt": "Families in the Central African Republic affected by crisis"
+            "src": "./displacement-road.jpg",
+            "alt": "People traveling with belongings on a road in the Central African Republic"
           }
         },
         "howToHelp": {
-          "summary": "Share information about the Central African Republic so the crisis is not forgotten, and donate to organizations such as UNICEF or UNHCR that are already working there. Public awareness and direct support both matter in places where humanitarian need is high but global attention is low.",
+          "summary": "Direct support is most effective when it is clear and immediate. Use the donation QR on the right to support humanitarian aid, and use the secondary code to learn more about the crisis and relief needs in the Central African Republic.",
           "cards": [
             {
-              "qr": "../images/car-1.png",
-              "label": "Scan to Help",
-              "url": "https://www.unicef.org/car/en"
+              "qr": "./car-donate-qr.png",
+              "label": "Scan to Donate",
+              "url": "https://www.unhcr.org/get-involved/ways-donate",
+              "primary": true
             },
             {
-              "qr": "../images/car-2.png",
-              "label": "Learn More",
-              "url": "https://www.unhcr.org/where-we-work/countries/central-african-republic"
+              "qr": "./car-info-qr.png",
+              "label": "More Information",
+              "url": "https://www.unicef.org/appeals/car"
             }
           ],
           "learnMore": {
-            "text": "Follow crisis updates from UNICEF, UNHCR, and other verified humanitarian sources to stay informed and support trusted relief efforts."
+            "text": "You can also follow updates from CFR, UNICEF, UNHCR and the ICRC to stay informed and support verified humanitarian efforts."
           },
-          "imageHeading": "Learn More",
           "image": {
-            "src": "./car-qr.png",
-            "alt": "QR code for Central African Republic humanitarian information",
-            "mode": "qr"
+            "src": "./displacement-road.jpg",
+            "alt": "People traveling with belongings on a road in the Central African Republic"
           }
         }
       }

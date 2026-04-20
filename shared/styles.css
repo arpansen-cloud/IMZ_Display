@@ -322,6 +322,32 @@ h1 {
   gap: 1rem;
 }
 
+.feature-panel-whatsHappening .feature-grid {
+  align-items: stretch;
+}
+
+.feature-panel-whatsHappening .feature-side {
+  grid-auto-rows: min-content;
+  align-content: start;
+  gap: 1.25rem;
+  padding-bottom: 1rem;
+}
+
+.feature-panel-whatsHappening .feature-side > .feature-stack,
+.feature-panel-whatsHappening .feature-side .feature-media-card {
+  height: 100%;
+}
+
+.feature-panel-whatsHappening .feature-side > .feature-stack {
+  display: flex;
+}
+
+.feature-panel-whatsHappening .feature-side .feature-media-card img {
+  height: 100%;
+  min-height: 150px;
+  max-height: none;
+}
+
 .feature-panel-civilianImpact .feature-copy,
 .feature-panel-civilianImpact .feature-side,
 .feature-panel-howToHelp .feature-side {
@@ -592,6 +618,17 @@ h1 {
 
 .feature-panel-afghanistan-howToHelp .afghanistan-support-priorities {
   gap: 0.5rem;
+}
+
+.feature-panel-afghanistan-overview .feature-side .stack-heading,
+.feature-panel-afghanistan-background .feature-side .stack-heading,
+.feature-panel-afghanistan-howToHelp .afghanistan-support-priorities .stack-heading {
+  text-align: center;
+}
+
+.feature-panel-afghanistan-overview .feature-side > .feature-stack:first-child {
+  width: min(100%, 410px);
+  justify-self: center;
 }
 
 .feature-panel-afghanistan-howToHelp .stats-grid {
@@ -938,8 +975,11 @@ h1 {
 }
 
 .stat-card {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .stat-value {
@@ -1328,9 +1368,24 @@ h1 {
   }
 
   .feature-panel-howToHelp .feature-copy,
+  .feature-panel-whatsHappening .feature-side,
   .feature-panel-civilianImpact .feature-side,
   .feature-panel-howToHelp .feature-side {
     grid-template-columns: 1fr;
+  }
+
+  .feature-panel-whatsHappening .feature-side {
+    grid-template-rows: auto;
+    height: auto;
+  }
+
+  .feature-panel-whatsHappening .feature-side > .feature-stack {
+    display: grid;
+  }
+
+  .feature-panel-whatsHappening .feature-side .feature-media-card img {
+    min-height: 0;
+    max-height: none;
   }
 
   .feature-panel-howToHelp .feature-side > .feature-stack:last-child {
