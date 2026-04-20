@@ -35,8 +35,8 @@
           { "year": "Mar-Apr 2026", "description": "OCHA, WHO, and UN updates reported renewed hostilities, mass displacement, rising casualties, and growing humanitarian need." }
         ],
         "image": {
-          "src": "https://images.unsplash.com/photo-1604608672516-f1b7dd2f5cf7?auto=format&fit=crop&w=1200&q=80",
-          "alt": "View across Lebanon"
+          "src": "./lebanon-slide1.jpeg",
+          "alt": "Destroyed buildings and civilians in Lebanon"
         }
       },
       "civilianImpact": {
@@ -48,8 +48,8 @@
           { "value": "88", "label": "Attacks on Health Care; 4 Hospitals Fully Closed" }
         ],
         "image": {
-          "src": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Map and region context"
+          "src": "./lebanon-slide2.jpeg",
+          "alt": "Destroyed buildings and humanitarian impact in Lebanon"
         }
       },
       "howToHelp": {
