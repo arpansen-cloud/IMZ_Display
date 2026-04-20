@@ -4,7 +4,7 @@
     "logoLabel": "MSA",
     "secondsPerSlide": 14,
     "background": {
-      "src": "./background-v2.png"
+      "src": "./Lake-Pamirs-Uygur-Autonomous-Region-of-Xinjiang background.webp"
     }
   },
   "slides": [
@@ -12,7 +12,7 @@
       "title": "Uyghur",
       "subtitle": "",
       "background": {
-        "src": "./background-v2.png"
+        "src": "./Lake-Pamirs-Uygur-Autonomous-Region-of-Xinjiang background.webp"
       },
       "whatsHappening": {
         "partiesHeading": "Parties Involved",
@@ -50,8 +50,8 @@
           }
         ],
         "image": {
-          "src": "./bottom-left.png",
-          "alt": "Map or landscape related to the Xinjiang Uyghur Autonomous Region"
+          "src": "./u3.jpeg",
+          "alt": "Uyghur region landscape"
         }
       },
       "civilianImpact": {
@@ -95,8 +95,8 @@
           "text": "This slide explains the historical path to the current repression of Uyghurs in China."
         },
         "image": {
-          "src": "./flag-slide1.png",
-          "alt": "Solidarity themed image for Uyghur awareness"
+          "src": "./u3.jpeg",
+          "alt": "Uyghur region landscape"
         }
       }
     },
@@ -104,7 +104,7 @@
       "title": "Uyghur",
       "subtitle": "How are civilians affected?",
       "background": {
-        "src": "./background-v2.png"
+        "src": "./Lake-Pamirs-Uygur-Autonomous-Region-of-Xinjiang background.webp"
       },
       "whatsHappening": {
         "partiesHeading": "People Affected",
@@ -142,8 +142,8 @@
           }
         ],
         "image": {
-          "src": "./bottom-left.png",
-          "alt": "Regional image related to Xinjiang or East Turkistan"
+          "src": "./uyghur1.jpeg",
+          "alt": "Barbed wire image representing detention and repression affecting Uyghur civilians"
         }
       },
       "civilianImpact": {
@@ -188,7 +188,7 @@
         },
         "imageHeading": "Forced Labor",
         "image": {
-          "src": "./uyghur-qr.png",
+          "src": "../images/uyghur-1.png",
           "alt": "QR code for more information about Uyghur forced labor and human rights abuses",
           "mode": "qr"
         }
@@ -198,7 +198,7 @@
       "title": "Uyghur",
       "subtitle": "How You Can Help",
       "background": {
-        "src": "./background-v2.png"
+        "src": "./Lake-Pamirs-Uygur-Autonomous-Region-of-Xinjiang background.webp"
       },
       "whatsHappening": {
         "partiesHeading": "Action Steps",
@@ -236,8 +236,8 @@
           }
         ],
         "image": {
-          "src": "./bottom-left.png",
-          "alt": "Image representing public awareness and advocacy"
+          "src": "./ughyer2.jpeg",
+          "alt": "Uyghur flag image representing identity, solidarity, and resistance"
         }
       },
       "civilianImpact": {
@@ -261,8 +261,8 @@
           }
         ],
         "image": {
-          "src": "./people-affected.png",
-          "alt": "Visual related to advocacy, labor rights, or Uyghur awareness"
+          "src": "./u3.jpeg",
+          "alt": "Uyghur region landscape"
         }
       },
       "howToHelp": {

@@ -4,7 +4,11 @@
     "logoLabel": "MSA",
     "secondsPerSlide": 14,
     "background": {
-      "src": "./image-destination-here.png"
+      "src": "./background.jpg",
+      "size": "cover",
+      "position": "center 45%",
+      "repeat": "no-repeat",
+      "opacity": "1"
     }
   },
   "slides": [
@@ -12,99 +16,103 @@
       "title": "Yemen",
       "subtitle": "",
       "background": {
-        "src": "./image-destination-here.png"
+        "src": "./background.jpg",
+        "size": "cover",
+        "position": "center 45%",
+        "repeat": "no-repeat",
+        "opacity": "1"
       },
       "whatsHappening": {
-        "partiesHeading": "Parties Involved",
-        "background": "Yemen’s crisis is rooted in long-standing tensions between North and South Yemen, but the current war escalated after the Houthi movement seized Sana’a in 2014 and a Saudi-led intervention began in 2015. By late 2025 and early 2026, southern Yemen saw another major power struggle when the UAE-supported Southern Transitional Council advanced in the east, Saudi-backed forces counterattacked, and fears of partition and renewed proxy conflict deepened.",
+        "backgroundHeading": "Background",
+        "partiesHeading": "Main Parties Involved",
+        "timelineHeading": "Timeline",
+        "background": "Yemen’s current crisis escalated after the Houthi movement seized Sana’a in 2014 and a Saudi-led coalition intervened in 2015 to support the internationally recognized government. A 2022 truce reduced large-scale fighting, but Yemen remains divided, fragile, and deeply affected by conflict, economic collapse, disease outbreaks, and damaged public services.",
         "parties": [
           {
-            "name": "Presidential Leadership Council",
-            "description": "The internationally recognized governing body led by Rashad al-Alimi, which responded politically and militarily to the southern crisis."
-          },
-          {
-            "name": "National Shield Forces",
-            "description": "Saudi-backed pro-unity forces formed in 2023 that retook territory from STC-aligned forces in early January 2026."
-          },
-          {
-            "name": "Southern Transitional Council",
-            "description": "A UAE-backed southern secessionist body that seized Hadramawt and al-Mahra in late 2025 before its control collapsed in January 2026."
-          },
-          {
             "name": "Houthis",
-            "description": "Armed movement controlling much of northern Yemen and viewing both Saudi Arabia and the UAE as occupiers."
+            "description": "Armed movement controlling much of northern Yemen, including Sana’a."
           },
           {
-            "name": "AQAP",
-            "description": "Al-Qaeda in the Arabian Peninsula, which has exploited instability to regain territory and loot arms depots."
+            "name": "Recognized Government",
+            "description": "Internationally recognized authorities backed by the Saudi-led coalition."
+          },
+          {
+            "name": "Southern Forces",
+            "description": "Groups in southern Yemen with competing political and security goals."
+          },
+          {
+            "name": "Civilians",
+            "description": "Families face hunger, displacement, disease, and weak basic services."
           }
         ],
         "timeline": [
           {
-            "year": "1990",
-            "description": "North and South Yemen formally merged into the Republic of Yemen, but regional tensions persisted."
+            "year": "2014",
+            "description": "Houthis seize Sana’a and the political crisis escalates."
           },
           {
-            "year": "2014-15",
-            "description": "The Houthis seized Sana’a and a Saudi-led intervention began in support of the internationally recognized government."
+            "year": "2015",
+            "description": "Saudi-led coalition intervenes in Yemen’s war."
           },
           {
-            "year": "12/2025",
-            "description": "The STC seized Hadramawt and al-Mahra, raising fears of southern secession and renewed proxy conflict."
+            "year": "2022",
+            "description": "A UN-backed truce reduces large-scale fighting."
           },
           {
-            "year": "01/2026",
-            "description": "Saudi-backed National Shield Forces retook territory, STC control collapsed, and Saudi Arabia announced the secessionist body was dissolved."
+            "year": "2026",
+            "description": "Humanitarian needs remain severe despite reduced front-line fighting."
           }
         ],
         "image": {
-          "src": "./bottom-left.png",
-          "alt": "Landscape or conflict-affected scene in Yemen"
+          "src": "./yemen2.jpg",
+          "alt": "Armed men in Yemen"
         }
       },
       "civilianImpact": {
-        "experiences": "Civilians in Yemen are living through one of the world’s most severe humanitarian crises. More than half the population needs assistance, while aid delivery has been scaled back by a major funding gap. Families face insecurity, economic collapse, human rights abuses, restrictions on movement, and growing danger as armed groups exploit local instability. Women in Houthi-controlled areas face especially harsh limits on travel, work, and aid access.",
+        "experiencesHeading": "Experiences",
+        "statsHeading": "Key Figures",
+        "experiences": "Civilians are living through one of the world’s most severe humanitarian crises. Families face hunger, displacement, disease, unsafe water, damaged health services, and limited income after more than a decade of conflict and economic collapse.",
         "stats": [
           {
-            "value": "19.5m+",
-            "label": "Need Assistance"
+            "value": "22M+",
+            "label": "Need Aid"
           },
           {
-            "value": "70%",
-            "label": "Funding Gap"
+            "value": "18.3M",
+            "label": "Food Insecure"
           },
           {
-            "value": "50%+",
-            "label": "Population in Need"
+            "value": "5.2M",
+            "label": "Internally Displaced"
           },
           {
-            "value": "2026",
-            "label": "Crisis Ongoing"
+            "value": "15M",
+            "label": "Women and Children"
           }
         ],
         "image": {
-          "src": "./slide1-people.png",
-          "alt": "Yemeni civilians affected by the crisis"
+          "src": "./original.jpg",
+          "alt": "A child carried through rubble in Yemen"
         }
       },
       "howToHelp": {
-        "summary": "Yemen’s crisis continues to be shaped by war, underfunding, and fragmented political control. Supporting humanitarian aid and ceasefire efforts can help families facing hunger, displacement, and unsafe living conditions while reducing the risk of deeper proxy conflict.",
+        "summary": "Yemen’s crisis is driven by conflict, economic collapse, disease, displacement, and damaged services. Humanitarian aid and sustained diplomacy both matter.",
         "cards": [
-          {
-            "placeholder": "1990",
-            "label": "Unification"
-          },
           {
             "placeholder": "2014",
             "label": "War Escalates"
+          },
+          {
+            "placeholder": "2022",
+            "label": "Truce Reduces Fighting"
           }
         ],
         "learnMore": {
-          "text": "This slide outlines how Yemen’s current crisis grew from long-term political division into today’s humanitarian emergency."
+          "text": "This page explains how Yemen’s political conflict became a long humanitarian emergency."
         },
         "image": {
-          "src": "./flag-slide1.png",
-          "alt": "Yemeni flag"
+          "src": "./original.jpg",
+          "alt": "A child carried through rubble in Yemen"
         }
       }
     },
@@ -112,93 +120,99 @@
       "title": "Yemen",
       "subtitle": "How are civilians affected?",
       "background": {
-        "src": "./image-destination-here.png"
+        "src": "./background.jpg",
+        "size": "cover",
+        "position": "center 45%",
+        "repeat": "no-repeat",
+        "opacity": "1"
       },
       "whatsHappening": {
+        "backgroundHeading": "Civilian Impact",
         "partiesHeading": "People Affected",
-        "background": "Yemen’s war affects civilians through hunger, insecurity, rights abuses, and shrinking access to aid. Instability in the south and continued Houthi control in the north have deepened everyday hardship for families already living through years of conflict and economic collapse.",
+        "timelineHeading": "Impact Statistics",
+        "background": "Yemen’s war affects civilians through hunger, disease, displacement, protection risks, and shrinking access to services. Children are especially vulnerable because malnutrition, missed school, unsafe water, and damaged health care can shape their entire future.",
         "parties": [
           {
-            "name": "19.5 million need aid",
-            "description": "More than half the population requires humanitarian assistance."
+            "name": "Children",
+            "description": "Many face wasting, disease, interrupted education, and protection risks."
           },
           {
-            "name": "Women under restrictions",
-            "description": "Women in Houthi-controlled areas face travel bans without a male guardian and reduced access to work and aid."
+            "name": "Displaced Families",
+            "description": "Millions live away from home, often in camps or unstable shelters."
           },
           {
-            "name": "Communities facing rights abuses",
-            "description": "All sides have been accused of arbitrary detention, forced disappearance, and unfair trials."
+            "name": "Women and Girls",
+            "description": "Face higher risks from poverty, displacement, and limited services."
           },
           {
-            "name": "Coastal and port communities",
-            "description": "Shipping attacks and retaliatory strikes have damaged livelihoods and endangered marine environments."
+            "name": "Sick and Injured",
+            "description": "Health care is weakened by shortages, damage, and underfunding."
           }
         ],
         "timeline": [
           {
-            "year": "70%",
-            "description": "Humanitarian funding gap reducing the scale of relief operations."
+            "year": "18.3M",
+            "description": "People are acutely food insecure in 2026."
           },
           {
-            "year": "28.3%",
-            "description": "Funding level noted for major aid support while needs remain severe."
+            "year": "2.2M",
+            "description": "Children under five are acutely malnourished."
           },
           {
-            "year": "2026",
-            "description": "Aid cuts, insecurity, and armed group expansion continue affecting daily life."
+            "year": "59.3%",
+            "description": "Health facilities are fully functional."
           }
         ],
         "image": {
-          "src": "./bottom-left.png",
-          "alt": "Conflict-affected area in Yemen"
+          "src": "./yemen.jpg",
+          "alt": "Children reaching for aid in Yemen"
         }
       },
       "civilianImpact": {
-        "experiences": "Yemenis are not only threatened by direct fighting but also by the collapse of normal life. Armed groups have exploited withdrawn forces and unstable territory, especially in the south. Shipping attacks and retaliatory strikes have harmed ports, livelihoods, and local environments. At the same time, underfunded aid operations leave millions with less food, less protection, and fewer essential services than they need to survive.",
+        "experiencesHeading": "Experiences",
+        "statsHeading": "Impact Statistics",
+        "experiences": "Families are not only affected by direct fighting. Many cannot afford enough food, lack safe water, or live far from functioning clinics. Funding cuts and access restrictions make it harder for aid groups to reach the people facing the most severe needs.",
         "stats": [
           {
-            "value": "19.5m",
-            "label": "People in Need"
+            "value": "2.2M",
+            "label": "Children Malnourished"
           },
           {
-            "value": "70%",
-            "label": "Aid Funding Gap"
+            "value": "4.5M",
+            "label": "Children Out of School"
           },
           {
-            "value": "28.3%",
-            "label": "Aid Funding Reached"
+            "value": "14.4M",
+            "label": "Need WASH Aid"
           },
           {
-            "value": "Half",
-            "label": "Population Affected"
+            "value": "40%",
+            "label": "Health Sites Limited"
           }
         ],
         "image": {
-          "src": "./food-insecurity.png",
-          "alt": "Humanitarian conditions or food insecurity in Yemen"
+          "src": "./yemen.jpg",
+          "alt": "Children reaching for aid in Yemen"
         }
       },
       "howToHelp": {
-        "summary": "Civilians continue to pay the price for conflict, aid shortfalls, and political fragmentation. Humanitarian assistance, protection efforts, and a durable ceasefire remain critical for reducing harm and preventing even deeper instability.",
+        "summary": "Humanitarian support helps families survive, but lasting improvement also depends on a political solution, restored services, and sustained funding.",
         "cards": [
           {
-            "placeholder": "Women",
-            "label": "Mobility Curbs"
+            "placeholder": "Food",
+            "label": "Hunger Crisis"
           },
           {
-            "placeholder": "Ports",
-            "label": "Livelihoods Hit"
+            "placeholder": "Water",
+            "label": "Disease Risk"
           }
         ],
         "learnMore": {
-          "text": "The crisis affects civil liberties, gender equity, aid access, safety, and long-term local livelihoods."
+          "text": "The civilian toll includes hunger, malnutrition, displacement, health risks, and years of disrupted education."
         },
-        "imageHeading": "Yemen Crisis",
         "image": {
-          "src": "./ipc-qr.png",
-          "alt": "QR code for Yemen crisis information",
-          "mode": "qr"
+          "src": "./2025-03-15T192758Z_1638200887_RC22BDALJ88M_RTRMADP_3_USA-TRUMP-YEMEN-1024x683.jpg",
+          "alt": "A child sitting near rubble in Yemen"
         }
       }
     },
@@ -206,99 +220,99 @@
       "title": "Yemen",
       "subtitle": "How You Can Help",
       "background": {
-        "src": "./image-destination-here.png"
+        "src": "./background.jpg",
+        "size": "cover",
+        "position": "center 45%",
+        "repeat": "no-repeat",
+        "opacity": "1"
       },
       "whatsHappening": {
-        "partiesHeading": "Organizations and Efforts",
-        "background": "Support is most effective when it strengthens humanitarian operations already serving families in Yemen and when it backs efforts toward a lasting ceasefire and political settlement. Aid remains essential because millions of civilians are living through hunger, insecurity, displacement, and reduced services while funding continues to fall short.",
+        "backgroundHeading": "How You Can Help",
+        "partiesHeading": "Organizations",
+        "timelineHeading": "Ways to Help",
+        "background": "Support is most effective when it goes to organizations already delivering food, nutrition, clean water, health care, protection, and education support in Yemen. Public attention also matters because Yemen remains severely underfunded despite the scale of need.",
         "parties": [
           {
-            "name": "World Food Programme",
-            "description": "Provides food assistance and remains central to famine prevention and emergency relief in Yemen."
+            "name": "UNICEF",
+            "description": "Supports children with nutrition, health, WASH, education, and protection."
           },
           {
-            "name": "UN Special Envoy",
-            "description": "Hans Grundberg’s mediation efforts are important for moving the conflict toward a lasting ceasefire and negotiated settlement."
+            "name": "WFP",
+            "description": "Provides food assistance and logistics for the humanitarian response."
           },
           {
-            "name": "Humanitarian Donors",
-            "description": "Funding helps keep food aid, protection work, and basic support services operating despite severe shortfalls."
+            "name": "UNHCR",
+            "description": "Supports displaced families, refugees, shelter, and protection."
           },
           {
-            "name": "Southern Dialogue Efforts",
-            "description": "Political dialogue initiatives aim to reduce proxy violence and unify southern representation."
-          },
-          {
-            "name": "Public Awareness",
-            "description": "Learning and sharing verified information helps sustain pressure for relief and accountability."
+            "name": "Local Partners",
+            "description": "Help deliver aid in communities with urgent needs."
           }
         ],
         "timeline": [
           {
             "year": "Donate",
-            "description": "Support trusted humanitarian relief efforts serving civilians in Yemen."
+            "description": "Support trusted relief groups serving families in Yemen."
           },
           {
             "year": "Learn",
-            "description": "Follow verified reporting on Yemen’s humanitarian and political crisis."
+            "description": "Follow verified updates on hunger, displacement, and aid access."
           },
           {
-            "year": "Advocate",
-            "description": "Support ceasefire, diplomacy, and accountability for rights abuses against civilians."
+            "year": "Share",
+            "description": "Keep attention on a crisis that is easy to overlook."
           }
         ],
         "image": {
-          "src": "./people-affected.png",
-          "alt": "Aid or recovery efforts related to Yemen"
+          "src": "./2025-03-15T192758Z_1638200887_RC22BDALJ88M_RTRMADP_3_USA-TRUMP-YEMEN-1024x683.jpg",
+          "alt": "A child sitting near rubble in Yemen"
         }
       },
       "civilianImpact": {
-        "experiences": "Helping Yemen means supporting both immediate humanitarian relief and longer-term efforts to reduce violence. Donations can help keep food and essential aid moving to vulnerable communities, while public attention and advocacy can strengthen calls for ceasefire, diplomacy, and protection of civilians.",
+        "experiencesHeading": "How You Can Help",
+        "statsHeading": "Support Options",
+        "experiences": "Helping Yemen means funding emergency food, nutrition treatment, safe water, health care, and protection for displaced and conflict-affected families while supporting diplomacy that reduces harm to civilians.",
         "stats": [
           {
-            "value": "3",
-            "label": "Ways to Take Action"
+            "value": "Food",
+            "label": "Emergency Aid"
           },
           {
-            "value": "1",
-            "label": "Main Learn More QR"
+            "value": "Health",
+            "label": "Medical Support"
           },
           {
-            "value": "Ongoing",
-            "label": "Need for Relief"
+            "value": "Water",
+            "label": "Safe Services"
           },
           {
-            "value": "Millions",
-            "label": "Lives Affected"
+            "value": "Care",
+            "label": "Child Protection"
           }
         ],
         "image": {
-          "src": "./slide1-people.png",
-          "alt": "Yemeni families affected by crisis"
+          "src": "./2025-03-15T192758Z_1638200887_RC22BDALJ88M_RTRMADP_3_USA-TRUMP-YEMEN-1024x683.jpg",
+          "alt": "A child sitting near rubble in Yemen"
         }
       },
       "howToHelp": {
-        "summary": "Support humanitarian groups such as the World Food Programme and follow verified updates on Yemen. You can also advocate for diplomacy, civilian protection, and serious international attention to a crisis that remains underfunded despite the scale of need.",
+        "summary": "Use the donation QR on the right to support Yemen relief, and use the second QR to learn more about hunger, displacement, and humanitarian response.",
         "cards": [
           {
-            "qr": "../images/yemen-1.png",
-            "label": "World Food Programme Yemen",
-            "url": "https://www.wfp.org/emergencies/yemen-emergency"
+            "qr": "./yemen-donate-qr.png",
+            "label": "Scan to Donate"
           },
           {
-            "qr": "../images/yemen-2.png",
-            "label": "UN Yemen Crisis Response",
-            "url": "https://www.unocha.org/yemen"
+            "qr": "./yemen-info-qr.png",
+            "label": "Learn More"
           }
         ],
         "learnMore": {
-          "text": "You can also follow UN mediation efforts and humanitarian updates to better understand Yemen’s crisis and support informed advocacy."
+          "text": "You can also follow UNICEF, WFP, UNHCR, OCHA, and the UN Special Envoy for verified Yemen updates."
         },
-        "imageHeading": "Learn More",
         "image": {
-          "src": "./grundberg-qr.png",
-          "alt": "QR code for Yemen humanitarian or UN mediation information",
-          "mode": "qr"
+          "src": "./2025-03-15T192758Z_1638200887_RC22BDALJ88M_RTRMADP_3_USA-TRUMP-YEMEN-1024x683.jpg",
+          "alt": "A child sitting near rubble in Yemen"
         }
       }
     }

@@ -106,7 +106,7 @@
       "title": "Congo",
       "subtitle": "How are civilians affected?",
       "background": {
-        "src": "./congo mining.png"
+        "src": "./congo landscape.jpg"
       },
       "whatsHappening": {
         "backgroundHeading": "Civilian Impact",
@@ -193,7 +193,7 @@
       "title": "Congo",
       "subtitle": "How You Can Help",
       "background": {
-        "src": "./congo architecture.png"
+        "src": "./congo landscape.jpg"
       },
       "whatsHappening": {
         "backgroundHeading": "How Support Helps",
