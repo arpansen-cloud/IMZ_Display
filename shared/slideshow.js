@@ -169,7 +169,7 @@ function normalizeQrSrc(src) {
 
 function createQrBlock(title, items) {
   if (!items?.length) return null;
-  const wrap = createNode("article", "feature-stack");
+  const wrap = createNode("article", "feature-stack qr-section");
   wrap.appendChild(createNode("h3", "stack-heading section-heading", title || "How to Help"));
 
   const grid = createNode("div", "qr-grid");
@@ -183,6 +183,7 @@ function createQrBlock(title, items) {
     const textOnlyCard = !item.qr && !item.url;
     const qrImageCard = Boolean(item.qr);
     article.className = `qr-card${textOnlyCard ? " qr-card-text" : ""}${qrImageCard ? " qr-card-image" : ""}${item.primary ? " qr-card-primary" : ""}`;
+    const qrContainer = createNode("div", "qr-container");
 
     if (item.qr) {
       const img = document.createElement("img");
@@ -191,18 +192,19 @@ function createQrBlock(title, items) {
       img.alt = item.label ? `${item.label} QR code` : "QR code";
       img.loading = "eager";
       img.decoding = "sync";
-      article.appendChild(img);
+      qrContainer.appendChild(img);
     } else {
-      article.appendChild(createNode("span", "qr-placeholder", item.placeholder || "QR CODE"));
+      qrContainer.appendChild(createNode("span", "qr-placeholder", item.placeholder || "QR CODE"));
     }
 
     if (item.label) {
       const label = document.createElement("span");
       label.className = "qr-link";
       label.textContent = item.label;
-      article.appendChild(label);
+      qrContainer.appendChild(label);
     }
 
+    article.appendChild(qrContainer);
     grid.appendChild(article);
   });
 

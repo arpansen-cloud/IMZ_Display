@@ -407,6 +407,7 @@ h1 {
 
 .feature-panel-bosnia-howToHelp .qr-link {
   font-size: 0.74rem;
+  text-align: center;
 }
 
 .feature-panel-bosnia-howToHelp .learn-more {
@@ -901,6 +902,12 @@ h1 {
   justify-content: center;
 }
 
+.qr-section .qr-grid.single-card {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 .qr-grid.three-cards {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -959,6 +966,33 @@ h1 {
   gap: 0.55rem;
   text-align: center;
   min-height: 108px;
+}
+
+.qr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.qr-section {
+  width: 100%;
+  justify-items: center;
+}
+
+.qr-section .section-heading {
+  justify-self: stretch;
+}
+
+.qr-section .qr-grid {
+  width: 100%;
+  justify-content: center;
+  justify-items: center;
+}
+
+.qr-section .qr-card {
+  justify-self: center;
 }
 
 .qr-card-image {
