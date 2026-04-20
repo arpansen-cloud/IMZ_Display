@@ -87,7 +87,7 @@
         "cards": [
           {
             "qr": "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fwww.unicef.org%2Fbih%2Fen%2Fdonate",
-            "label": "UNICEF Donation Link"
+            "label": "Scan to Donate"
           }
         ],
         "learnMore": {

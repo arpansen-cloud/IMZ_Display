@@ -35,8 +35,8 @@
           { "year": "Mar-Apr 2026", "description": "OCHA, WHO, and UN updates reported renewed hostilities, mass displacement, rising casualties, and growing humanitarian need." }
         ],
         "image": {
-          "src": "./lebanon-slide1.jpeg",
-          "alt": "Destroyed buildings and civilians in Lebanon"
+          "src": "./2026-03-17-lebanon.png",
+          "alt": "Civilians looking at destroyed buildings in Lebanon"
         }
       },
       "civilianImpact": {
@@ -48,16 +48,16 @@
           { "value": "88", "label": "Attacks on Health Care; 4 Hospitals Fully Closed" }
         ],
         "image": {
-          "src": "./lebanon-slide2.jpeg",
-          "alt": "Destroyed buildings and humanitarian impact in Lebanon"
+          "src": "./lebanon-explainer-1.png",
+          "alt": "Displaced families sheltering in Lebanon"
         }
       },
       "howToHelp": {
         "summary": "Donations to vetted relief groups help fund food, emergency health care, shelter support, medicine, hygiene supplies, and protection services for families who have been displaced or injured.",
         "cards": [
-          { "qr": "./red-cross-qr.png?v=2", "label": "Lebanese Red Cross" },
-          { "qr": "./unicef-qr.png?v=2", "label": "UNICEF Lebanon Appeal" },
-          { "qr": "./wfp-qr.png?v=2", "label": "WFP Lebanon" }
+          { "qr": "./red-cross-qr.png?v=2", "label": "Donate: Red Cross" },
+          { "qr": "./unicef-qr.png?v=2", "label": "Donate: UNICEF" },
+          { "qr": "./wfp-qr.png?v=2", "label": "Donate: WFP" }
         ],
         "learnMore": {
           "text": "Visit this page for verified resources and updated information on the Lebanon crisis.",
@@ -65,8 +65,8 @@
           "url": "https://www.unocha.org/lebanon"
         },
         "image": {
-          "src": "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Families displaced by conflict"
+          "src": "./im-83947463.avif",
+          "alt": "Humanitarian conditions in Lebanon"
         }
       }
     }

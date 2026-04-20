@@ -87,7 +87,7 @@
         "cards": [
           {
             "qr": "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fgive.unrefugees.org%2F250331emer_myan_p_3000%2F%3Futm_medium%3Dreferral%26utm_source%3Ddonate.unhcr.org%26utm_campaign%3DUS_PS_EN_MS_____250331%26utm_content%3Drfrl%26SF_onetime%3D701Rf00000PhjecIAB%26SF_monthly%3D701Rf00000Phf9bIAB%26_gl%3D1%2Al8za4n%2A_gcl_au%2AODY5NTM2Mzk0LjE3NzYwMzczMzQ.%2A_ga%2AMjM5Mzg5NjMzLjE3NzYwMzczMzQ.%2A_ga_X2YZPJ1XWR%2AczE3NzYwMzczMzMkbzEkZzAkdDE3NzYwMzczMzMkajYwJGwwJGgw%2A_rup_ga%2AMjM5Mzg5NjMzLjE3NzYwMzczMzQ.%2A_rup_ga_EVDQTJ4LMY%2AczE3NzYwMzczMzQkbzEkZzAkdDE3NzYwMzczMzQkajYwJGwwJGgw",
-            "label": "UNHCR Donation Link"
+            "label": "Scan to Donate"
           }
         ],
         "learnMore": {

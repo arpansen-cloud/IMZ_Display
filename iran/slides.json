@@ -87,15 +87,15 @@
         "cards": [
           {
             "qr": "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fwww.ifrc.org%2Femergency%2Firan-complex-emergency-2026",
-            "label": "IFRC Iran Appeal"
+            "label": "Scan to Donate"
           },
           {
             "qr": "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fwww.doctorswithoutborders.org%2Fwhat-we-do%2Fwhere-we-work%2Firan",
-            "label": "Doctors Without Borders"
+            "label": "Medical Aid"
           },
           {
             "qr": "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fwww.unhcr.org%2Fcountries%2Firan",
-            "label": "UNHCR Iran"
+            "label": "Learn More"
           }
         ],
         "learnMore": {

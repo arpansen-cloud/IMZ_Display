@@ -133,26 +133,40 @@ h1 {
 
 .sources-shell {
   min-height: 100vh;
+  width: min(1380px, calc(100vw - 2rem));
+  padding-top: 1.2rem;
 }
 
 .sources-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.sources-grid-focused {
+  grid-template-columns: 1fr;
+}
+
+.sources-grid-focused .source-card {
+  padding: 1rem;
+}
+
+.sources-grid-focused .source-list {
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
 }
 
 .source-card {
-  min-height: 180px;
-  padding: 1.25rem;
-  border-radius: 18px;
+  min-height: 0;
+  padding: 0.82rem;
+  border-radius: 16px;
   border: 1px solid var(--stroke);
   background: linear-gradient(180deg, rgba(27, 23, 70, 0.92), rgba(15, 12, 42, 0.92));
   box-shadow: var(--shadow);
 }
 
 .source-card h2 {
-  margin: 0 0 0.55rem;
-  font-size: 1.2rem;
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
 }
 
 .source-card p {
@@ -163,6 +177,107 @@ h1 {
 
 .sources-actions {
   margin-top: 1.25rem;
+}
+
+.source-card-full {
+  min-height: 0;
+}
+
+.source-card-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.source-card-heading h2 {
+  margin: 0;
+}
+
+.source-card-heading span {
+  color: var(--muted);
+  font-size: 0.68rem;
+  white-space: nowrap;
+}
+
+.source-note,
+.source-empty {
+  margin: 0.25rem 0 0.52rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.32;
+}
+
+.source-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
+  gap: 0.36rem;
+  margin: 0.5rem 0 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.source-list li {
+  color: rgba(245, 245, 251, 0.72);
+  min-width: 0;
+}
+
+.source-list a {
+  display: grid;
+  gap: 0.08rem;
+  min-height: 2.25rem;
+  padding: 0.38rem 0.48rem;
+  border-radius: 10px;
+  border: 1px solid rgba(187, 206, 255, 0.14);
+  background: rgba(255, 255, 255, 0.045);
+  color: #f7f7ff;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.source-list a:hover {
+  border-color: rgba(187, 206, 255, 0.32);
+  background: rgba(255, 255, 255, 0.075);
+}
+
+.source-list strong,
+.source-list span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.source-list strong {
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+.source-list span {
+  color: rgba(219, 223, 245, 0.68);
+  font-size: 0.62rem;
+  line-height: 1.1;
+}
+
+.text-source-box {
+  margin-top: 0.55rem;
+  padding: 0.55rem;
+  border-radius: 12px;
+  border: 1px solid rgba(187, 206, 255, 0.16);
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.text-source-box h3 {
+  margin: 0 0 0.25rem;
+  font-size: 0.74rem;
+}
+
+.text-source-box p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.68rem;
+  line-height: 1.32;
 }
 
 #app {
@@ -821,7 +936,7 @@ h1 {
 }
 
 .feature-panel-afghanistan-howToHelp .afghanistan-support-priorities {
-  gap: 0.5rem;
+  gap: 0.25rem;
 }
 
 .feature-panel-afghanistan-overview .feature-side .stack-heading,
@@ -1057,7 +1172,7 @@ h1 {
 .section-heading {
   text-align: center;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 0.28rem;
 }
 
 .key-figures-heading {
@@ -1238,21 +1353,23 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  gap: 0.16rem;
 }
 
 .stat-value {
   margin: 0;
   font-size: 1.55rem;
   font-weight: 800;
-  line-height: 0.9;
+  line-height: 1;
   letter-spacing: -0.03em;
   text-align: center;
 }
 
 .stat-label {
-  margin-top: 0.22rem;
+  margin: 0;
   color: var(--muted);
   font-size: 0.76rem;
+  line-height: 1.16;
   text-align: center;
 }
 
@@ -1272,6 +1389,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 0.38rem;
   width: 100%;
 }
 
@@ -1286,6 +1404,7 @@ h1 {
 
 .support-options .section-heading {
   width: 100%;
+  margin-bottom: 0.28rem;
 }
 
 .support-options .qr-grid {
@@ -1303,6 +1422,7 @@ h1 {
 
 .qr-section .section-heading {
   justify-self: stretch;
+  margin-bottom: 0.28rem;
 }
 
 .qr-section .qr-grid {

@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../shared/styles.css?v=29" />
+  <link rel="stylesheet" href="../shared/styles.css?v=30" />
 </head>
 <body class="hub-page">
   <div class="hub-shell sources-shell">
@@ -22,28 +22,11 @@
     </header>
 
     <p class="hub-intro" id="sourcesIntro">
-      Add your citations, reports, articles, and resource links here. This page is set up as a
-      central place for the source material used across the country slides.
+      Explore the reports, humanitarian updates, and background resources used to support each
+      country display.
     </p>
 
-    <main class="sources-grid" aria-label="Source sections">
-      <section class="source-card">
-        <h2>General Sources</h2>
-        <p>Add shared reports, global databases, and background explainers here.</p>
-      </section>
-      <section class="source-card">
-        <h2>Country-Specific Sources</h2>
-        <p>Add links grouped by country page as you build out the remaining content.</p>
-      </section>
-      <section class="source-card">
-        <h2>Organizations</h2>
-        <p>Add humanitarian, legal, medical, and reporting organizations here.</p>
-      </section>
-      <section class="source-card">
-        <h2>Media and Images</h2>
-        <p>Add attribution links for images, maps, and other visual materials here.</p>
-      </section>
-    </main>
+    <main class="sources-grid" id="sourcesGrid" aria-label="Source sections"></main>
 
     <div class="sources-actions">
       <a class="nav-button" id="countryBackLink" href="../index.html">Back to Country</a>
@@ -51,18 +34,347 @@
     </div>
   </div>
   <script>
+    const sourceData = [
+      {
+        title: "Afghanistan",
+        path: "afghanistan",
+        note: "Background reporting, conflict analysis, and humanitarian response resources.",
+        links: [
+          "https://www.cfr.org/global-conflict-tracker/conflict/war-afghanistan",
+          "https://interactive.aljazeera.com/aje/2021/afghanistan-visualising-impact-of-war/index.html",
+          "https://www.pbs.org/newshour/politics/asia-jan-june11-timeline-afghanistan",
+          "https://www.cfr.org/articles/why-are-the-afghan-taliban-and-pakistan-in-an-open-war",
+          "https://help.rescue.org/donate/afghanistan-crisis"
+        ]
+      },
+      {
+        title: "Bosnia",
+        path: "bosnia",
+        links: [
+          "https://www.ushmm.org/genocide-prevention/countries/bosnia-herzegovina",
+          "https://www.aljazeera.com/features/2026/4/1/on-bosnian-croatian-border-migrants-face-untold",
+          "https://www.ifrc.org/press-release/migrants-bosnia-and-herzegovina-dying-while-seeking-safety",
+          "https://www.eeas.europa.eu/eeas/bosnia-and-herzegovina-migration-crisis-far-over_en",
+          "https://www.pbs.org/newshour/show/wave-of-refugees-to-bosnia-signals-new-migrant-trail-to-the-european-union",
+          "https://borgenproject.org/managing-asylum-seekers-and-migrants-in-bosnia-and-herzegovina",
+          "https://migrants-refugees.va/country-profile/bosnia-and-herzegovina/",
+          "https://www.gmfus.org/news/toward-new-youth-brain-drain-paradigm-western-balkans",
+          "https://www.hrw.org/world-report/2026/country-chapters/bosnia-and-herzegovina",
+          "https://www.hrw.org/news/2018/12/11/croatia-migrants-pushed-back-bosnia-and-herzegovina",
+          "https://www.care.org/our-work/where-we-work/bosnia-and-herzegovina/",
+          "https://cwsglobal.org/donate-3/bosnia-migration-crisis/",
+          "https://www.collectiveaidngo.org/apply-to-volunteer-balkans"
+        ]
+      },
+      {
+        title: "Central African Republic",
+        path: "centralafricanrepublic",
+        links: [
+          "https://www.cfr.org/global-conflict-tracker/conflict/violence-central-african-republic",
+          "https://www.unicef.org/media/179296/file/2026-HAC-CAR.pdf",
+          "https://www.unicef.org/car/en",
+          "https://www.unhcr.org/where-we-work/countries/central-african-republic",
+          "https://www.icrcnewsroom.org/story/en/1140/central-african-republic-humanitarian-situation-remains-alarming-in-south-east-of-the-country-302449",
+          "https://www.icrc.org/en/where-we-work/central-african-republic"
+        ]
+      },
+      {
+        title: "Uyghur",
+        path: "china",
+        note: "Additional documentaries and research organizations are listed below for further learning.",
+        links: [
+          "https://uyghurstudy.org/the-plight-of-the-uyghurs-2014-2024/",
+          "https://bylinetimes.com/2020/09/01/china-must-give-the-un-immediate-and-unfettered-access-to-uyghur-camps/",
+          "https://www.mausa.org/appeals/uyghur-refugees",
+          "https://uhrp.org/take-action/"
+        ],
+        textSources: [
+          "Nowhere to Call Home, Al Jazeera",
+          "All Static & Noise, David Novak",
+          "China Undercover, Frontline PBS",
+          "Center for Uyghur Studies",
+          "The Xinjiang Data Project",
+          "Xinjiang Police Files",
+          "Humanity in Action",
+          "Uyghur Human Rights Project"
+        ]
+      },
+      {
+        title: "Congo",
+        path: "congo",
+        links: [
+          "https://e360.yale.edu/features/siddharth-kara-cobalt-mining-labor-congo",
+          "https://www.washingtonpost.com/graphics/business/batteries/congo-cobalt-mining-for-lithium-ion-battery/",
+          "https://www.genocidewatch.com/single-post/special-report-conflict-minerals-in-the-drc",
+          "https://www.hrw.org/news/2026/01/12/dr-congo-surge-in-conflict-related-sexual-violence",
+          "https://panzifoundation.org/#",
+          "https://www.cfr.org/global-conflict-tracker/conflict/violence-democratic-republic-congo",
+          "https://www.focuscongo.com/en/spende/"
+        ]
+      },
+      {
+        title: "Iran",
+        path: "iran",
+        note: "Additional referenced organizations include The Lancet, OCHA, NRC, Refugees International, The Soufan Center, WHO, and the House of Commons.",
+        links: []
+      },
+      {
+        title: "Kashmir",
+        path: "kashmir",
+        note: "Reporting resource connected to the Kashmir display.",
+        links: [
+          "https://www.reuters.com/world/asia-pacific/residents-pakistani-kashmir-say-they-fled-into-hills-during-indian-strikes-2025-05-07/"
+        ]
+      },
+      {
+        title: "Kurdistan",
+        path: "kurdistan",
+        links: [
+          "https://www.cfr.org/articles/kurds-long-struggle-statelessness",
+          "https://historylearning.com/modern-world-history/treaty-of-sevres/",
+          "https://thelausanneproject.com/history-lausanne-treaty/",
+          "https://thekurdishproject.org/infographics/kurds-and-the-refugee-crisis/",
+          "https://kurdistanhumanrights.org/en/category/publications/annual-report",
+          "https://hanahr.org/en/publications/hana-human-rights-organization-monthly-reporthumanrights-situation-in-iranian-kurdistan-january-2026/",
+          "https://www.bbc.com/news/magazine-36362107",
+          "https://en.emergency.it/blog/from-the-field/iraq-and-the-kurdistan-region-under-the-threat-of-a-new-crisis-testimony-from-sulaymaniyah/"
+        ]
+      },
+      {
+        title: "Lebanon",
+        path: "lebanon",
+        links: [
+          "https://www.unicef.org/appeals/lebanon",
+          "https://www.unocha.org/lebanon",
+          "https://docs.un.org/en/S/2024/870",
+          "https://www.wfp.org/news/food-insecurity-lebanon-remains-fragile-despite-signs-easing-country-enters-new-year-new",
+          "https://www.worldbank.org/en/news/press-release/2024/11/14/new-world-bank-report-assesses-impact-of-conflict-on-lebanon-s-economy-and-key-sectors",
+          "https://www.redcross.org.lb",
+          "https://www.wfp.org/emergencies/lebanon",
+          "https://reliefweb.int/report/lebanon/flash-appeal-lebanon-march-may-2026-march-2026-enar",
+          "https://www.emro.who.int/images/stories/lebanon/Lebanon-Emergency-Sitrep-15-2026.pdf",
+          "https://unifil.unmissions.org/sites/default/files/s_2024_548-en.pdf",
+          "https://documents1.worldbank.org/curated/en/099011525121042059/pdf/P5084841069d290311976a104d01527af01.pdf",
+          "https://www.msf.org/lebanon-testimony-night-mass-casualties-beirut",
+          "https://www.unrefugees.org/news/what-is-happening-in-lebanon/",
+          "https://www.ohchr.org/en/press-briefing-notes/2026/03/situation-lebanon"
+        ]
+      },
+      {
+        title: "Myanmar",
+        path: "myanmar",
+        links: [
+          "https://en.wikipedia.org/wiki/Myanmar_conflict",
+          "https://worldwithoutgenocide.org/toolkits/genocide-of-the-rohingya",
+          "https://www.aljazeera.com/news/2017/8/26/deadly-clashes-erupt-in-myanmars-restive-rakhinestate",
+          "https://www.ohchr.org/en/press-releases/2017/12/human-rights-council-opens-special-session-situation-human-rights-rohingya?LangID=E&NewsID=22491",
+          "https://www.aljazeera.com/news/2024/6/26/rohingya-genocide-intensifying-as-war-rages-in-myanmars-rakhine-brouk",
+          "https://www.hrw.org/news/2021/08/25/rohingya-refugees-search-safety-freedom-and-justice",
+          "https://www.reuters.com/news/picture/where-the-rohingya-once-lived-idUSRTS1E33Y/",
+          "https://edition.cnn.com/2024/03/27/asia/myanmar-military-junta-civilian-attacks-intl-hnk-dst/index.html",
+          "https://news.sky.com/story/myanmars-civil-war-has-taken-dramatic-turn-and-never-has-the-ruling-military-looked-so-vulnerable-13030330",
+          "https://www.thenewhumanitarian.org/news-feature/2025/01/30/rohingya-civilians-recall-alleged-arakan-army-abuses",
+          "https://www.aa.com.tr/en/asia-pacific/rohingya-muslims-face-new-threat-from-arakan-army-after-being-persecuted-by-myanmar-military/3412335",
+          "https://aappb.org/%e2%81%a8daily-briefing-in-relation-to-the-military-coup-12/",
+          "https://www.islamic-relief.org.uk/where-we-work/country/myanmar/",
+          "https://humanappeal.org.uk/appeals/myanmar-emergency-appeal",
+          "https://www.globalgiving.org/projects/rohingya-refugee-relief-fund/projects/",
+          "https://giving.unhcr.org/en/rohingya/",
+          "https://humanappealusa.org/donate/projects/emergencies/rohingya-emergencyfund"
+        ]
+      },
+      {
+        title: "Palestine",
+        path: "palestine",
+        note: "Reporting and educational resources related to the Palestine display.",
+        links: [
+          "https://www.aljazeera.com/gallery/2026/1/17/photos-gaza-ceasefire-brings-no-relief-as-israeli-bombings-continue",
+          "https://www.aljazeera.com/gallery/2025/12/22/2025-in-gaza-12-months-12-pictures",
+          "https://www.btselem.org/",
+          "https://www.972mag.com/",
+          "https://www.unrwausa.org/"
+        ]
+      },
+      {
+        title: "Sudan",
+        path: "sudan",
+        links: [
+          "https://www.unicef.org/press-releases/entire-generation-children-sudan-faces-catastrophe-war-enters-its-second-year",
+          "https://www.wfp.org/emergencies/sudan",
+          "https://www.cfr.org/global-conflict-tracker",
+          "https://www.unrefugees.org/emergencies/sudan/",
+          "https://www.unwomen.org/en/articles/explainer/the-impact-of-sudans-war-on-women-two-years-on",
+          "https://www.ohchr.org/en/press-releases/2026/02/sudan-rsf-violations-capture-el-fasher-amount-war-crimes",
+          "https://www.unicef.org/appeals/sudan"
+        ]
+      },
+      {
+        title: "Syria",
+        path: "syria",
+        note: "Humanitarian, refugee, and civil response resources connected to the Syria display.",
+        links: [
+          "https://www.unicef.org/emergencies/syrian-crisis",
+          "https://www.unicef.org/appeals/syria",
+          "https://www.unhcr.org/sy/",
+          "https://sarc.sy/",
+          "https://www.syriacivildefence.org/",
+          "https://www.aljazeera.com/where/syria/"
+        ]
+      },
+      {
+        title: "Ukraine",
+        path: "ukraine",
+        links: [
+          "https://www.reuters.com/world/europe/ukrainians-mourn-missing-homes-loved-ones-after-four-years-war",
+          "https://www.unhcr.org/emergencies/ukraine-emergency",
+          "https://www.unicef.org/appeals/ukraine",
+          "https://www.unicef.org/ukraine/en/donate-now"
+        ]
+      },
+      {
+        title: "Venezuela",
+        path: "venezuela",
+        links: [
+          "https://news.un.org/en/story/2026/01/1166708",
+          "https://www.cfr.org/global-conflict-tracker/conflict/instability-venezuela",
+          "https://crisisresponse.iom.int/response/ioms-appeal-towards-regional-refugee-and-migrant-response-plan-venezuela-situation-2025",
+          "https://crisisresponse.iom.int/response/venezuela-bolivarian-republic-crisis-response-plan-2026",
+          "https://www.r4v.info/es/refugiadosymigrantes",
+          "https://www.wfp.org/countries/venezuela-bolivarian-republic",
+          "https://www.unocha.org/venezuela",
+          "https://www.unhcr.org/us/emergencies/venezuela-situation"
+        ]
+      },
+      {
+        title: "Yemen",
+        path: "yemen",
+        links: [
+          "https://acleddata.com/qa/qa-southern-yemen-how-did-we-get-here-and-what-happens-next",
+          "https://arabcenterdc.org/resource/a-timeline-of-the-yemen-crisis-from-the-1990s-to-the-present/",
+          "https://www.congress.gov/crs-product/IF12581",
+          "https://www.amnesty.org/en/location/middle-east-and-north-africa/middle-east/yemen/report-yemen/",
+          "https://www.cnn.com/2015/10/21/middleeast/yemen-fareed-shawky-dont-bury-me",
+          "https://euromedmonitor.org/en/article/5380/Reduction-in-fighting-has-not-alleviated-Yemen%E2%80%99s-humanitarian-crisis",
+          "https://www.fairobserver.com/region/middle_east_north_africa/pierrepont-johnson-yemen-humanitarian-crisis-aid-reconstruction-peace-process-news-16524/",
+          "https://www.unicef.org/appeals/yemen",
+          "https://www.wfp.org/emergencies/yemen-emergency",
+          "https://yemen.un.org/en/312711-ocha-yemen-yemen-humanitarian-needs-and-response-plan-2026-march-2026"
+        ]
+      }
+    ];
+
     const params = new URLSearchParams(window.location.search);
-    const country = params.get("country");
-    const path = params.get("path");
+    let country = params.get("country");
+    let path = params.get("path");
+    const grid = document.getElementById("sourcesGrid");
+    const normalize = (value) => value.toLowerCase().replace(/[^a-z0-9]/g, "");
+
+    if (!country && !path && document.referrer) {
+      try {
+        const referrer = new URL(document.referrer);
+        const parts = referrer.pathname.split("/").filter(Boolean);
+        const previousFolder = parts.at(-2);
+        const inferred = sourceData.find((item) => item.path === previousFolder);
+        if (inferred) {
+          country = inferred.title;
+          path = inferred.path;
+        }
+      } catch {
+        // Keep the full source hub when the referrer cannot be parsed.
+      }
+    }
+
+    function sourceLabel(url) {
+      try {
+        const parsed = new URL(url);
+        const host = parsed.hostname.replace(/^www\./, "");
+        const slug = parsed.pathname.split("/").filter(Boolean).slice(-1)[0] || host;
+        return {
+          host,
+          title: slug.replace(/[-_]/g, " ")
+        };
+      } catch {
+        return {
+          host: "Source",
+          title: url
+        };
+      }
+    }
+
+    function uniqueLinks(links) {
+      const seen = new Set();
+      return links.filter((link) => {
+        const key = link.replace(/\/$/, "");
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      });
+    }
+
+    function renderCard(item) {
+      const card = document.createElement("section");
+      card.className = "source-card source-card-full";
+      const links = uniqueLinks(item.links || []);
+      card.innerHTML = `
+        <div class="source-card-heading">
+          <h2>${item.title}</h2>
+          <span>${links.length} link${links.length === 1 ? "" : "s"}</span>
+        </div>
+        ${item.note ? `<p class="source-note">${item.note}</p>` : ""}
+      `;
+
+      if (links.length) {
+        const list = document.createElement("ol");
+        list.className = "source-list";
+        links.forEach((url) => {
+          const label = sourceLabel(url);
+          const row = document.createElement("li");
+          const link = document.createElement("a");
+          link.href = url;
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+          link.title = url;
+          link.innerHTML = `<strong>${label.host}</strong><span>${label.title}</span>`;
+          row.append(link);
+          list.append(row);
+        });
+        card.append(list);
+      } else {
+        const empty = document.createElement("p");
+        empty.className = "source-empty";
+        empty.textContent = "Sources for this country are being prepared.";
+        card.append(empty);
+      }
+
+      if (item.textSources?.length) {
+        const textBox = document.createElement("div");
+        textBox.className = "text-source-box";
+        textBox.innerHTML = `<h3>Additional resources</h3><p>${item.textSources.join(" · ")}</p>`;
+        card.append(textBox);
+      }
+      return card;
+    }
+
+    function renderSources(items) {
+      grid.replaceChildren(...items.map(renderCard));
+    }
 
     if (country) {
+      const selected = sourceData.find((item) =>
+        normalize(item.title) === normalize(country) || normalize(item.path) === normalize(path || "")
+      );
       document.title = `${country} Sources`;
       document.getElementById("sourcesTitle").textContent = `${country} Sources`;
       document.getElementById("sourcesIntro").textContent =
-        `Add citations, reports, articles, and resource links for ${country} here. This page can serve as the reference hub for that country's display slides.`;
+        selected
+          ? `Reports, background resources, and humanitarian updates connected to the ${selected.title} display.`
+          : `Sources for ${country} are being prepared.`;
       document.getElementById("countryBackLink").href = path ? `../${path}/index.html` : "../index.html";
+      grid.classList.add("sources-grid-focused");
+      renderSources(selected ? [selected] : []);
     } else {
       document.getElementById("countryBackLink").remove();
+      renderSources(sourceData);
     }
   </script>
 </body>

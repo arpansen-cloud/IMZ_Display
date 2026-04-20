@@ -285,7 +285,7 @@
         "cards": [
           {
             "qr": "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fwww1.hhrd.org%2FCampaigns%2FKashmir-Relief",
-            "label": "Helping Hand Relief"
+            "label": "Scan to Donate"
           }
         ],
         "learnMore": {
