@@ -526,6 +526,12 @@ h1 {
   gap: 0.65rem;
 }
 
+.country-afghanistan .feature-panel-afghanistan-overview .feature-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .country-afghanistan .feature-panel-afghanistan-overview .content-block {
   margin-bottom: 0.42rem;
 }
@@ -546,11 +552,17 @@ h1 {
 }
 
 .country-afghanistan .feature-panel-afghanistan-overview .feature-side .feature-media-card {
-  height: 210px;
+  width: 100%;
+  max-width: 320px;
+  height: 260px;
+  margin-top: 0.1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .country-afghanistan .feature-panel-afghanistan-overview .feature-side .feature-media-card img {
-  height: 210px;
+  width: 100%;
+  height: 260px;
   object-fit: cover;
   object-position: center;
 }
