@@ -611,6 +611,12 @@ async function main() {
   const slides = data.slides || [];
   if (slides.length === 0) throw new Error("slides.json has no slides");
 
+  const countryClass = (meta.defaultTitle || document.title || "country")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+  document.body.classList.add(`country-${countryClass}`);
+
   const sectionSlides = buildSectionSlides(slides, meta);
   const hasMultipleSlides = sectionSlides.length > 1;
   setSourcesLink(meta);

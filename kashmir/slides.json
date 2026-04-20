@@ -281,23 +281,19 @@
         }
       },
       "howToHelp": {
-        "summary": "Use the support options on the right as reminders: learn the history, follow credible reporting, and support civilian-focused human rights or mental health work.",
+        "summary": "Support civilian relief directly through a verified Kashmir relief campaign while continuing to follow credible reporting and civilian-focused advocacy.",
         "cards": [
           {
-            "placeholder": "Learn",
-            "label": "Understand the Conflict"
-          },
-          {
-            "placeholder": "Share",
-            "label": "Raise Awareness"
+            "qr": "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https%3A%2F%2Fwww1.hhrd.org%2FCampaigns%2FKashmir-Relief",
+            "label": "Helping Hand Relief"
           }
         ],
         "learnMore": {
           "text": "Reliable sources include human rights groups, press freedom monitors, medical humanitarian reporting, and careful news coverage from the region."
         },
         "image": {
-          "src": "./crowd.png",
-          "alt": "Crowd of Kashmiris"
+          "src": "./kashmir33.jpeg",
+          "alt": "Civilians walking during lockdown in Kashmir with security presence"
         }
       }
     }
