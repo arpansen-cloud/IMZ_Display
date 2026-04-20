@@ -135,7 +135,7 @@ function createTimelineBlock(title, items) {
 function createStatsBlock(title, items) {
   if (!items?.length) return null;
   const wrap = createNode("article", "feature-stack");
-  wrap.appendChild(createNode("h3", "stack-heading", title || "Key Figures"));
+  wrap.appendChild(createNode("h3", "stack-heading section-heading", title || "Key Figures"));
 
   const grid = createNode("div", "stats-grid");
   items.slice(0, 4).forEach((item) => {
@@ -170,7 +170,7 @@ function normalizeQrSrc(src) {
 function createQrBlock(title, items) {
   if (!items?.length) return null;
   const wrap = createNode("article", "feature-stack");
-  wrap.appendChild(createNode("h3", "stack-heading", title || "How to Help"));
+  wrap.appendChild(createNode("h3", "stack-heading section-heading", title || "How to Help"));
 
   const grid = createNode("div", "qr-grid");
   const cards = items.slice(0, 3);
@@ -350,6 +350,10 @@ function renderSection(sectionSlide) {
   if (sectionSlide.section.variant === "afghanistan-overview") {
     const overviewSlide = sectionSlide.slides[0];
     const impactSlide = sectionSlide.slides[1];
+    const overviewImage =
+      sectionSlide.slides.length > 1 && overviewSlide !== impactSlide
+        ? overviewSlide.civilianImpact?.image || impactSlide.whatsHappening?.image
+        : overviewSlide.whatsHappening?.image || overviewSlide.civilianImpact?.image;
 
     appendIfPresent(
       copy,
@@ -371,7 +375,7 @@ function renderSection(sectionSlide) {
     appendIfPresent(
       side,
       createImageCard(
-        overviewSlide.civilianImpact?.image || impactSlide.whatsHappening?.image,
+        overviewImage,
         "Country civilian impact image",
       ),
     );
@@ -411,7 +415,7 @@ function renderSection(sectionSlide) {
     appendIfPresent(
       side,
       createImageCard(
-        analysisSlide.civilianImpact?.image || analysisSlide.whatsHappening?.image,
+        analysisSlide.civilianImpact?.image || analysisSlide.whatsHappening?.image || overviewSlide.civilianImpact?.image,
         "Country background image",
       ),
     );
@@ -463,7 +467,7 @@ function renderSection(sectionSlide) {
     );
 
     const supportImage = createImageCard(
-      slide.civilianImpact?.image || slide.howToHelp?.image,
+      slide.howToHelp?.image || slide.civilianImpact?.image,
       "Country support image",
     );
     if (supportImage) {

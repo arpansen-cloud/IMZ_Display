@@ -755,6 +755,7 @@ h1 {
 .feature-stack {
   display: grid;
   gap: 0.6rem;
+  width: 100%;
 }
 
 .stack-heading {
@@ -762,6 +763,12 @@ h1 {
   color: var(--accent);
   font-size: 0.92rem;
   font-weight: 700;
+}
+
+.section-heading {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .feature-media-card {
