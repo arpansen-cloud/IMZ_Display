@@ -1039,6 +1039,7 @@ h1 {
   justify-content: flex-start;
   align-self: flex-start;
   margin-top: auto;
+  margin-left: 20px;
 }
 
 .country-lebanon .feature-panel-afghanistan-overview .feature-side .feature-media-card {
