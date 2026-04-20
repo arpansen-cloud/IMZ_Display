@@ -239,6 +239,9 @@ function createImageCard(image, fallbackAlt, heading) {
     img.src = image.src;
     img.alt = image.alt || fallbackAlt;
     img.dataset.mode = image.mode || "photo";
+    if (image.position) {
+      img.style.objectPosition = image.position;
+    }
     figure.classList.toggle("qr-media-card", img.dataset.mode === "qr");
     figure.appendChild(img);
     wrap.appendChild(figure);

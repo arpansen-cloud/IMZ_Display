@@ -1,310 +1,290 @@
 {
-    "meta": {
-      "defaultTitle": "Kurdistan",
-      "logoLabel": "MSA",
-      "secondsPerSlide": 14,
+  "meta": {
+    "defaultTitle": "Kurdistan",
+    "logoLabel": "MSA",
+    "secondsPerSlide": 14,
+    "background": {
+      "src": "./Kurdistan-Province-2.webp"
+    }
+  },
+  "slides": [
+    {
+      "title": "Kurdistan",
+      "subtitle": "",
       "background": {
-        "src": "./image-destination-here.png"
+        "src": "./Kurdistan-Province-2.webp"
+      },
+      "whatsHappening": {
+        "backgroundHeading": "Background",
+        "partiesHeading": "Main Parties Involved",
+        "background": "The Kurds are one of the world’s largest stateless peoples, living mainly across Turkey, Iraq, Iran, and Syria. After World War I, the 1920 Treaty of Sèvres raised the possibility of Kurdish autonomy, but the 1923 Treaty of Lausanne left Kurds divided across new state borders. Since then, Kurdish communities have faced shifting repression, armed conflict, displacement, and denied political rights in different countries.",
+        "parties": [
+          {
+            "name": "Kurdish Communities",
+            "description": "A stateless people spread across several countries."
+          },
+          {
+            "name": "Turkey",
+            "description": "Has fought the PKK and restricted Kurdish political movements."
+          },
+          {
+            "name": "Iraq",
+            "description": "Includes the Kurdistan Region, but also the legacy of Anfal and Halabja."
+          },
+          {
+            "name": "Syria",
+            "description": "Kurdish-led areas gained autonomy during war but remain under pressure."
+          },
+          {
+            "name": "Iran",
+            "description": "Kurdish activists and communities face arrests, executions, and repression."
+          }
+        ],
+        "timeline": [
+          {
+            "year": "1920",
+            "description": "The Treaty of Sèvres proposes possible Kurdish autonomy."
+          },
+          {
+            "year": "1923",
+            "description": "The Treaty of Lausanne leaves Kurds divided across new borders."
+          },
+          {
+            "year": "1988",
+            "description": "Iraq’s Anfal campaign and Halabja chemical attack devastate Kurdish civilians."
+          },
+          {
+            "year": "2010s-2020s",
+            "description": "ISIS, Turkish offensives, and regional crackdowns keep Kurdish civilians at risk."
+          }
+        ],
+        "image": {
+          "src": "./_109141954_63d4b1ff-2a63-431f-9a89-6727321c7faf.gif.webp",
+          "alt": "Map showing Kurdish-inhabited areas across the region"
+        }
+      },
+      "civilianImpact": {
+        "experiencesHeading": "Experiences",
+        "statsHeading": "Key Figures",
+        "experiences": "For Kurdish civilians, the crisis has meant displacement, village destruction, chemical attacks, language and identity restrictions, detention, and repeated insecurity. The impact differs by country, but the pattern is similar: Kurdish communities are often caught between state security campaigns, armed groups, foreign alliances, and broader wars.",
+        "stats": [
+          {
+            "value": "25-60M",
+            "label": "Estimated Kurds"
+          },
+          {
+            "value": "1923",
+            "label": "No Kurdish State"
+          },
+          {
+            "value": "1988",
+            "label": "Anfal and Halabja"
+          },
+          {
+            "value": "4",
+            "label": "Main Countries"
+          }
+        ],
+        "image": {
+          "src": "./_109141954_63d4b1ff-2a63-431f-9a89-6727321c7faf.gif.webp",
+          "alt": "Map showing Kurdish-inhabited areas across the region"
+        }
+      },
+      "howToHelp": {
+        "summary": "",
+        "cards": [],
+        "learnMore": {
+          "text": ""
+        },
+        "image": {
+          "src": "",
+          "alt": ""
+        }
       }
     },
-    "slides": [
-      {
-        "title": "Kurdistan",
-        "subtitle": "",
-        "background": {
-          "src": "./image-destination-here.png"
-        },
-        "whatsHappening": {
-          "partiesHeading": "Parties Involved",
-          "background": "The Kurdish people are a stateless ethnic group of roughly 25 to 60 million spread across Turkey, Syria, Iran, Iraq, and nearby regions. Their crisis is rooted in the collapse of Ottoman rule and the failure to create a Kurdish state after World War I. Since then, Kurds have faced decades of repression, cultural suppression, cross-border war, and repeated violence from multiple states and armed actors. In recent decades, Kurdish movements have also been shaped by the rise of ISIS, shifting foreign alliances, Turkish offensives, and renewed crackdowns in Iran and elsewhere.",
-          "parties": [
-            {
-              "name": "Kurdish Political and Armed Groups",
-              "description": "These include organizations such as the PKK, DEM Party, YPG, SDF, PDKI, KRG, KDP, and PUK, which differ by country and strategy."
-            },
-            {
-              "name": "Turkey",
-              "description": "Has a long history of suppressing Kurdish language, political movements, and armed groups, including cross-border operations."
-            },
-            {
-              "name": "Syria",
-              "description": "Kurdish groups in Syria have pursued autonomy while also facing war, ISIS violence, and Turkish military offensives."
-            },
-            {
-              "name": "Iran",
-              "description": "Kurdish communities and activists in Iran continue to face arrests, executions, and repression."
-            },
-            {
-              "name": "Iraq",
-              "description": "Iraq includes the Kurdistan Regional Government but also carries the legacy of genocide, displacement, and conflict against Kurdish populations."
-            },
-            {
-              "name": "Foreign Powers",
-              "description": "Western powers, the United States, and regional governments have all shaped Kurdish politics through borders, alliances, and military involvement."
-            }
-          ],
-          "timeline": [
-            {
-              "year": "1920",
-              "description": "The Treaty of Sèvres proposed a possible Kurdish state, but it was never ratified."
-            },
-            {
-              "year": "1923",
-              "description": "The Treaty of Lausanne replaced Sèvres and removed the obligation to create a Kurdish state."
-            },
-            {
-              "year": "1980s-2000s",
-              "description": "Violence intensified across Turkey, Iran, and Iraq, including Saddam Hussein’s genocide against Iraqi Kurds and the Halabja chemical attack."
-            },
-            {
-              "year": "2000s-2020s",
-              "description": "Kurdish autonomy expanded in Iraq and Syria, but new wars involving ISIS, Turkey, and regional forces brought further instability."
-            },
-            {
-              "year": "2020s",
-              "description": "Turkish offensives, repression in Iran, and lingering post-ISIS conflict continue to shape Kurdish life across the region."
-            }
-          ],
-          "image": {
-            "src": "./bottom-left.png",
-            "alt": "Landscape or conflict-affected scene related to Kurdistan"
-          }
-        },
-        "civilianImpact": {
-          "experiences": "For Kurdish civilians, this crisis has meant decades of displacement, killings, cultural suppression, political isolation, detention, and forced migration. Because Kurds are spread across multiple countries and often face state censorship, their suffering is less visible and less consistently documented than many other crises. Even so, the record shows recurring executions, arrests, and restrictions on language, identity, and political participation, alongside repeated waves of war and displacement.",
-          "stats": [
-            {
-              "value": "500+",
-              "label": "Executed Since 2020"
-            },
-            {
-              "value": "2,000+",
-              "label": "Detained Since 2020"
-            },
-            {
-              "value": "2m+",
-              "label": "Relocated to Iraqi Kurdistan"
-            },
-            {
-              "value": "80+ yrs",
-              "label": "Violence and Oppression"
-            }
-          ],
-          "image": {
-            "src": "./slide1-people.png",
-            "alt": "Kurdish civilians affected by displacement and repression"
-          }
-        },
-        "howToHelp": {
-          "summary": "The Kurdish crisis is often overlooked because it is spread across several countries rather than tied to a single state. Raising awareness matters because underreported repression, displacement, and rights abuses are easier to ignore when international attention fades.",
-          "cards": [
-            {
-              "placeholder": "1920",
-              "label": "Sèvres"
-            },
-            {
-              "placeholder": "1923",
-              "label": "Lausanne"
-            }
-          ],
-          "learnMore": {
-            "text": "This slide explains how Kurdistan’s modern crisis grew out of denied statehood, regional repression, and a century of conflict."
+    {
+      "title": "Kurdistan",
+      "subtitle": "How are civilians affected?",
+      "background": {
+        "src": "./_89773356_gettyimages-97630775.jpg.webp"
+      },
+      "whatsHappening": {
+        "backgroundHeading": "Civilian Impact",
+        "partiesHeading": "Who Is Most Affected",
+        "timelineHeading": "Impact Statistics",
+        "background": "Kurdish civilians are affected by conflict in several overlapping ways: displacement from military campaigns, loss of homes, restrictions on language and political organizing, and violence from both state forces and armed groups. In Iraq, Anfal and Halabja remain defining traumas. In Syria, ISIS and later Turkish-backed offensives displaced many Kurdish families.",
+        "parties": [
+          {
+            "name": "Displaced Families",
+            "description": "Families have fled wars in Iraq, Syria, and border regions."
           },
-          "image": {
-            "src": "./flag-slide1.png",
-            "alt": "Kurdish flag"
+          {
+            "name": "Children",
+            "description": "War and displacement interrupt schooling, safety, and stability."
+          },
+          {
+            "name": "Political Activists",
+            "description": "Kurdish parties, journalists, and activists can face detention or repression."
+          },
+          {
+            "name": "Border Communities",
+            "description": "Cross-border strikes and offensives repeatedly affect civilian life."
           }
+        ],
+        "timeline": [
+          {
+            "year": "50k+",
+            "description": "Kurds killed during Iraq’s Anfal campaign, according to common estimates."
+          },
+          {
+            "year": "5k",
+            "description": "up to about 5,000 killed in the Halabja chemical attack."
+          },
+          {
+            "year": "700k",
+            "description": "people in northeast Syria needed aid before Turkey’s 2019 offensive."
+          }
+        ],
+        "image": {
+          "src": "./SYRIA-superJumbo.webp",
+          "alt": "Kurdish civilians displaced near the Syrian border"
         }
       },
-      {
-        "title": "Kurdistan",
-        "subtitle": "How are civilians affected?",
-        "background": {
-          "src": "./image-destination-here.png"
-        },
-        "whatsHappening": {
-          "partiesHeading": "People Affected",
-          "background": "Kurdish civilians face a crisis that combines state repression, conflict displacement, and long-term cultural and political suppression. The effects differ across countries, but together they form a broad humanitarian pattern of insecurity and marginalization.",
-          "parties": [
-            {
-              "name": "500+ executed since 2020",
-              "description": "Executions have targeted Kurdish people on charges ranging from political dissent to other accusations."
-            },
-            {
-              "name": "2,000+ detained since 2020",
-              "description": "Thousands of Kurdish civilians have been detained, with many formally charged or sentenced."
-            },
-            {
-              "name": "2 million+ relocated",
-              "description": "Since 2011, over 2 million refugees or internally displaced people from Syria and Iraq have relocated to Iraqi Kurdistan."
-            },
-            {
-              "name": "Iranian Kurdistan under pressure",
-              "description": "In January 2026 alone, reports recorded hundreds of arbitrary arrests, many killings, and additional executions."
-            }
-          ],
-          "timeline": [
-            {
-              "year": "272",
-              "description": "Arbitrary arrests of Kurdish citizens reported in Iranian Kurdistan in January 2026."
-            },
-            {
-              "year": "238",
-              "description": "Kurdish citizens reported killed in Iranian Kurdistan in January 2026."
-            },
-            {
-              "year": "10",
-              "description": "Executions reported in January 2026, following 205 executions in 2025."
-            }
-          ],
-          "image": {
-            "src": "./bottom-left.png",
-            "alt": "Humanitarian or conflict conditions affecting Kurdish communities"
-          }
-        },
-        "civilianImpact": {
-          "experiences": "Kurdish civilians have endured not only direct violence but also the slower harms of cultural erasure, blocked political participation, forced migration, and state surveillance. The lack of a unified state makes both aid and public visibility harder. In many places, Kurdish people face punishment for activism, association, or simply asserting language and identity, while broader regional wars continue to spill into Kurdish communities.",
-          "stats": [
-            {
-              "value": "272",
-              "label": "Arbitrary Arrests Jan 2026"
-            },
-            {
-              "value": "238",
-              "label": "Killed Jan 2026"
-            },
-            {
-              "value": "10",
-              "label": "Executed Jan 2026"
-            },
-            {
-              "value": "205",
-              "label": "Executed in 2025"
-            }
-          ],
-          "image": {
-            "src": "./food-insecurity.png",
-            "alt": "Displacement, repression, or humanitarian conditions affecting Kurdish civilians"
-          }
-        },
-        "howToHelp": {
-          "summary": "Because the Kurdish crisis crosses borders, support often means combining awareness with aid for broader humanitarian operations in the places where Kurdish communities live. Staying informed also matters because documentation gaps make silence especially dangerous.",
-          "cards": [
-            {
-              "placeholder": "Rights",
-              "label": "Under Pressure"
-            },
-            {
-              "placeholder": "Identity",
-              "label": "Suppressed"
-            }
-          ],
-          "learnMore": {
-            "text": "The civilian toll includes executions, detention, displacement, and long-term restrictions on Kurdish language, identity, and political life."
+      "civilianImpact": {
+        "experiencesHeading": "How Civilians Are Affected",
+        "statsHeading": "Impact Statistics",
+        "experiences": "Civilian harm is not only physical violence. It also includes losing homes, being forced into camps, being separated by borders, and facing pressure over Kurdish language, identity, and political participation. Because Kurdish communities are divided across several states, the crisis is often fragmented and easier for the world to overlook.",
+        "stats": [
+          {
+            "value": "50k+",
+            "label": "Killed in Anfal"
           },
-          "imageHeading": "Kurdistan Crisis",
-          "image": {
-            "src": "./ipc-qr.png",
-            "alt": "QR code for Kurdistan crisis information",
-            "mode": "qr"
+          {
+            "value": "5k",
+            "label": "Killed in Halabja"
+          },
+          {
+            "value": "2014",
+            "label": "ISIS Threat Rises"
+          },
+          {
+            "value": "700k",
+            "label": "Needed Aid in NE Syria"
           }
+        ],
+        "image": {
+          "src": "./SYRIA-superJumbo.webp",
+          "alt": "Kurdish civilians displaced near the Syrian border"
         }
       },
-      {
-        "title": "Kurdistan",
-        "subtitle": "How You Can Help",
-        "background": {
-          "src": "./image-destination-here.png"
+      "howToHelp": {
+        "summary": "",
+        "cards": [],
+        "learnMore": {
+          "text": ""
         },
-        "whatsHappening": {
-          "partiesHeading": "Organizations and Action",
-          "background": "Helping Kurdish communities is more complicated than in many country-specific crises because Kurds are spread across several states and do not have one unified national aid system. Still, support for trusted humanitarian organizations and informed public awareness can make a real difference.",
-          "parties": [
-            {
-              "name": "UNHCR",
-              "description": "Supports displaced people and refugees across the wider region, including communities affected by Kurdish displacement."
-            },
-            {
-              "name": "World Food Programme",
-              "description": "Provides food assistance in conflict-affected parts of Iraq, Syria, and surrounding areas where Kurdish families have been displaced."
-            },
-            {
-              "name": "Human Rights Reporting",
-              "description": "Following and sharing credible reporting helps document abuses that are often hidden or undercounted."
-            },
-            {
-              "name": "Public Education",
-              "description": "Teaching others about Kurdish history and current repression helps counter invisibility and misinformation."
-            }
-          ],
-          "timeline": [
-            {
-              "year": "Learn",
-              "description": "Study Kurdish history, current repression, and the regional politics shaping the crisis."
-            },
-            {
-              "year": "Share",
-              "description": "Spread awareness using verified reporting and human rights documentation."
-            },
-            {
-              "year": "Donate",
-              "description": "Support trusted organizations working in Iraq, Syria, and surrounding regions."
-            }
-          ],
-          "image": {
-            "src": "./people-affected.png",
-            "alt": "Aid or support efforts relevant to Kurdish communities"
-          }
-        },
-        "civilianImpact": {
-          "experiences": "Helping Kurdish communities means not letting a long-running and fragmented humanitarian crisis disappear from public view. Donations can support displaced families and conflict-affected civilians, while awareness and documentation help protect people whose suffering is often obscured by borders, censorship, and broader regional wars.",
-          "stats": [
-            {
-              "value": "2",
-              "label": "Main Aid Paths"
-            },
-            {
-              "value": "3",
-              "label": "Ways to Act"
-            },
-            {
-              "value": "1",
-              "label": "Learn More QR"
-            },
-            {
-              "value": "Ongoing",
-              "label": "Need for Attention"
-            }
-          ],
-          "image": {
-            "src": "./slide1-people.png",
-            "alt": "Kurdish families and civilians affected by conflict"
-          }
-        },
-        "howToHelp": {
-          "summary": "Educate yourself and others about the Kurdish crisis, support trusted humanitarian organizations such as UNHCR and WFP that operate in the relevant regions, and follow verified human rights reporting so abuses are not ignored or erased.",
-          "cards": [
-            {
-              "qr": "../images/unhcr-qr.png",
-              "label": "UNHCR Regional Support",
-              "url": "https://www.unhcr.org/"
-            },
-            {
-              "qr": "../images/wpf.png",
-              "label": "World Food Programme",
-              "url": "https://www.wfp.org/"
-            }
-          ],
-          "learnMore": {
-            "text": "You can also follow Kurdish human rights documentation and broader regional humanitarian reporting to stay informed."
-          },
-          "imageHeading": "Learn More",
-          "image": {
-            "src": "./kurdistan-qr.png",
-            "alt": "QR code for Kurdistan humanitarian or human rights information",
-            "mode": "qr"
-          }
+        "image": {
+          "src": "",
+          "alt": ""
         }
       }
-    ]
-  }
+    },
+    {
+      "title": "Kurdistan",
+      "subtitle": "How You Can Help",
+      "background": {
+        "src": "./Kurdistan-Province-2.webp"
+      },
+      "whatsHappening": {
+        "backgroundHeading": "How Support Helps",
+        "partiesHeading": "Aid and Awareness",
+        "timelineHeading": "How to Make an Impact",
+        "background": "Helping Kurdish civilians means supporting people across several countries rather than one single state. Aid can help displaced families in Iraq and Syria, while awareness can keep attention on rights abuses, press freedom, cultural restrictions, and the long-term effects of conflict.",
+        "parties": [
+          {
+            "name": "UNHCR",
+            "description": "Supports refugees and displaced people across the region."
+          },
+          {
+            "name": "World Food Programme",
+            "description": "Provides food support in conflict-affected areas."
+          },
+          {
+            "name": "Human Rights Groups",
+            "description": "Document detentions, repression, displacement, and abuses."
+          },
+          {
+            "name": "Public Awareness",
+            "description": "Helps keep a fragmented crisis from disappearing."
+          }
+        ],
+        "timeline": [
+          {
+            "year": "Learn",
+            "description": "Understand Kurdish history and why state borders matter."
+          },
+          {
+            "year": "Share",
+            "description": "Use credible reporting and avoid flattening all Kurds into one group."
+          },
+          {
+            "year": "Support",
+            "description": "Donate to trusted relief groups working in Iraq, Syria, and nearby areas."
+          }
+        ],
+        "image": {
+          "src": "./Kurdistan-Province-2.webp",
+          "alt": "Mountain landscape in Kurdistan"
+        }
+      },
+      "civilianImpact": {
+        "experiencesHeading": "How You Can Help",
+        "statsHeading": "Support Priorities",
+        "experiences": "Support should center civilians: displaced families, survivors of past atrocities, communities affected by cross-border attacks, and people facing repression for Kurdish identity or politics. Because the crisis is spread across borders, reliable information and trusted humanitarian aid both matter.",
+        "stats": [
+          {
+            "value": "Aid",
+            "label": "Displaced Families"
+          },
+          {
+            "value": "Rights",
+            "label": "Document Abuses"
+          },
+          {
+            "value": "Food",
+            "label": "Emergency Relief"
+          },
+          {
+            "value": "Info",
+            "label": "Accurate Awareness"
+          }
+        ],
+        "image": {
+          "src": "./Kurdistan-Province-2.webp",
+          "alt": "Mountain landscape in Kurdistan"
+        }
+      },
+      "howToHelp": {
+        "summary": "Use the support options on the right to donate through broad humanitarian groups, then keep learning from reliable reporting about Kurdish civilians across Turkey, Iraq, Iran, and Syria.",
+        "cards": [
+          {
+            "qr": "./unhcr-iraq-emergency-qr.png",
+            "label": "Scan to Donate"
+          },
+          {
+            "qr": "./kurdistan-info-qr.png",
+            "label": "Learn More"
+          }
+        ],
+        "learnMore": {
+          "text": "Follow trusted human rights reporting, Kurdish civil society voices, and humanitarian updates from the region."
+        },
+        "image": {
+          "src": "./us-kurd91-2_custom-81998bc90b0428353d181800002fb6eba3c2a0b6.webp",
+          "alt": "Soldiers carrying Kurdish children during displacement",
+          "position": "center 28%"
+        }
+      }
+    }
+  ]
+}
