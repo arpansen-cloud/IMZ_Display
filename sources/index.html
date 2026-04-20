@@ -116,7 +116,48 @@
         title: "Iran",
         path: "iran",
         note: "Additional referenced organizations include The Lancet, OCHA, NRC, Refugees International, The Soufan Center, WHO, and the House of Commons.",
-        links: []
+        links: [
+          {
+            title: "UN OCHA - Humanitarian Update No. 02 (3 April 2026)",
+            url: "https://www.unocha.org/publications/report/iran-islamic-republic/islamic-republic-iran-humanitarian-update-no-02-3-april-2026"
+          },
+          {
+            title: "UN OCHA - Humanitarian Update No. 01 (17 March 2026)",
+            url: "https://www.unocha.org/publications/report/iran-islamic-republic/islamic-republic-iran-humanitarian-update-no-01-17-march-2026"
+          },
+          {
+            title: "UNHCR - ReliefWeb Situation Report (15 April 2026)",
+            url: "https://reliefweb.int/report/iran-islamic-republic/unhcr-core-middle-east-situation-15-april-2026"
+          },
+          {
+            title: "Reuters - 3.2 million displaced inside Iran by conflict",
+            url: "https://www.reuters.com/world/middle-east/up-32-million-people-displaced-inside-iran-by-conflict-un-says-2026-03-12/"
+          },
+          {
+            title: "Reuters - Major humanitarian emergency in the region",
+            url: "https://www.reuters.com/world/middle-east/middle-east-situation-is-major-humanitarian-emergency-un-refugee-agency-says-2026-03-06/"
+          },
+          {
+            title: "Norwegian Refugee Council - One month of war leaves millions in extreme uncertainty",
+            url: "https://www.nrc.no/news/2026/iran-one-month-of-war-leaves-millions-in-extreme-uncertainty"
+          },
+          {
+            title: "Refugees International - Iran Situation Update (April 7, 2026)",
+            url: "https://refugees.org/wp-content/uploads/2026/04/Iran-Situation-Update-April-7-2026.pdf"
+          },
+          {
+            title: "Wikipedia - 2026 Iran War",
+            url: "https://en.wikipedia.org/wiki/2026_Iran_war"
+          },
+          {
+            title: "Wikipedia - Timeline of the 2026 Iran War",
+            url: "https://en.wikipedia.org/wiki/Timeline_of_the_2026_Iran_war"
+          },
+          {
+            title: "Wikipedia - Casualties of the 2026 Iran War",
+            url: "https://en.wikipedia.org/wiki/Casualties_of_the_2026_Iran_war"
+          }
+        ]
       },
       {
         title: "Kashmir",
@@ -284,19 +325,21 @@
       }
     }
 
-    function sourceLabel(url) {
+    function sourceLabel(entry) {
+      const url = typeof entry === "string" ? entry : entry?.url;
+
       try {
         const parsed = new URL(url);
         const host = parsed.hostname.replace(/^www\./, "");
         const slug = parsed.pathname.split("/").filter(Boolean).slice(-1)[0] || host;
         return {
           host,
-          title: slug.replace(/[-_]/g, " ")
+          title: typeof entry === "object" && entry?.title ? entry.title : slug.replace(/[-_]/g, " ")
         };
       } catch {
         return {
           host: "Source",
-          title: url
+          title: typeof entry === "object" && entry?.title ? entry.title : url
         };
       }
     }
@@ -304,7 +347,9 @@
     function uniqueLinks(links) {
       const seen = new Set();
       return links.filter((link) => {
-        const key = link.replace(/\/$/, "");
+        const href = typeof link === "string" ? link : link?.url;
+        if (!href) return false;
+        const key = href.replace(/\/$/, "");
         if (seen.has(key)) return false;
         seen.add(key);
         return true;
@@ -326,14 +371,15 @@
       if (links.length) {
         const list = document.createElement("ol");
         list.className = "source-list";
-        links.forEach((url) => {
-          const label = sourceLabel(url);
+        links.forEach((entry) => {
+          const href = typeof entry === "string" ? entry : entry.url;
+          const label = sourceLabel(entry);
           const row = document.createElement("li");
           const link = document.createElement("a");
-          link.href = url;
+          link.href = href;
           link.target = "_blank";
           link.rel = "noopener noreferrer";
-          link.title = url;
+          link.title = href;
           link.innerHTML = `<strong>${label.host}</strong><span>${label.title}</span>`;
           row.append(link);
           list.append(row);

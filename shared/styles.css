@@ -1004,6 +1004,74 @@ h1 {
   display: block;
 }
 
+.country-ukraine .feature-panel-afghanistan-overview .feature-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.country-ukraine .feature-panel-afghanistan-overview .feature-side > .feature-stack:first-child {
+  width: min(100%, 420px);
+}
+
+.country-ukraine .feature-panel-afghanistan-overview .feature-side > .feature-stack:last-child {
+  width: 100%;
+  max-width: 420px;
+  margin-top: 16px;
+  align-self: center;
+}
+
+.country-ukraine .feature-panel-afghanistan-overview .feature-side .feature-media-card {
+  width: 100%;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  padding: 0;
+  overflow: hidden;
+}
+
+.country-ukraine .feature-panel-afghanistan-overview .feature-side .feature-media-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.country-kurdistan .feature-panel-afghanistan-overview .feature-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.country-kurdistan .feature-panel-afghanistan-overview .feature-side > .feature-stack:first-child {
+  width: min(100%, 420px);
+}
+
+.country-kurdistan .feature-panel-afghanistan-overview .feature-side > .feature-stack:last-child {
+  width: 100%;
+  max-width: 420px;
+  margin-top: 16px;
+  align-self: center;
+}
+
+.country-kurdistan .feature-panel-afghanistan-overview .feature-side .feature-media-card {
+  width: 100%;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  padding: 0;
+  overflow: hidden;
+}
+
+.country-kurdistan .feature-panel-afghanistan-overview .feature-side .feature-media-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
 .feature-panel-afghanistan-howToHelp .stats-grid {
   gap: 0.6rem;
 }
