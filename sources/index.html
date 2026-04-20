@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../shared/styles.css?v=30" />
 </head>
-<body class="hub-page">
+<body class="hub-page sources-hub-page">
   <div class="hub-shell sources-shell">
     <header class="topbar">
       <div>
@@ -406,6 +406,8 @@
     }
 
     if (country) {
+      document.body.classList.remove("sources-hub-page");
+      document.body.classList.add("sources-country-page");
       const selected = sourceData.find((item) =>
         normalize(item.title) === normalize(country) || normalize(item.path) === normalize(path || "")
       );
@@ -419,6 +421,8 @@
       grid.classList.add("sources-grid-focused");
       renderSources(selected ? [selected] : []);
     } else {
+      document.body.classList.remove("sources-country-page");
+      document.body.classList.add("sources-hub-page");
       document.getElementById("countryBackLink").remove();
       renderSources(sourceData);
     }

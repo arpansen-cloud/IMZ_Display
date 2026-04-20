@@ -149,6 +149,10 @@ h1 {
   gap: 16px;
 }
 
+.sources-hub-page .sources-grid {
+  gap: 12px;
+}
+
 .sources-grid-focused {
   grid-template-columns: 1fr;
 }
@@ -265,6 +269,58 @@ h1 {
   color: rgba(219, 223, 245, 0.68);
   font-size: 0.8rem;
   line-height: 1.2;
+}
+
+.sources-hub-page .source-card {
+  min-height: 150px;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.sources-hub-page .source-card h2 {
+  margin: 0 0 0.55rem;
+  font-size: 20px;
+}
+
+.sources-hub-page .source-card p,
+.sources-hub-page .source-note,
+.sources-hub-page .source-empty {
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.sources-hub-page .source-card-heading {
+  margin-bottom: 0.25rem;
+}
+
+.sources-hub-page .source-card-heading span {
+  font-size: 0.64rem;
+}
+
+.sources-hub-page .source-list {
+  gap: 10px;
+  margin-top: 0.6rem;
+}
+
+.sources-hub-page .source-list a {
+  min-height: 72px;
+  padding: 12px 16px;
+  border-radius: 14px;
+}
+
+.sources-hub-page .source-list strong {
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.sources-hub-page .source-list span {
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+.sources-hub-page .text-source-box {
+  margin-top: 0.45rem;
+  padding: 0.5rem;
 }
 
 .text-source-box {
