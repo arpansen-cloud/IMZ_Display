@@ -53,8 +53,8 @@
           }
         ],
         "image": {
-          "src": "https://images.unsplash.com/photo-1526481280695-3c4691f8d3d8?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Iran city and mountain landscape"
+          "src": "./iran1.jpeg",
+          "alt": "Civilians walking past damaged building in Iran"
         }
       },
       "civilianImpact": {
@@ -78,8 +78,8 @@
           }
         ],
         "image": {
-          "src": "https://images.unsplash.com/photo-1518695606297-6bb7c9378e6f?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Displacement and humanitarian crisis"
+          "src": "./iran_mosq.jpeg",
+          "alt": "Mosque in Iran with reflection"
         }
       },
       "howToHelp": {
@@ -104,8 +104,8 @@
           "url": "https://www.unocha.org/iran"
         },
         "image": {
-          "src": "https://images.unsplash.com/photo-1599837487527-d8f0f837f9f9?auto=format&fit=crop&w=1200&q=80",
-          "alt": "Humanitarian support and solidarity"
+          "src": "./iranslide3.jpeg",
+          "alt": "Humanitarian aid workers rescuing civilians in Iran"
         }
       }
     }
